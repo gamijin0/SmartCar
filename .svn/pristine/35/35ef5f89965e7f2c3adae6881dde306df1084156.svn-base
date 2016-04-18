@@ -1,0 +1,108 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+-include ../makefile.init
+
+RM := rm -rf
+
+# All of the sources participating in the build are defined here
+-include sources.mk
+-include 08_Sources/subdir.mk
+-include 07_Soft_Component/control/subdir.mk
+-include 07_Soft_Component/common/subdir.mk
+-include 06_App_Component/speed/subdir.mk
+-include 06_App_Component/motor/subdir.mk
+-include 06_App_Component/light/subdir.mk
+-include 06_App_Component/SC_Status/subdir.mk
+-include 06_App_Component/GyroAcce/subdir.mk
+-include 05_Driver/uart/subdir.mk
+-include 05_Driver/pwm/subdir.mk
+-include 05_Driver/pit/subdir.mk
+-include 05_Driver/gpio/subdir.mk
+-include 05_Driver/adc/subdir.mk
+-include 03_MCU/subdir.mk
+-include 02_CPU/subdir.mk
+-include subdir.mk
+-include objects.mk
+
+ifneq ($(MAKECMDGOALS),clean)
+ifneq ($(strip $(C++_DEPS)),)
+-include $(C++_DEPS)
+endif
+ifneq ($(strip $(C_DEPS)),)
+-include $(C_DEPS)
+endif
+ifneq ($(strip $(ASM_DEPS)),)
+-include $(ASM_DEPS)
+endif
+ifneq ($(strip $(CC_DEPS)),)
+-include $(CC_DEPS)
+endif
+ifneq ($(strip $(CPP_DEPS)),)
+-include $(CPP_DEPS)
+endif
+ifneq ($(strip $(CXX_DEPS)),)
+-include $(CXX_DEPS)
+endif
+ifneq ($(strip $(C_UPPER_DEPS)),)
+-include $(C_UPPER_DEPS)
+endif
+ifneq ($(strip $(S_UPPER_DEPS)),)
+-include $(S_UPPER_DEPS)
+endif
+endif
+
+-include ../makefile.defs
+
+# Add inputs and outputs from these tool invocations to the build variables 
+SECONDARY_FLASH += \
+K60_SmartCar.hex \
+
+SECONDARY_LIST += \
+K60_SmartCar.lst \
+
+SECONDARY_SIZE += \
+K60_SmartCar.siz \
+
+
+# All Target
+all: K60_SmartCar.elf secondary-outputs
+
+# Tool invocations
+K60_SmartCar.elf: $(OBJS) $(USER_OBJS)
+	@echo 'Building target: $@'
+	@echo 'Invoking: Cross ARM C++ Linker'
+	arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "MK60DN512Z_flash.ld" -nostartfiles -Xlinker --gc-sections -L"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160324/04_Linker_File" -Wl,-Map,"K60_SmartCar.map" -specs=nano.specs -specs=nosys.specs -o "K60_SmartCar.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	@echo 'Finished building target: $@'
+	@echo ' '
+
+K60_SmartCar.hex: K60_SmartCar.elf
+	@echo 'Invoking: Cross ARM GNU Create Flash Image'
+	arm-none-eabi-objcopy -O ihex "K60_SmartCar.elf"  "K60_SmartCar.hex"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+K60_SmartCar.lst: K60_SmartCar.elf
+	@echo 'Invoking: Cross ARM GNU Create Listing'
+	arm-none-eabi-objdump --source --all-headers --demangle --line-numbers --wide "K60_SmartCar.elf" > "K60_SmartCar.lst"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+K60_SmartCar.siz: K60_SmartCar.elf
+	@echo 'Invoking: Cross ARM GNU Print Size'
+	arm-none-eabi-size --format=berkeley "K60_SmartCar.elf"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+# Other Targets
+clean:
+	-$(RM) $(SECONDARY_SIZE)$(C++_DEPS)$(OBJS)$(C_DEPS)$(ASM_DEPS)$(CC_DEPS)$(SECONDARY_FLASH)$(CPP_DEPS)$(CXX_DEPS)$(C_UPPER_DEPS)$(SECONDARY_LIST)$(S_UPPER_DEPS) K60_SmartCar.elf
+	-@echo ' '
+
+secondary-outputs: $(SECONDARY_FLASH) $(SECONDARY_LIST) $(SECONDARY_SIZE)
+
+.PHONY: all clean dependents
+.SECONDARY:
+
+-include ../makefile.targets

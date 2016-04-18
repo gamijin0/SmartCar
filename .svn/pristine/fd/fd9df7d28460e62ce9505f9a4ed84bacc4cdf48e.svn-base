@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../07_Soft_Component/common/common.c 
+
+OBJS += \
+./07_Soft_Component/common/common.o 
+
+C_DEPS += \
+./07_Soft_Component/common/common.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+07_Soft_Component/common/%.o: ../07_Soft_Component/common/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: Cross ARM C Compiler'
+	arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/02_CPU" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/05_Driver/pwm" -I"H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160328\05_Driver\pit" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/05_Driver" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/05_Driver/gpio" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/05_Driver/uart" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/05_Driver/adc" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/03_MCU" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/04_Linker_File" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/06_App_Component" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/06_App_Component/speed" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/06_App_Component/light" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/06_App_Component/GyroAcce" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/06_App_Component/motor" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/07_Soft_Component" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/07_Soft_Component/control" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/07_Soft_Component/common" -I"H:/Elec_Team_gexinyue_16_03_07/04-software/K60_SmartCar_20160328/08_Sources" -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" -c -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

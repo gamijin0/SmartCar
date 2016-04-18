@@ -1,0 +1,119 @@
+//==============================================================
+//文件名称：GyroAcce.h
+//功能概要：陀螺仪、加速度传感器头文件
+//版权所有：苏州大学飞思卡尔嵌入式中心(sumcu.suda.edu.cn)
+//==============================================================
+
+#ifndef  GYROACCE_H_
+#define  GYROACCE_H_
+
+#include "common.h"    //包含公共要素头文件
+#include "uart.h"
+#include "adc.h"
+#include "motor.h"
+
+//根据陀螺仪加速度传感器初始状态确定========================================
+#define  CAR_ACCE_SET   (0x0737)	//0x068E(向前倾5°) 0x0737(竖直) 0x084A(向后倾5°)
+#define  CAR_GYRO_SET   (0x06FD)	//0x06FD(角速度为0°/s)
+//==============================================================
+
+//卡尔曼滤波陀螺仪和加速度PID因子
+#define  Q_angle         (0.0000000001)		//0.0000000001	值越大越与实际值贴合
+#define  Q_gyro          (0.000001)		//0.000001
+#define  R_angle         (0.0001)			//0.0001	值越大波形延迟越高
+
+
+#define ANGLE_PWM_OUT_MAX        8000
+#define ANGLE_PWM_OUT_MIN       -8000
+
+#define  TURNTIMCOUNT   2
+
+
+#define AANGPERIODFAV  	(1)
+#define TURNGPERIODFAV  (4)
+#define SPEEDPERIODFAV  (20)
+
+//==============================================================
+//函数名称：GyroAcce_Init
+//函数返回：无
+//参数说明：无
+//功能概要：陀螺仪、加速度传感器初始化。调用AD构件完成对陀螺仪、加速
+//度传感器的MCU采样引脚的初始化，无需参数。
+//==============================================================
+void GyroAcce_init(void);
+
+//==============================================================
+//函数名称：GyroAcce_getAD
+//函数返回：无
+//参数说明：ADValue存放陀螺仪、加速度传感器采样的AD数据
+//功能概要：获取陀螺仪、加速度传感器AD数据。调用AD构件完成对陀螺仪、
+//加速度传感器的MCU采样引脚的电平采样。
+//==============================================================
+uint8_t GyroAcce_getAD(uint16_t *ADValue, uint8_t Count);
+
+//==============================================================
+//函数名称：GyroAccePHYToAngle
+//函数返回：无
+//参数说明： float *   GyroAngle，存放陀螺仪的数组指针
+//          float *   AcceValue，存放加速度传感器加速度的数组指针
+//          float *   car_Angle，存放车模倾角
+//功能概要：利用卡尔曼滤波把角速度、加速度转成车模倾角。
+//==============================================================
+void GyroAccePHYToAngle(float *GyroAngle,float *AcceValue,float *car_Angle);
+
+//==============================================================
+//函数名称：AngleControl
+//函数返回：
+//参数说明：	float	*PWM_aq_gle,
+//      	float	 angle_P,角度比例控制参数
+//          float    angle_D,角度微分控制参数
+//功能概要：车模直立控制函数。根据车模角度和角速度计算车模电机的控制量。
+//==============================================================
+int16_t AngleControl(float *PWM_aq_gle,float angle_P,float angle_D);
+
+/***********************************************************
+函数名称：AAangPWMOut
+函数功能：
+入口参数：	NewspeedPWM      当前的电机输出PWM
+      	LastspeedPWM     上次电机输出PWM
+        PeriodCount      平滑周期
+出口参数：无
+备 注：
+***********************************************************/
+int16_t AAangPWMOut(int16_t NewAangPWM ,int16_t LastAangPWM,uint8_t PeriodCount);
+
+/***********************************************************
+函数名称：TURNPWMOut
+函数功能：
+入口参数：	NewspeedPWM      当前的电机输出PWM
+        LastspeedPWM     上次电机输出PWM
+        PeriodCount      平滑周期
+出口参数：无
+备 注：
+***********************************************************/
+int16_t TURNPWMOut(int16_t NewAangPWM ,int16_t LastAangPWM,int8_t PeriodCount);
+
+/***********************************************************
+函数名称：SpeedPWMOut
+函数功能：
+入口参数：	NewspeedPWM      当前的电机输出PWM
+        LastspeedPWM     上次电机输出PWM
+        PeriodCount      平滑周期
+出口参数：无
+备 注：
+***********************************************************/
+int16_t SpeedPWMOut(int16_t NewspeedPWM ,int16_t LastspeedPWM,uint8_t PeriodCount);
+
+/***********************************************************
+函数名称：MotorSpeedOut
+函数功能：
+入口参数：	anglePWM
+        speedPWM
+        turnPWM
+返回值：无
+备 注：
+***********************************************************/
+int16_t MotorSpeedOut(int16_t anglePWM ,int16_t speedPWM ,int16_t turnPWM);
+
+#endif
+

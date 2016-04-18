@@ -1,0 +1,3781 @@
+
+K60_SmartCar1.elf:     file format elf32-littlearm
+K60_SmartCar1.elf
+architecture: arm, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00001635
+
+Program Header:
+    LOAD off    0x00008000 vaddr 0x00000000 paddr 0x00000000 align 2**15
+         filesz 0x000001bc memsz 0x000001bc flags r--
+    LOAD off    0x00008800 vaddr 0x00000800 paddr 0x00000800 align 2**15
+         filesz 0x00001304 memsz 0x00001304 flags r-x
+    LOAD off    0x00010000 vaddr 0x1fff0000 paddr 0x00001b04 align 2**15
+         filesz 0x0000006c memsz 0x000000fc flags rw-
+    LOAD off    0x00018000 vaddr 0x20000000 paddr 0x00001b70 align 2**15
+         filesz 0x00000024 memsz 0x00000024 flags rw-
+    LOAD off    0x000180fc vaddr 0x1fff00fc paddr 0x00001c00 align 2**15
+         filesz 0x00000000 memsz 0x00001000 flags rw-
+private flags = 5000002: [Version5 EABI] [has entry point]
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn  Flags
+  0 .interrupts   000001bc  00000000  00000000  00008000  2**2  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .text         00001304  00000800  00000800  00008800  2**2  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .data         0000006c  1fff0000  00001b04  00010000  2**2  CONTENTS, ALLOC, LOAD, DATA
+  3 .bss          00000090  1fff006c  00001b70  0001006c  2**2  ALLOC
+  4 ._user_heap_stack 00001000  1fff00fc  00001c00  000180fc  2**0  ALLOC
+  5 .romp         00000024  20000000  00001b70  00018000  2**0  CONTENTS, ALLOC, LOAD, DATA
+  6 .ARM.attributes 00000033  00000000  00000000  00018024  2**0  CONTENTS, READONLY
+  7 .debug_info   00003459  00000000  00000000  00018057  2**0  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 00000b95  00000000  00000000  0001b4b0  2**0  CONTENTS, READONLY, DEBUGGING
+  9 .debug_aranges 00000248  00000000  00000000  0001c045  2**0  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 000001a8  00000000  00000000  0001c28d  2**0  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_macro  00034119  00000000  00000000  0001c435  2**0  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_line   00002734  00000000  00000000  0005054e  2**0  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_str    00060c86  00000000  00000000  00052c82  2**0  CONTENTS, READONLY, DEBUGGING
+ 14 .comment      00000070  00000000  00000000  000b3908  2**0  CONTENTS, READONLY
+ 15 .debug_frame  000005f8  00000000  00000000  000b3978  2**2  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+00000000 l    d  .interrupts	00000000 .interrupts
+00000800 l    d  .text	00000000 .text
+1fff0000 l    d  .data	00000000 .data
+1fff006c l    d  .bss	00000000 .bss
+1fff00fc l    d  ._user_heap_stack	00000000 ._user_heap_stack
+20000000 l    d  .romp	00000000 .romp
+00000000 l    d  .ARM.attributes	00000000 .ARM.attributes
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00000000 l    d  .debug_macro	00000000 .debug_macro
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    df *ABS*	00000000 vectors.c
+00000000 l    df *ABS*	00000000 isr.c
+1fff006c l     O .bss	00000001 TimerCnt5ms.5618
+1fff006d l     O .bss	00000001 TimerCnt10ms.5619
+1fff006e l     O .bss	00000001 TimerCnt15ms.5620
+1fff006f l     O .bss	00000001 TimerCnt20ms.5621
+1fff0070 l     O .bss	00000002 TimerCnt100ms.5622
+1fff0074 l     O .bss	00000004 TimerCnt1s.5623
+00000000 l    df *ABS*	00000000 main.c
+00000000 l    df *ABS*	00000000 common.c
+1fff0078 l     O .bss	00000004 int_disable_level
+00000000 l    df *ABS*	00000000 light.c
+00000000 l    df *ABS*	00000000 uart.c
+00001abc l     O .text	00000018 UART_ARR
+00000000 l    df *ABS*	00000000 pwm.c
+00000000 l    df *ABS*	00000000 gpio.c
+00001ad4 l     O .text	00000014 PORT_ARR
+00001ae8 l     O .text	00000014 GPIO_ARR
+00001290 l     F .text	0000002c gpio_port_pin_resolution
+00000000 l    df *ABS*	00000000 startup.c
+1fff007c l     O .bss	00000004 argv
+000013dc l     F .text	00000020 zero_fill_bss
+00000000 l    df *ABS*	00000000 sysint.c
+00000000 l    df *ABS*	00000000 exit.c
+00000000 l    df *ABS*	00000000 memset.c
+00000000 l    df *ABS*	00000000 _exit.c
+00000000 l    df *ABS*	00000000 impure.c
+1fff000c l     O .data	00000060 impure_data
+00000000 l    df *ABS*	00000000 
+00000800 l       *ABS*	00000000 __stack_size
+1fff0000 l       .data	00000000 _sdata
+00001b04 l       .data	00000000 ___ROM_AT
+00000800 l       *ABS*	00000000 __heap_size
+20000000 l       *ABS*	00000000 __SP_INIT
+20000000 l       .data	00000000 ___m_data2_RAMEnd
+1fff006c l       .data	00000000 _edata
+20000000 l       .data	00000000 ___m_data2_RAMStart
+1fff0088 g     O .bss	00000004 Speed_I
+00001a64 g     F .text	0000000c default_isr
+1fff008c g     O .bss	00000001 TurnPriodCt
+1fff008d g     O .bss	00000001 TIME0flag_5ms
+1fff0090 g     O .bss	00000004 Speed_P
+1fff00fc g       ._user_heap_stack	00000000 __heap_addr
+1fff0094 g     O .bss	00000001 AAngPeriodCount
+00000ae4 g     F .text	00000022 light_init
+00001b04 g       .data	00000000 __exidx_end
+00001b04 g       .text	00000000 _etext
+1fff0098 g     O .bss	00000004 Angle_D
+00000800 g     F .text	00000032 isr_uart5_re
+00000000 g     O .interrupts	000001bc InterruptVector
+00001b04 g       .data	00000000 __DTOR_END__
+1fff00d4 g     O .bss	00000004 SystemCoreClock
+1fff006c g       .bss	00000000 __START_BSS
+1fff009c g     O .bss	00000001 Runstop
+1fff009e g     O .bss	00000002 SpeedAD
+1fff0080 g     O .bss	00000002 LeftSpeedC
+00001b70 g       .data	00000000 ___m_data2_ROMStart
+1fff0082 g     O .bss	00000002 RightSpeedC
+00001634 g     F .text	00000040 __thumb_startup
+1fff00a0 g     O .bss	00000002 RunCountLast
+00001b04 g       .data	00000000 __exidx_start
+00000834 g     F .text	0000012c pit0_isr
+1fff00a2 g     O .bss	00000001 run_flag
+00001b00 g     O .text	00000004 _global_impure_ptr
+1fff00a4 g     O .bss	00000002 SpeedPeriodCount
+00001618 g     F .text	0000001c __init_hardware
+1fff00a6 g     O .bss	00000002 AAngPWM
+00000df8 g     F .text	00000374 pwm_init
+1fff00a8 g     O .bss	00000001 TIME0flag_15ms
+00000000  w      *UND*	00000000 __sf_fake_stderr
+00001470 g     F .text	000000e2 __copy_rom_section
+00000d34 g     F .text	00000052 uart_send_string
+1fff00aa g     O .bss	00000002 MotorAAngPWM
+1fff00ac g     O .bss	00000001 TIME0flag_20ms
+00000960 g     F .text	00000094 PORTD_isr
+00001b04 g       .data	00000000 __CTOR_LIST__
+00000b08 g     F .text	000001c8 uart_init
+00000000  w      *UND*	00000000 __call_exitprocs
+00000000 g       *ABS*	00000000 ___m_data2_ROMSize
+00000000 g       .interrupts	00000000 __vector_table
+1fff00ae g     O .bss	00000002 MotorSpeedPWMR
+1fff00b0 g     O .bss	00000002 PWMout
+1fff00b4 g     O .bss	00000004 Speed_D
+00001554 g     F .text	000000c4 __copy_rom_sections_to_ram
+00000d88 g     F .text	00000070 uart_re1
+1fff00b8 g     O .bss	00000002 TIME0flag_100ms
+00000000  w      *UND*	00000000 __sf_fake_stdin
+1fff00d8 g     O .bss	00000024 CPUInfo
+00001a98 g     F .text	00000010 memset
+000009f4 g     F .text	000000a0 main
+00000ab8 g     F .text	0000002c exit_critical
+1fff00ba g     O .bss	00000002 RunCountLast1
+1fff00bc g     O .bss	00000002 AMotorTurnPWM
+1fff0084 g     O .bss	00000002 RunCount
+00001674 g     F .text	000003f0 SystemClockSetup
+1fff00be g     O .bss	00000002 MotorSpeedPWM
+00001b04 g       .data	00000000 __CTOR_END__
+00001b04 g       .data	00000000 __DTOR_LIST__
+1fff00fc g       .bss	00000000 __END_BSS
+1fff0086 g     O .bss	00000002 count
+1fff00c0 g     O .bss	00000002 LastAAngPWM
+00001b70 g       .data	00000000 _romp_at
+1fff00c2 g     O .bss	00000001 TIME0flag_10ms
+1fff0000 g     O .data	0000000c FTMx
+0000116c g     F .text	00000124 pwm_set
+20000000 g       *ABS*	00000000 _estack
+00001b70 g       .data	00000000 __S_romp
+1fff00c4 g     O .bss	00000002 ATurnPWM
+000013fc g     F .text	00000028 gpio_io_init
+00000a94 g     F .text	00000024 enter_critical
+00001a70 g     F .text	00000028 exit
+00000000  w      *UND*	00000000 __sf_fake_stdout
+00001424 g     F .text	00000038 wdog_disable1
+00001aa8 g     F .text	00000002 _exit
+00000cd0 g     F .text	00000064 uart_send1
+00001374 g     F .text	00000068 gpio_set
+1fff00c8 g     O .bss	00000004 TIME0flag_1s
+0000145c g     F .text	00000014 __flush_cache
+000012bc g     F .text	000000b8 gpio_init
+0000006c g       *ABS*	00000000 ___data_size
+1fff00cc g     O .bss	00000002 ALastTurnPWM
+1fff00d0 g     O .bss	00000004 Angle_P
+
+
+
+Disassembly of section .text:
+
+00000800 <isr_uart5_re>:
+isr_uart5_re():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:54
+	    EnableInterrupts;
+}
+
+
+void isr_uart5_re(void)
+{
+     800:	b580      	push	{r7, lr}
+     802:	b082      	sub	sp, #8
+     804:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:56
+	    uint8_t ch;
+	    uint8_t flag = 1;
+     806:	2301      	movs	r3, #1
+     808:	71bb      	strb	r3, [r7, #6]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:58
+
+	    DisableInterrupts;
+     80a:	b672      	cpsid	i
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:60
+
+	    ch = uart_re1(UART_5, &flag);
+     80c:	1dbb      	adds	r3, r7, #6
+     80e:	2005      	movs	r0, #5
+     810:	4619      	mov	r1, r3
+     812:	f000 fab9 	bl	d88 <uart_re1>
+     816:	4603      	mov	r3, r0
+     818:	71fb      	strb	r3, [r7, #7]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:61
+	    if (0 == flag)
+     81a:	79bb      	ldrb	r3, [r7, #6]
+     81c:	2b00      	cmp	r3, #0
+     81e:	d104      	bne.n	82a <isr_uart5_re+0x2a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:63
+	    {
+	        uart_send1(UART_5, ch);
+     820:	79fb      	ldrb	r3, [r7, #7]
+     822:	2005      	movs	r0, #5
+     824:	4619      	mov	r1, r3
+     826:	f000 fa53 	bl	cd0 <uart_send1>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:66
+	    }
+
+	    EnableInterrupts;
+     82a:	b662      	cpsie	i
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:67
+}
+     82c:	3708      	adds	r7, #8
+     82e:	46bd      	mov	sp, r7
+     830:	bd80      	pop	{r7, pc}
+     832:	bf00      	nop
+
+00000834 <pit0_isr>:
+pit0_isr():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:82
+extern uint8_t TIME0flag_15ms  ;
+extern uint8_t TIME0flag_20ms  ;
+extern uint16_t TIME0flag_100ms ;
+extern uint32_t TIME0flag_1s ;
+void pit0_isr(void)
+{
+     834:	b580      	push	{r7, lr}
+     836:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:89
+		static uint8_t TimerCnt10ms = 0;
+		static uint8_t TimerCnt15ms = 0;
+		static uint8_t TimerCnt20ms = 0;
+		static uint16_t TimerCnt100ms = 0;
+		static uint32_t TimerCnt1s=0;
+		enter_critical(); //进入临界区,关中断
+     838:	f000 f92c 	bl	a94 <enter_critical>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:90
+		if ((PIT_TFLG(PIT0) & PIT_TFLG_TIF_MASK) == PIT_TFLG_TIF_MASK)
+     83c:	4b3b      	ldr	r3, [pc, #236]	; (92c <pit0_isr+0xf8>)
+     83e:	f8d3 310c 	ldr.w	r3, [r3, #268]	; 0x10c
+     842:	f003 0301 	and.w	r3, r3, #1
+     846:	2b00      	cmp	r3, #0
+     848:	d007      	beq.n	85a <pit0_isr+0x26>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:92
+		{
+			PIT_TFLG(PIT0) |= PIT_TFLG_TIF_MASK;       //清标志
+     84a:	4b38      	ldr	r3, [pc, #224]	; (92c <pit0_isr+0xf8>)
+     84c:	4a37      	ldr	r2, [pc, #220]	; (92c <pit0_isr+0xf8>)
+     84e:	f8d2 210c 	ldr.w	r2, [r2, #268]	; 0x10c
+     852:	f042 0201 	orr.w	r2, r2, #1
+     856:	f8c3 210c 	str.w	r2, [r3, #268]	; 0x10c
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:95
+		}
+
+		TimerCnt5ms++;
+     85a:	4b35      	ldr	r3, [pc, #212]	; (930 <pit0_isr+0xfc>)
+     85c:	781b      	ldrb	r3, [r3, #0]
+     85e:	3301      	adds	r3, #1
+     860:	b2da      	uxtb	r2, r3
+     862:	4b33      	ldr	r3, [pc, #204]	; (930 <pit0_isr+0xfc>)
+     864:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:96
+		TimerCnt10ms++;
+     866:	4b33      	ldr	r3, [pc, #204]	; (934 <pit0_isr+0x100>)
+     868:	781b      	ldrb	r3, [r3, #0]
+     86a:	3301      	adds	r3, #1
+     86c:	b2da      	uxtb	r2, r3
+     86e:	4b31      	ldr	r3, [pc, #196]	; (934 <pit0_isr+0x100>)
+     870:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:97
+		TimerCnt15ms++;
+     872:	4b31      	ldr	r3, [pc, #196]	; (938 <pit0_isr+0x104>)
+     874:	781b      	ldrb	r3, [r3, #0]
+     876:	3301      	adds	r3, #1
+     878:	b2da      	uxtb	r2, r3
+     87a:	4b2f      	ldr	r3, [pc, #188]	; (938 <pit0_isr+0x104>)
+     87c:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:98
+		TimerCnt20ms++;
+     87e:	4b2f      	ldr	r3, [pc, #188]	; (93c <pit0_isr+0x108>)
+     880:	781b      	ldrb	r3, [r3, #0]
+     882:	3301      	adds	r3, #1
+     884:	b2da      	uxtb	r2, r3
+     886:	4b2d      	ldr	r3, [pc, #180]	; (93c <pit0_isr+0x108>)
+     888:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:99
+		TimerCnt100ms++;
+     88a:	4b2d      	ldr	r3, [pc, #180]	; (940 <pit0_isr+0x10c>)
+     88c:	881b      	ldrh	r3, [r3, #0]
+     88e:	3301      	adds	r3, #1
+     890:	b29a      	uxth	r2, r3
+     892:	4b2b      	ldr	r3, [pc, #172]	; (940 <pit0_isr+0x10c>)
+     894:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:100
+		TimerCnt1s++;
+     896:	4b2b      	ldr	r3, [pc, #172]	; (944 <pit0_isr+0x110>)
+     898:	681b      	ldr	r3, [r3, #0]
+     89a:	1c5a      	adds	r2, r3, #1
+     89c:	4b29      	ldr	r3, [pc, #164]	; (944 <pit0_isr+0x110>)
+     89e:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:102
+
+		if (TimerCnt5ms >= 25)
+     8a0:	4b23      	ldr	r3, [pc, #140]	; (930 <pit0_isr+0xfc>)
+     8a2:	781b      	ldrb	r3, [r3, #0]
+     8a4:	2b18      	cmp	r3, #24
+     8a6:	d905      	bls.n	8b4 <pit0_isr+0x80>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:104
+		{
+			TimerCnt5ms = 0;
+     8a8:	4b21      	ldr	r3, [pc, #132]	; (930 <pit0_isr+0xfc>)
+     8aa:	2200      	movs	r2, #0
+     8ac:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:105
+			TIME0flag_5ms = 1;
+     8ae:	4b26      	ldr	r3, [pc, #152]	; (948 <pit0_isr+0x114>)
+     8b0:	2201      	movs	r2, #1
+     8b2:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:107
+		}//5ms置标志
+		if (TimerCnt10ms >= 50)
+     8b4:	4b1f      	ldr	r3, [pc, #124]	; (934 <pit0_isr+0x100>)
+     8b6:	781b      	ldrb	r3, [r3, #0]
+     8b8:	2b31      	cmp	r3, #49	; 0x31
+     8ba:	d905      	bls.n	8c8 <pit0_isr+0x94>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:109
+		{
+			TimerCnt10ms = 0;
+     8bc:	4b1d      	ldr	r3, [pc, #116]	; (934 <pit0_isr+0x100>)
+     8be:	2200      	movs	r2, #0
+     8c0:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:110
+			TIME0flag_10ms = 1;
+     8c2:	4b22      	ldr	r3, [pc, #136]	; (94c <pit0_isr+0x118>)
+     8c4:	2201      	movs	r2, #1
+     8c6:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:112
+		}//10ms置标志
+		if (TimerCnt15ms >= 75)
+     8c8:	4b1b      	ldr	r3, [pc, #108]	; (938 <pit0_isr+0x104>)
+     8ca:	781b      	ldrb	r3, [r3, #0]
+     8cc:	2b4a      	cmp	r3, #74	; 0x4a
+     8ce:	d905      	bls.n	8dc <pit0_isr+0xa8>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:114
+		{
+			TimerCnt15ms = 0;
+     8d0:	4b19      	ldr	r3, [pc, #100]	; (938 <pit0_isr+0x104>)
+     8d2:	2200      	movs	r2, #0
+     8d4:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:115
+			TIME0flag_15ms = 1;
+     8d6:	4b1e      	ldr	r3, [pc, #120]	; (950 <pit0_isr+0x11c>)
+     8d8:	2201      	movs	r2, #1
+     8da:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:117
+		}//15ms置标志
+		if (TimerCnt20ms >= 100)
+     8dc:	4b17      	ldr	r3, [pc, #92]	; (93c <pit0_isr+0x108>)
+     8de:	781b      	ldrb	r3, [r3, #0]
+     8e0:	2b63      	cmp	r3, #99	; 0x63
+     8e2:	d905      	bls.n	8f0 <pit0_isr+0xbc>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:119
+		{
+			TimerCnt20ms = 0;
+     8e4:	4b15      	ldr	r3, [pc, #84]	; (93c <pit0_isr+0x108>)
+     8e6:	2200      	movs	r2, #0
+     8e8:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:120
+			TIME0flag_20ms = 1;
+     8ea:	4b1a      	ldr	r3, [pc, #104]	; (954 <pit0_isr+0x120>)
+     8ec:	2201      	movs	r2, #1
+     8ee:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:122
+		}//20ms置标志
+		if (TimerCnt100ms >= 500)
+     8f0:	4b13      	ldr	r3, [pc, #76]	; (940 <pit0_isr+0x10c>)
+     8f2:	881b      	ldrh	r3, [r3, #0]
+     8f4:	f5b3 7ffa 	cmp.w	r3, #500	; 0x1f4
+     8f8:	d309      	bcc.n	90e <pit0_isr+0xda>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:124
+		{
+			uart_send1(5, '9');
+     8fa:	2005      	movs	r0, #5
+     8fc:	2139      	movs	r1, #57	; 0x39
+     8fe:	f000 f9e7 	bl	cd0 <uart_send1>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:125
+			TimerCnt100ms = 0;
+     902:	4b0f      	ldr	r3, [pc, #60]	; (940 <pit0_isr+0x10c>)
+     904:	2200      	movs	r2, #0
+     906:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:126
+			TIME0flag_100ms = 1;
+     908:	4b13      	ldr	r3, [pc, #76]	; (958 <pit0_isr+0x124>)
+     90a:	2201      	movs	r2, #1
+     90c:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:128
+		}//100ms置标志
+		if (TimerCnt1s >= 5000)
+     90e:	4b0d      	ldr	r3, [pc, #52]	; (944 <pit0_isr+0x110>)
+     910:	681a      	ldr	r2, [r3, #0]
+     912:	f241 3387 	movw	r3, #4999	; 0x1387
+     916:	429a      	cmp	r2, r3
+     918:	d905      	bls.n	926 <pit0_isr+0xf2>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:130
+		{
+			TimerCnt1s = 0;
+     91a:	4b0a      	ldr	r3, [pc, #40]	; (944 <pit0_isr+0x110>)
+     91c:	2200      	movs	r2, #0
+     91e:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:131
+			TIME0flag_1s = 1;
+     920:	4b0e      	ldr	r3, [pc, #56]	; (95c <pit0_isr+0x128>)
+     922:	2201      	movs	r2, #1
+     924:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:134
+		}//1s置标志
+
+		exit_critical(); //退出临界区,恢复原总中断设置情况
+     926:	f000 f8c7 	bl	ab8 <exit_critical>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:135
+}
+     92a:	bd80      	pop	{r7, pc}
+     92c:	40037000 	.word	0x40037000
+     930:	1fff006c 	.word	0x1fff006c
+     934:	1fff006d 	.word	0x1fff006d
+     938:	1fff006e 	.word	0x1fff006e
+     93c:	1fff006f 	.word	0x1fff006f
+     940:	1fff0070 	.word	0x1fff0070
+     944:	1fff0074 	.word	0x1fff0074
+     948:	1fff008d 	.word	0x1fff008d
+     94c:	1fff00c2 	.word	0x1fff00c2
+     950:	1fff00a8 	.word	0x1fff00a8
+     954:	1fff00ac 	.word	0x1fff00ac
+     958:	1fff00b8 	.word	0x1fff00b8
+     95c:	1fff00c8 	.word	0x1fff00c8
+
+00000960 <PORTD_isr>:
+PORTD_isr():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:148
+int16_t LeftSpeedC, RightSpeedC;
+int16_t RunCount;
+extern uint8_t run_flag, Runstop;
+//GPIO中断服务例程
+void PORTD_isr()
+{
+     960:	b480      	push	{r7}
+     962:	b083      	sub	sp, #12
+     964:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:151
+	uint8_t  n;    //引脚号
+
+	n = (uint8_t)(SPEED_PINL & 0x0F);  //获取引脚号
+     966:	2301      	movs	r3, #1
+     968:	71fb      	strb	r3, [r7, #7]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:152
+    if(PORTD_ISFR & (1 << n))         //设定的引脚触发中断
+     96a:	4b1f      	ldr	r3, [pc, #124]	; (9e8 <PORTD_isr+0x88>)
+     96c:	f8d3 20a0 	ldr.w	r2, [r3, #160]	; 0xa0
+     970:	79fb      	ldrb	r3, [r7, #7]
+     972:	2101      	movs	r1, #1
+     974:	fa01 f303 	lsl.w	r3, r1, r3
+     978:	4013      	ands	r3, r2
+     97a:	2b00      	cmp	r3, #0
+     97c:	d011      	beq.n	9a2 <PORTD_isr+0x42>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:154
+    {
+        PORTD_ISFR  |= (1 << n);        //写1清中断标志位
+     97e:	4b1a      	ldr	r3, [pc, #104]	; (9e8 <PORTD_isr+0x88>)
+     980:	4a19      	ldr	r2, [pc, #100]	; (9e8 <PORTD_isr+0x88>)
+     982:	f8d2 10a0 	ldr.w	r1, [r2, #160]	; 0xa0
+     986:	79fa      	ldrb	r2, [r7, #7]
+     988:	2001      	movs	r0, #1
+     98a:	fa00 f202 	lsl.w	r2, r0, r2
+     98e:	430a      	orrs	r2, r1
+     990:	f8c3 20a0 	str.w	r2, [r3, #160]	; 0xa0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:155
+        LeftSpeedC ++ ;
+     994:	4b15      	ldr	r3, [pc, #84]	; (9ec <PORTD_isr+0x8c>)
+     996:	881b      	ldrh	r3, [r3, #0]
+     998:	b29b      	uxth	r3, r3
+     99a:	3301      	adds	r3, #1
+     99c:	b29a      	uxth	r2, r3
+     99e:	4b13      	ldr	r3, [pc, #76]	; (9ec <PORTD_isr+0x8c>)
+     9a0:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:157
+    }
+    n = (uint8_t)(SPEED_PINR & 0x0F);  //获取引脚号
+     9a2:	2302      	movs	r3, #2
+     9a4:	71fb      	strb	r3, [r7, #7]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:158
+    if(PORTD_ISFR & (1 << n))         //设定的引脚触发中断
+     9a6:	4b10      	ldr	r3, [pc, #64]	; (9e8 <PORTD_isr+0x88>)
+     9a8:	f8d3 20a0 	ldr.w	r2, [r3, #160]	; 0xa0
+     9ac:	79fb      	ldrb	r3, [r7, #7]
+     9ae:	2101      	movs	r1, #1
+     9b0:	fa01 f303 	lsl.w	r3, r1, r3
+     9b4:	4013      	ands	r3, r2
+     9b6:	2b00      	cmp	r3, #0
+     9b8:	d011      	beq.n	9de <PORTD_isr+0x7e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:160
+    {
+        PORTD_ISFR  |= (1 << n);        //写1清中断标志位
+     9ba:	4b0b      	ldr	r3, [pc, #44]	; (9e8 <PORTD_isr+0x88>)
+     9bc:	4a0a      	ldr	r2, [pc, #40]	; (9e8 <PORTD_isr+0x88>)
+     9be:	f8d2 10a0 	ldr.w	r1, [r2, #160]	; 0xa0
+     9c2:	79fa      	ldrb	r2, [r7, #7]
+     9c4:	2001      	movs	r0, #1
+     9c6:	fa00 f202 	lsl.w	r2, r0, r2
+     9ca:	430a      	orrs	r2, r1
+     9cc:	f8c3 20a0 	str.w	r2, [r3, #160]	; 0xa0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:161
+        RightSpeedC ++ ;
+     9d0:	4b07      	ldr	r3, [pc, #28]	; (9f0 <PORTD_isr+0x90>)
+     9d2:	881b      	ldrh	r3, [r3, #0]
+     9d4:	b29b      	uxth	r3, r3
+     9d6:	3301      	adds	r3, #1
+     9d8:	b29a      	uxth	r2, r3
+     9da:	4b05      	ldr	r3, [pc, #20]	; (9f0 <PORTD_isr+0x90>)
+     9dc:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../08_Sources/isr.c:163
+    }
+}
+     9de:	370c      	adds	r7, #12
+     9e0:	46bd      	mov	sp, r7
+     9e2:	f85d 7b04 	ldr.w	r7, [sp], #4
+     9e6:	4770      	bx	lr
+     9e8:	4004c000 	.word	0x4004c000
+     9ec:	1fff0080 	.word	0x1fff0080
+     9f0:	1fff0082 	.word	0x1fff0082
+
+000009f4 <main>:
+main():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:57
+int8_t TurnPriodCt;
+uint16_t RunCountLast, RunCountLast1;
+extern uint16_t RunCount, RunCount1;
+uint8_t run_flag,Runstop;
+
+int main(void) {
+     9f4:	b580      	push	{r7, lr}
+     9f6:	b084      	sub	sp, #16
+     9f8:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:65
+//	uint8_t duty;
+	uint8_t countgo;
+	uint16_t ADValue[2];
+	float GyroAngle, AcceValue, car_Angle[2];
+	//2. 关总中断
+	DISABLE_INTERRUPTS
+     9fa:	b672      	cpsid	i
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:68
+	;
+	//3. 初始化外设模块
+	light_init(RUN_LIGHT1, Light_ON); //灯1初始化
+     9fc:	f240 3003 	movw	r0, #771	; 0x303
+     a00:	2100      	movs	r1, #0
+     a02:	f000 f86f 	bl	ae4 <light_init>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:69
+	light_init(RUN_LIGHT2, Light_ON); //灯2初始化
+     a06:	f44f 7041 	mov.w	r0, #772	; 0x304
+     a0a:	2100      	movs	r1, #0
+     a0c:	f000 f86a 	bl	ae4 <light_init>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:70
+	uart_init(UART_TEST, 9600);         //uart5初始化
+     a10:	2005      	movs	r0, #5
+     a12:	f44f 5116 	mov.w	r1, #9600	; 0x2580
+     a16:	f000 f877 	bl	b08 <uart_init>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:72
+//	pit_init(PIT0, BUS_CLK_KHz * 5);  //初始化pit0，周期1s
+	uart_send_string(UART_TEST, "Hello WORLD!\n");
+     a1a:	2005      	movs	r0, #5
+     a1c:	4915      	ldr	r1, [pc, #84]	; (a74 <main+0x80>)
+     a1e:	f000 f989 	bl	d34 <uart_send_string>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:73
+	pwm_init(FTM0, FTMCH0,1000,0);
+     a22:	2000      	movs	r0, #0
+     a24:	2100      	movs	r1, #0
+     a26:	f44f 727a 	mov.w	r2, #1000	; 0x3e8
+     a2a:	2300      	movs	r3, #0
+     a2c:	f000 f9e4 	bl	df8 <pwm_init>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:75
+//	pwm_init(FTM0, FTMCH1,100,0);
+	pwm_set(FTM0, FTMCH0,1000,2000);
+     a30:	2000      	movs	r0, #0
+     a32:	2100      	movs	r1, #0
+     a34:	f44f 727a 	mov.w	r2, #1000	; 0x3e8
+     a38:	f44f 63fa 	mov.w	r3, #2000	; 0x7d0
+     a3c:	f000 fb96 	bl	116c <pwm_set>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:82
+	//motor_init(MOTOR2);
+	//GyroAcce_init();
+	//4. 给有关变量赋初值
+//	duty = 0;
+//	mRuncount = 0;      //小灯计数器
+	count = 0;
+     a40:	4b0d      	ldr	r3, [pc, #52]	; (a78 <main+0x84>)
+     a42:	2200      	movs	r2, #0
+     a44:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:87
+
+	/***********
+	 初始速度
+	 ***********/
+	SpeedAD = 50 ;
+     a46:	4b0d      	ldr	r3, [pc, #52]	; (a7c <main+0x88>)
+     a48:	2232      	movs	r2, #50	; 0x32
+     a4a:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:91
+	/***********
+	 PID变量，待调
+	 ***********/
+	Angle_P = 0;  //7.30;//7.00;  //40
+     a4c:	4b0c      	ldr	r3, [pc, #48]	; (a80 <main+0x8c>)
+     a4e:	f04f 0200 	mov.w	r2, #0
+     a52:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:92
+	Angle_D = 0;  //0.85;//2.50;//550;  //8
+     a54:	4b0b      	ldr	r3, [pc, #44]	; (a84 <main+0x90>)
+     a56:	f04f 0200 	mov.w	r2, #0
+     a5a:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:93
+	Speed_P = 55; //55
+     a5c:	4b0a      	ldr	r3, [pc, #40]	; (a88 <main+0x94>)
+     a5e:	2237      	movs	r2, #55	; 0x37
+     a60:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:94
+	Speed_I = 0;  //20
+     a62:	4b0a      	ldr	r3, [pc, #40]	; (a8c <main+0x98>)
+     a64:	2200      	movs	r2, #0
+     a66:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:95
+	Speed_D = 0;
+     a68:	4b09      	ldr	r3, [pc, #36]	; (a90 <main+0x9c>)
+     a6a:	2200      	movs	r2, #0
+     a6c:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:101
+
+	//5. 使能模块中断
+	//enable_pit_int(PIT0);   //开pit中断
+	//uart_enable_re_int(UART_TEST);   //使能uart5接收中断
+	//6. 开总中断
+	ENABLE_INTERRUPTS;
+     a6e:	b662      	cpsie	i
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../08_Sources/main.c:212 (discriminator 1)
+//			TIME0flag_1s = 0;
+//			light_change(RUN_LIGHT1);
+//			countgo++;
+//		}
+		//以下加入用户程序--------------------------------------------------------
+	} //主循环end_for
+     a70:	e7fe      	b.n	a70 <main+0x7c>
+     a72:	bf00      	nop
+     a74:	00001aac 	.word	0x00001aac
+     a78:	1fff0086 	.word	0x1fff0086
+     a7c:	1fff009e 	.word	0x1fff009e
+     a80:	1fff00d0 	.word	0x1fff00d0
+     a84:	1fff0098 	.word	0x1fff0098
+     a88:	1fff0090 	.word	0x1fff0090
+     a8c:	1fff0088 	.word	0x1fff0088
+     a90:	1fff00b4 	.word	0x1fff00b4
+
+00000a94 <enter_critical>:
+enter_critical():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:33
+//函数返回：无
+//功能概要：进入临界区                           //(1).是以中断的形式请求进入临界区的吗？请求的对象是什么？
+//                             //应该是以中断的形式进入的，对象也应该是ISR  
+//=========================================================================
+void  enter_critical(void)     //进入临界区之前，需要先判断有没有中断服务例程(准确吗)
+{                              //(2).已在访问临界区，如果有(不让该ISR继续访问吗?)，那么+1;
+     a94:	b480      	push	{r7}
+     a96:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:34
+    if (0 == int_disable_level)//否则，进入临界区，关中断，不让其他中断打断执行，加1，为其他调用
+     a98:	4b06      	ldr	r3, [pc, #24]	; (ab4 <enter_critical+0x20>)
+     a9a:	681b      	ldr	r3, [r3, #0]
+     a9c:	2b00      	cmp	r3, #0
+     a9e:	d100      	bne.n	aa2 <enter_critical+0xe>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:36
+    {                          //该函数enter_critical的ISR做判断，(调用时有循环吗，应该没有，进入与退出一一对应关系不匹配)
+        DISABLE_INTERRUPTS;    //(3).不是已经使用DISABLE_INTERRUPTS语句了吗，屏蔽一切中断，除NMI和(硬(件)错误)外，其余ISR
+     aa0:	b672      	cpsid	i
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:38
+    }                          //能打断正在执行的ISR吗?
+    int_disable_level++;       //(4).这个值会是2吗？      如果可以，当第2个ISR调用该函数时，抢占吗，与优先级有关吗？不抢占的话，之后
+     aa2:	4b04      	ldr	r3, [pc, #16]	; (ab4 <enter_critical+0x20>)
+     aa4:	681b      	ldr	r3, [r3, #0]
+     aa6:	1c5a      	adds	r2, r3, #1
+     aa8:	4b02      	ldr	r3, [pc, #8]	; (ab4 <enter_critical+0x20>)
+     aaa:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:39
+}                              //到来的ISR继续以中断的形式请求，直到临界区无ISR占用吗？若抢占，关中断还有意义吗？(中断嵌套，值必会大于2)
+     aac:	46bd      	mov	sp, r7
+     aae:	f85d 7b04 	ldr.w	r7, [sp], #4
+     ab2:	4770      	bx	lr
+     ab4:	1fff0078 	.word	0x1fff0078
+
+00000ab8 <exit_critical>:
+exit_critical():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:52
+//参数说明：无
+//函数返回：无
+//功能概要：离开临界区
+//=========================================================================
+void  exit_critical(void)       //如果没有成对使用，int_disable_level就会非零，临界区不就关不掉了吗，更低优先级的ISR进来，就不受限制
+{                               //此时屏蔽不屏蔽完全失去意义 
+     ab8:	b480      	push	{r7}
+     aba:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:53
+    if (int_disable_level)
+     abc:	4b08      	ldr	r3, [pc, #32]	; (ae0 <exit_critical+0x28>)
+     abe:	681b      	ldr	r3, [r3, #0]
+     ac0:	2b00      	cmp	r3, #0
+     ac2:	d009      	beq.n	ad8 <exit_critical+0x20>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:55
+{
+        int_disable_level--;
+     ac4:	4b06      	ldr	r3, [pc, #24]	; (ae0 <exit_critical+0x28>)
+     ac6:	681b      	ldr	r3, [r3, #0]
+     ac8:	1e5a      	subs	r2, r3, #1
+     aca:	4b05      	ldr	r3, [pc, #20]	; (ae0 <exit_critical+0x28>)
+     acc:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:56
+        if (0 == int_disable_level)
+     ace:	4b04      	ldr	r3, [pc, #16]	; (ae0 <exit_critical+0x28>)
+     ad0:	681b      	ldr	r3, [r3, #0]
+     ad2:	2b00      	cmp	r3, #0
+     ad4:	d100      	bne.n	ad8 <exit_critical+0x20>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:58
+        {
+            ENABLE_INTERRUPTS;
+     ad6:	b662      	cpsie	i
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../07_Soft_Component/common/common.c:61
+        }
+    }
+}
+     ad8:	46bd      	mov	sp, r7
+     ada:	f85d 7b04 	ldr.w	r7, [sp], #4
+     ade:	4770      	bx	lr
+     ae0:	1fff0078 	.word	0x1fff0078
+
+00000ae4 <light_init>:
+light_init():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../06_App_Component/light/light.c:20
+//       state：设定小灯状态。由light.h中宏定义。
+//函数返回：无
+//功能概要：指示灯驱动初始化。
+//===========================================================================
+void light_init(uint16_t port_pin, uint8_t state)
+{
+     ae4:	b580      	push	{r7, lr}
+     ae6:	b082      	sub	sp, #8
+     ae8:	af00      	add	r7, sp, #0
+     aea:	4602      	mov	r2, r0
+     aec:	460b      	mov	r3, r1
+     aee:	80fa      	strh	r2, [r7, #6]
+     af0:	717b      	strb	r3, [r7, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../06_App_Component/light/light.c:21
+    gpio_init(port_pin, 1, state);
+     af2:	88fa      	ldrh	r2, [r7, #6]
+     af4:	797b      	ldrb	r3, [r7, #5]
+     af6:	4610      	mov	r0, r2
+     af8:	2101      	movs	r1, #1
+     afa:	461a      	mov	r2, r3
+     afc:	f000 fbde 	bl	12bc <gpio_init>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../06_App_Component/light/light.c:22
+}
+     b00:	3708      	adds	r7, #8
+     b02:	46bd      	mov	sp, r7
+     b04:	bd80      	pop	{r7, pc}
+     b06:	bf00      	nop
+
+00000b08 <uart_init>:
+uart_init():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:23
+//		  总线时钟    (48000khz)
+//          baud:波特率：300、600、1200、2400、4800、9600、19200、115200...
+//函数返回：无
+//=========================================================================
+uint8_t uart_init(uint8_t uartNo, uint32_t baud)
+{
+     b08:	b490      	push	{r4, r7}
+     b0a:	b086      	sub	sp, #24
+     b0c:	af00      	add	r7, sp, #0
+     b0e:	4603      	mov	r3, r0
+     b10:	6039      	str	r1, [r7, #0]
+     b12:	71fb      	strb	r3, [r7, #7]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:27
+    register uint16_t sbr;
+    uint8_t temp;
+    uint32_t sel_clk;
+    UART_MemMapPtr uartch = UART_ARR[uartNo];
+     b14:	79fa      	ldrb	r2, [r7, #7]
+     b16:	4b68      	ldr	r3, [pc, #416]	; (cb8 <uart_init+0x1b0>)
+     b18:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+     b1c:	613b      	str	r3, [r7, #16]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:30
+
+    //使能引脚功能并启动引脚时钟
+    switch (uartNo)
+     b1e:	79fb      	ldrb	r3, [r7, #7]
+     b20:	2b05      	cmp	r3, #5
+     b22:	d875      	bhi.n	c10 <uart_init+0x108>
+     b24:	a201      	add	r2, pc, #4	; (adr r2, b2c <uart_init+0x24>)
+     b26:	f852 f023 	ldr.w	pc, [r2, r3, lsl #2]
+     b2a:	bf00      	nop
+     b2c:	00000b45 	.word	0x00000b45
+     b30:	00000b6f 	.word	0x00000b6f
+     b34:	00000b89 	.word	0x00000b89
+     b38:	00000ba3 	.word	0x00000ba3
+     b3c:	00000bcd 	.word	0x00000bcd
+     b40:	00000be7 	.word	0x00000be7
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:49
+       	    PORTB_PCR17 = PORT_PCR_MUX(0x2); //使能UART0_TXD
+       	    PORTB_PCR16 = PORT_PCR_MUX(0x2); //使能UART0_RXD
+        #endif
+
+        #if (UART_0_GROUP==4)
+       	    PORTD_PCR7 = PORT_PCR_MUX(0x2); //使能UART0_TXD
+     b44:	4b5d      	ldr	r3, [pc, #372]	; (cbc <uart_init+0x1b4>)
+     b46:	f44f 7200 	mov.w	r2, #512	; 0x200
+     b4a:	61da      	str	r2, [r3, #28]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:50
+            PORTD_PCR6 = PORT_PCR_MUX(0x2); //使能UART0_RXD
+     b4c:	4b5b      	ldr	r3, [pc, #364]	; (cbc <uart_init+0x1b4>)
+     b4e:	f44f 7200 	mov.w	r2, #512	; 0x200
+     b52:	619a      	str	r2, [r3, #24]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:53
+        #endif
+
+        BSET(SIM_SCGC4_UART0_SHIFT, SIM_SCGC4);//启动串口0时钟
+     b54:	495a      	ldr	r1, [pc, #360]	; (cc0 <uart_init+0x1b8>)
+     b56:	4b5a      	ldr	r3, [pc, #360]	; (cc0 <uart_init+0x1b8>)
+     b58:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     b5c:	3314      	adds	r3, #20
+     b5e:	681b      	ldr	r3, [r3, #0]
+     b60:	f443 6280 	orr.w	r2, r3, #1024	; 0x400
+     b64:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     b68:	3314      	adds	r3, #20
+     b6a:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:54
+       	break;
+     b6c:	e052      	b.n	c14 <uart_init+0x10c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:66
+        #if (UART_1_GROUP==2)
+            PORTE_PCR0 = PORT_PCR_MUX(0x3); //使能UART1_TXD
+            PORTE_PCR1 = PORT_PCR_MUX(0x3); //使能UART1_RXD
+        #endif
+
+        BSET(SIM_SCGC4_UART1_SHIFT, SIM_SCGC4); //启动串口1时钟
+     b6e:	4954      	ldr	r1, [pc, #336]	; (cc0 <uart_init+0x1b8>)
+     b70:	4b53      	ldr	r3, [pc, #332]	; (cc0 <uart_init+0x1b8>)
+     b72:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     b76:	3314      	adds	r3, #20
+     b78:	681b      	ldr	r3, [r3, #0]
+     b7a:	f443 6200 	orr.w	r2, r3, #2048	; 0x800
+     b7e:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     b82:	3314      	adds	r3, #20
+     b84:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:67
+        break;
+     b86:	e045      	b.n	c14 <uart_init+0x10c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:74
+    	#if (UART_2_GROUP==1)
+            PORTD_PCR3 = PORT_PCR_MUX(0x3); //使能UART2_TXD
+            PORTD_PCR2 = PORT_PCR_MUX(0x3); //使能UART2_RXD
+        #endif
+
+            BSET(SIM_SCGC4_UART2_SHIFT, SIM_SCGC4);//启动串口2时钟
+     b88:	494d      	ldr	r1, [pc, #308]	; (cc0 <uart_init+0x1b8>)
+     b8a:	4b4d      	ldr	r3, [pc, #308]	; (cc0 <uart_init+0x1b8>)
+     b8c:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     b90:	3314      	adds	r3, #20
+     b92:	681b      	ldr	r3, [r3, #0]
+     b94:	f443 5280 	orr.w	r2, r3, #4096	; 0x1000
+     b98:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     b9c:	3314      	adds	r3, #20
+     b9e:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:75
+            break;
+     ba0:	e038      	b.n	c14 <uart_init+0x10c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:78
+    case 3:
+        #if (UART_3_GROUP==1)
+            PORTB_PCR11 = PORT_PCR_MUX(0x3); //使能UART3_TXD
+     ba2:	4b48      	ldr	r3, [pc, #288]	; (cc4 <uart_init+0x1bc>)
+     ba4:	f44f 7240 	mov.w	r2, #768	; 0x300
+     ba8:	62da      	str	r2, [r3, #44]	; 0x2c
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:79
+            PORTB_PCR10 = PORT_PCR_MUX(0x3); //使能UART3_RXD
+     baa:	4b46      	ldr	r3, [pc, #280]	; (cc4 <uart_init+0x1bc>)
+     bac:	f44f 7240 	mov.w	r2, #768	; 0x300
+     bb0:	629a      	str	r2, [r3, #40]	; 0x28
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:92
+    	#if (UART_3_GROUP==3)
+            PORTE_PCR4 = PORT_PCR_MUX(0x3); //使能UART3_TXD
+            PORTE_PCR5 = PORT_PCR_MUX(0x3); //使能UART3_RXD
+        #endif
+
+        BSET(SIM_SCGC4_UART3_SHIFT, SIM_SCGC4);//启动串口3时钟
+     bb2:	4943      	ldr	r1, [pc, #268]	; (cc0 <uart_init+0x1b8>)
+     bb4:	4b42      	ldr	r3, [pc, #264]	; (cc0 <uart_init+0x1b8>)
+     bb6:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     bba:	3314      	adds	r3, #20
+     bbc:	681b      	ldr	r3, [r3, #0]
+     bbe:	f443 5200 	orr.w	r2, r3, #8192	; 0x2000
+     bc2:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     bc6:	3314      	adds	r3, #20
+     bc8:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:93
+        break;
+     bca:	e023      	b.n	c14 <uart_init+0x10c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:105
+        #if (UART_4_GROUP==2)
+            PORTE_PCR24 = PORT_PCR_MUX(0x3); //使能UART4_TXD
+            PORTE_PCR25 = PORT_PCR_MUX(0x3); //使能UART4_RXD
+    	#endif
+
+        BSET(SIM_SCGC1_UART4_SHIFT, SIM_SCGC1); //启动串口4时钟
+     bcc:	493c      	ldr	r1, [pc, #240]	; (cc0 <uart_init+0x1b8>)
+     bce:	4b3c      	ldr	r3, [pc, #240]	; (cc0 <uart_init+0x1b8>)
+     bd0:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     bd4:	3308      	adds	r3, #8
+     bd6:	681b      	ldr	r3, [r3, #0]
+     bd8:	f443 6280 	orr.w	r2, r3, #1024	; 0x400
+     bdc:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     be0:	3308      	adds	r3, #8
+     be2:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:106
+        break;
+     be4:	e016      	b.n	c14 <uart_init+0x10c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:114
+            PORTD_PCR9 = PORT_PCR_MUX(0x3); //使能UART4_TXD
+            PORTD_PCR8 = PORT_PCR_MUX(0x3); //使能UART4_RXD
+    	#endif
+
+    	#if (UART_5_GROUP==2)
+            PORTE_PCR8 = PORT_PCR_MUX(0x3); //使能UART5_TXD
+     be6:	4b38      	ldr	r3, [pc, #224]	; (cc8 <uart_init+0x1c0>)
+     be8:	f44f 7240 	mov.w	r2, #768	; 0x300
+     bec:	621a      	str	r2, [r3, #32]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:115
+            PORTE_PCR9 = PORT_PCR_MUX(0x3); //使能UART5_RXD
+     bee:	4b36      	ldr	r3, [pc, #216]	; (cc8 <uart_init+0x1c0>)
+     bf0:	f44f 7240 	mov.w	r2, #768	; 0x300
+     bf4:	625a      	str	r2, [r3, #36]	; 0x24
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:118
+    	#endif
+
+        BSET(SIM_SCGC1_UART5_SHIFT, SIM_SCGC1);//启动串口2时钟
+     bf6:	4932      	ldr	r1, [pc, #200]	; (cc0 <uart_init+0x1b8>)
+     bf8:	4b31      	ldr	r3, [pc, #196]	; (cc0 <uart_init+0x1b8>)
+     bfa:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     bfe:	3308      	adds	r3, #8
+     c00:	681b      	ldr	r3, [r3, #0]
+     c02:	f443 6200 	orr.w	r2, r3, #2048	; 0x800
+     c06:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     c0a:	3308      	adds	r3, #8
+     c0c:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:119
+        break;
+     c0e:	e001      	b.n	c14 <uart_init+0x10c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:121
+    default:
+        return 1;  //传参错误，返回
+     c10:	2301      	movs	r3, #1
+     c12:	e04b      	b.n	cac <uart_init+0x1a4>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:125
+        }
+
+    //暂时关闭串口发送与接收功能
+    uartch->C2 &= ~(UART_C2_TE_MASK | UART_C2_RE_MASK);
+     c14:	693b      	ldr	r3, [r7, #16]
+     c16:	78db      	ldrb	r3, [r3, #3]
+     c18:	b2db      	uxtb	r3, r3
+     c1a:	f023 030c 	bic.w	r3, r3, #12
+     c1e:	b2da      	uxtb	r2, r3
+     c20:	693b      	ldr	r3, [r7, #16]
+     c22:	70da      	strb	r2, [r3, #3]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:128
+
+	//配置串口工作模式,8位无校验模式
+	uartch->C1 = 0;
+     c24:	693b      	ldr	r3, [r7, #16]
+     c26:	2200      	movs	r2, #0
+     c28:	709a      	strb	r2, [r3, #2]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:133
+
+
+    //配置波特率
+    //串口0、1使用的内核时钟是其它串口使用外设时钟频率的2倍
+    if (UART_0 == uartNo || UART_1 == uartNo)
+     c2a:	79fb      	ldrb	r3, [r7, #7]
+     c2c:	2b00      	cmp	r3, #0
+     c2e:	d002      	beq.n	c36 <uart_init+0x12e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:133 (discriminator 1)
+     c30:	79fb      	ldrb	r3, [r7, #7]
+     c32:	2b01      	cmp	r3, #1
+     c34:	d102      	bne.n	c3c <uart_init+0x134>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:134
+        sel_clk=CORE_CLK_KHz;
+     c36:	4b25      	ldr	r3, [pc, #148]	; (ccc <uart_init+0x1c4>)
+     c38:	617b      	str	r3, [r7, #20]
+     c3a:	e002      	b.n	c42 <uart_init+0x13a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:136
+    else
+    	sel_clk=BUS_CLK_KHz;
+     c3c:	f64b 3380 	movw	r3, #48000	; 0xbb80
+     c40:	617b      	str	r3, [r7, #20]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:138
+    
+    sbr = (uint16_t)((sel_clk*1000)/(baud * 16));
+     c42:	697b      	ldr	r3, [r7, #20]
+     c44:	f44f 727a 	mov.w	r2, #1000	; 0x3e8
+     c48:	fb02 f203 	mul.w	r2, r2, r3
+     c4c:	683b      	ldr	r3, [r7, #0]
+     c4e:	011b      	lsls	r3, r3, #4
+     c50:	fbb2 f3f3 	udiv	r3, r2, r3
+     c54:	b29c      	uxth	r4, r3
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:139
+    temp = UART_BDH_REG(uartch) & ~(UART_BDH_SBR(0x1F));
+     c56:	693b      	ldr	r3, [r7, #16]
+     c58:	781b      	ldrb	r3, [r3, #0]
+     c5a:	b2db      	uxtb	r3, r3
+     c5c:	f023 031f 	bic.w	r3, r3, #31
+     c60:	73fb      	strb	r3, [r7, #15]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:140
+    UART_BDH_REG(uartch) = temp |  UART_BDH_SBR(((sbr & 0x1F00) >> 8));
+     c62:	4623      	mov	r3, r4
+     c64:	f403 53f8 	and.w	r3, r3, #7936	; 0x1f00
+     c68:	121b      	asrs	r3, r3, #8
+     c6a:	b2db      	uxtb	r3, r3
+     c6c:	f003 031f 	and.w	r3, r3, #31
+     c70:	b2da      	uxtb	r2, r3
+     c72:	7bfb      	ldrb	r3, [r7, #15]
+     c74:	4313      	orrs	r3, r2
+     c76:	b2da      	uxtb	r2, r3
+     c78:	693b      	ldr	r3, [r7, #16]
+     c7a:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:141
+    UART_BDL_REG(uartch) = (uint8_t)(sbr & UART_BDL_SBR_MASK);
+     c7c:	b2e2      	uxtb	r2, r4
+     c7e:	693b      	ldr	r3, [r7, #16]
+     c80:	705a      	strb	r2, [r3, #1]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:144
+    
+    //初始化控制寄存器、清标志位
+    uartch->C1 = 0x00;
+     c82:	693b      	ldr	r3, [r7, #16]
+     c84:	2200      	movs	r2, #0
+     c86:	709a      	strb	r2, [r3, #2]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:145
+    uartch->C3 = 0x00;
+     c88:	693b      	ldr	r3, [r7, #16]
+     c8a:	2200      	movs	r2, #0
+     c8c:	719a      	strb	r2, [r3, #6]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:146
+    uartch->S1 = 0x1F;
+     c8e:	693b      	ldr	r3, [r7, #16]
+     c90:	221f      	movs	r2, #31
+     c92:	711a      	strb	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:147
+    uartch->S2 = 0x00;
+     c94:	693b      	ldr	r3, [r7, #16]
+     c96:	2200      	movs	r2, #0
+     c98:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:150
+
+    //启动发送接收
+    UART_C2_REG(uartch) |= (UART_C2_TE_MASK | UART_C2_RE_MASK );
+     c9a:	693b      	ldr	r3, [r7, #16]
+     c9c:	78db      	ldrb	r3, [r3, #3]
+     c9e:	b2db      	uxtb	r3, r3
+     ca0:	f043 030c 	orr.w	r3, r3, #12
+     ca4:	b2da      	uxtb	r2, r3
+     ca6:	693b      	ldr	r3, [r7, #16]
+     ca8:	70da      	strb	r2, [r3, #3]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:151
+    return 0;
+     caa:	2300      	movs	r3, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:152
+}
+     cac:	4618      	mov	r0, r3
+     cae:	3718      	adds	r7, #24
+     cb0:	46bd      	mov	sp, r7
+     cb2:	bc90      	pop	{r4, r7}
+     cb4:	4770      	bx	lr
+     cb6:	bf00      	nop
+     cb8:	00001abc 	.word	0x00001abc
+     cbc:	4004c000 	.word	0x4004c000
+     cc0:	40047000 	.word	0x40047000
+     cc4:	4004a000 	.word	0x4004a000
+     cc8:	4004d000 	.word	0x4004d000
+     ccc:	00017700 	.word	0x00017700
+
+00000cd0 <uart_send1>:
+uart_send1():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:163
+//          ch:要发送的字节
+//函数返回：函数执行状态：0=正常；非0=异常。
+//功能概要：串行发送1个字节
+//============================================================================
+uint8_t uart_send1(uint8_t uartNo, uint8_t ch)
+{
+     cd0:	b480      	push	{r7}
+     cd2:	b085      	sub	sp, #20
+     cd4:	af00      	add	r7, sp, #0
+     cd6:	4602      	mov	r2, r0
+     cd8:	460b      	mov	r3, r1
+     cda:	71fa      	strb	r2, [r7, #7]
+     cdc:	71bb      	strb	r3, [r7, #6]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:165
+    uint32_t t;
+    UART_MemMapPtr uartch = UART_ARR[uartNo]; //获取UART1或者2基地址
+     cde:	79fa      	ldrb	r2, [r7, #7]
+     ce0:	4b13      	ldr	r3, [pc, #76]	; (d30 <uart_send1+0x60>)
+     ce2:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+     ce6:	60bb      	str	r3, [r7, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:167
+
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     ce8:	2300      	movs	r3, #0
+     cea:	60fb      	str	r3, [r7, #12]
+     cec:	e00d      	b.n	d0a <uart_send1+0x3a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:169
+    {
+        if ( (uartch->S1) & UART_S1_TDRE_MASK )//判断发送缓冲区是否为空
+     cee:	68bb      	ldr	r3, [r7, #8]
+     cf0:	791b      	ldrb	r3, [r3, #4]
+     cf2:	b2db      	uxtb	r3, r3
+     cf4:	b2db      	uxtb	r3, r3
+     cf6:	b25b      	sxtb	r3, r3
+     cf8:	2b00      	cmp	r3, #0
+     cfa:	da03      	bge.n	d04 <uart_send1+0x34>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:171
+        {
+	    uartch->D = ch;   //获取数据并发送
+     cfc:	68bb      	ldr	r3, [r7, #8]
+     cfe:	79ba      	ldrb	r2, [r7, #6]
+     d00:	71da      	strb	r2, [r3, #7]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:172
+	    break;             //跳出循环
+     d02:	e007      	b.n	d14 <uart_send1+0x44>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:167
+uint8_t uart_send1(uint8_t uartNo, uint8_t ch)
+{
+    uint32_t t;
+    UART_MemMapPtr uartch = UART_ARR[uartNo]; //获取UART1或者2基地址
+
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     d04:	68fb      	ldr	r3, [r7, #12]
+     d06:	3301      	adds	r3, #1
+     d08:	60fb      	str	r3, [r7, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:167 (discriminator 1)
+     d0a:	68fa      	ldr	r2, [r7, #12]
+     d0c:	f64f 33ba 	movw	r3, #64442	; 0xfbba
+     d10:	429a      	cmp	r2, r3
+     d12:	d9ec      	bls.n	cee <uart_send1+0x1e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:175
+        {
+	    uartch->D = ch;   //获取数据并发送
+	    break;             //跳出循环
+        }
+   }//end for
+   if (t >= 0xFBBB)
+     d14:	68fa      	ldr	r2, [r7, #12]
+     d16:	f64f 33ba 	movw	r3, #64442	; 0xfbba
+     d1a:	429a      	cmp	r2, r3
+     d1c:	d901      	bls.n	d22 <uart_send1+0x52>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:176
+       return 1; //发送超时，发送失败
+     d1e:	2301      	movs	r3, #1
+     d20:	e000      	b.n	d24 <uart_send1+0x54>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:178
+   else
+       return 0; //成功发送
+     d22:	2300      	movs	r3, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:180
+
+}
+     d24:	4618      	mov	r0, r3
+     d26:	3714      	adds	r7, #20
+     d28:	46bd      	mov	sp, r7
+     d2a:	f85d 7b04 	ldr.w	r7, [sp], #4
+     d2e:	4770      	bx	lr
+     d30:	00001abc 	.word	0x00001abc
+
+00000d34 <uart_send_string>:
+uart_send_string():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:216
+//          buff:要发送的字符串的首地址
+//函数返回： 函数执行状态：0=正常；非0=异常。
+//功能概要：从指定UART端口发送一个以'\0'结束的字符串
+//============================================================================
+uint8_t uart_send_string(uint8_t uartNo, void *buff)
+{
+     d34:	b580      	push	{r7, lr}
+     d36:	b084      	sub	sp, #16
+     d38:	af00      	add	r7, sp, #0
+     d3a:	4603      	mov	r3, r0
+     d3c:	6039      	str	r1, [r7, #0]
+     d3e:	71fb      	strb	r3, [r7, #7]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:217
+    uint16_t i = 0;
+     d40:	2300      	movs	r3, #0
+     d42:	81fb      	strh	r3, [r7, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:218
+    uint8_t *buff_ptr = (uint8_t *)buff;    //定义指针指向要发送字符串首地址
+     d44:	683b      	ldr	r3, [r7, #0]
+     d46:	60bb      	str	r3, [r7, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:219
+    for(i = 0; buff_ptr[i] != '\0'; i++)  //遍历字符串里的字符
+     d48:	2300      	movs	r3, #0
+     d4a:	81fb      	strh	r3, [r7, #14]
+     d4c:	e010      	b.n	d70 <uart_send_string+0x3c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:221
+    {
+        if (uart_send1(uartNo,buff_ptr[i]))//发送指针对应的字符
+     d4e:	89fb      	ldrh	r3, [r7, #14]
+     d50:	68ba      	ldr	r2, [r7, #8]
+     d52:	4413      	add	r3, r2
+     d54:	781b      	ldrb	r3, [r3, #0]
+     d56:	79fa      	ldrb	r2, [r7, #7]
+     d58:	4610      	mov	r0, r2
+     d5a:	4619      	mov	r1, r3
+     d5c:	f7ff ffb8 	bl	cd0 <uart_send1>
+     d60:	4603      	mov	r3, r0
+     d62:	2b00      	cmp	r3, #0
+     d64:	d001      	beq.n	d6a <uart_send_string+0x36>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:222
+            return 1;  //发送失败
+     d66:	2301      	movs	r3, #1
+     d68:	e009      	b.n	d7e <uart_send_string+0x4a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:219
+//============================================================================
+uint8_t uart_send_string(uint8_t uartNo, void *buff)
+{
+    uint16_t i = 0;
+    uint8_t *buff_ptr = (uint8_t *)buff;    //定义指针指向要发送字符串首地址
+    for(i = 0; buff_ptr[i] != '\0'; i++)  //遍历字符串里的字符
+     d6a:	89fb      	ldrh	r3, [r7, #14]
+     d6c:	3301      	adds	r3, #1
+     d6e:	81fb      	strh	r3, [r7, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:219 (discriminator 1)
+     d70:	89fb      	ldrh	r3, [r7, #14]
+     d72:	68ba      	ldr	r2, [r7, #8]
+     d74:	4413      	add	r3, r2
+     d76:	781b      	ldrb	r3, [r3, #0]
+     d78:	2b00      	cmp	r3, #0
+     d7a:	d1e8      	bne.n	d4e <uart_send_string+0x1a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:224
+    {
+        if (uart_send1(uartNo,buff_ptr[i]))//发送指针对应的字符
+            return 1;  //发送失败
+    }
+    return 0;         //发送成功
+     d7c:	2300      	movs	r3, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:225
+}
+     d7e:	4618      	mov	r0, r3
+     d80:	3710      	adds	r7, #16
+     d82:	46bd      	mov	sp, r7
+     d84:	bd80      	pop	{r7, pc}
+     d86:	bf00      	nop
+
+00000d88 <uart_re1>:
+uart_re1():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:236
+//          fp:接收成功标志的指针:*fp=0，成功接收；*fp=1，接收失败
+//函数返回：接收返回字节
+//功能概要：串行接收1个字节
+//============================================================================
+uint8_t uart_re1 (uint8_t uartNo,uint8_t *fp)
+{
+     d88:	b480      	push	{r7}
+     d8a:	b087      	sub	sp, #28
+     d8c:	af00      	add	r7, sp, #0
+     d8e:	4603      	mov	r3, r0
+     d90:	6039      	str	r1, [r7, #0]
+     d92:	71fb      	strb	r3, [r7, #7]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:239
+    uint32_t t;
+    uint8_t  dat;
+    UART_MemMapPtr uartch= UART_ARR[uartNo];//获取UART1或者2基地址
+     d94:	79fa      	ldrb	r2, [r7, #7]
+     d96:	4b17      	ldr	r3, [pc, #92]	; (df4 <uart_re1+0x6c>)
+     d98:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+     d9c:	60fb      	str	r3, [r7, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:241
+
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     d9e:	2300      	movs	r3, #0
+     da0:	617b      	str	r3, [r7, #20]
+     da2:	e010      	b.n	dc6 <uart_re1+0x3e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:244
+    {
+    	//判断接收缓冲区是否满
+        if ((uartch->S1) & UART_S1_RDRF_MASK )
+     da4:	68fb      	ldr	r3, [r7, #12]
+     da6:	791b      	ldrb	r3, [r3, #4]
+     da8:	b2db      	uxtb	r3, r3
+     daa:	f003 0320 	and.w	r3, r3, #32
+     dae:	2b00      	cmp	r3, #0
+     db0:	d006      	beq.n	dc0 <uart_re1+0x38>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:246
+        {
+        	dat = uartch->D; //获取数据
+     db2:	68fb      	ldr	r3, [r7, #12]
+     db4:	79db      	ldrb	r3, [r3, #7]
+     db6:	74fb      	strb	r3, [r7, #19]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:247
+        	*fp= 0;  //接受成功
+     db8:	683b      	ldr	r3, [r7, #0]
+     dba:	2200      	movs	r2, #0
+     dbc:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:248
+        	break;
+     dbe:	e007      	b.n	dd0 <uart_re1+0x48>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:241
+{
+    uint32_t t;
+    uint8_t  dat;
+    UART_MemMapPtr uartch= UART_ARR[uartNo];//获取UART1或者2基地址
+
+    for (t = 0; t < 0xFBBB; t++)//查询指定次数
+     dc0:	697b      	ldr	r3, [r7, #20]
+     dc2:	3301      	adds	r3, #1
+     dc4:	617b      	str	r3, [r7, #20]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:241 (discriminator 1)
+     dc6:	697a      	ldr	r2, [r7, #20]
+     dc8:	f64f 33ba 	movw	r3, #64442	; 0xfbba
+     dcc:	429a      	cmp	r2, r3
+     dce:	d9e9      	bls.n	da4 <uart_re1+0x1c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:252
+        	*fp= 0;  //接受成功
+        	break;
+        }
+
+    }//end for
+    if(t >= 0xFBBB)
+     dd0:	697a      	ldr	r2, [r7, #20]
+     dd2:	f64f 33ba 	movw	r3, #64442	; 0xfbba
+     dd6:	429a      	cmp	r2, r3
+     dd8:	d904      	bls.n	de4 <uart_re1+0x5c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:254
+    {
+        dat = 0xFF;
+     dda:	23ff      	movs	r3, #255	; 0xff
+     ddc:	74fb      	strb	r3, [r7, #19]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:255
+        *fp = 1;    //未收到数据
+     dde:	683b      	ldr	r3, [r7, #0]
+     de0:	2201      	movs	r2, #1
+     de2:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:257
+    }
+    return dat;    //返回接收到的数据
+     de4:	7cfb      	ldrb	r3, [r7, #19]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/uart/uart.c:259
+
+}
+     de6:	4618      	mov	r0, r3
+     de8:	371c      	adds	r7, #28
+     dea:	46bd      	mov	sp, r7
+     dec:	f85d 7b04 	ldr.w	r7, [sp], #4
+     df0:	4770      	bx	lr
+     df2:	bf00      	nop
+     df4:	00001abc 	.word	0x00001abc
+
+00000df8 <pwm_init>:
+pwm_init():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:24
+//			1	模块号，通道号错误
+//			2	频率大于时钟的二分之一
+//			3	设置管脚有误
+//=========================================================================
+uint8_t pwm_init(uint8_t ftmModule, uint8_t channel, uint32_t period, uint16_t duty)
+{
+     df8:	b480      	push	{r7}
+     dfa:	b087      	sub	sp, #28
+     dfc:	af00      	add	r7, sp, #0
+     dfe:	603a      	str	r2, [r7, #0]
+     e00:	4602      	mov	r2, r0
+     e02:	71fa      	strb	r2, [r7, #7]
+     e04:	460a      	mov	r2, r1
+     e06:	71ba      	strb	r2, [r7, #6]
+     e08:	80bb      	strh	r3, [r7, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:25
+	uint32_t clk_hz = (bus_clk_khz * 1000) >> 1;       //bus频率/2  bus_clk_khz = 50000
+     e0a:	4ba5      	ldr	r3, [pc, #660]	; (10a0 <pwm_init+0x2a8>)
+     e0c:	613b      	str	r3, [r7, #16]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:31
+	uint16_t mod;
+	uint8_t sc_ps;
+	uint16_t cv;
+
+	//检查传递进来的通道是否正确
+	if(!( (ftmModule == FTM0) || ( (ftmModule == FTM1 || ftmModule == FTM2 ) && (channel <= FTMCH1))   ))
+     e0e:	79fb      	ldrb	r3, [r7, #7]
+     e10:	2b00      	cmp	r3, #0
+     e12:	d00a      	beq.n	e2a <pwm_init+0x32>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:31 (discriminator 1)
+     e14:	79fb      	ldrb	r3, [r7, #7]
+     e16:	2b01      	cmp	r3, #1
+     e18:	d002      	beq.n	e20 <pwm_init+0x28>
+     e1a:	79fb      	ldrb	r3, [r7, #7]
+     e1c:	2b02      	cmp	r3, #2
+     e1e:	d102      	bne.n	e26 <pwm_init+0x2e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:31 (discriminator 2)
+     e20:	79bb      	ldrb	r3, [r7, #6]
+     e22:	2b01      	cmp	r3, #1
+     e24:	d901      	bls.n	e2a <pwm_init+0x32>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:32
+		return 1;		//模块号，通道号错误
+     e26:	2301      	movs	r3, #1
+     e28:	e197      	b.n	115a <pwm_init+0x362>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:35
+
+	//检测 频率 是否正常 ,频率必须小于时钟二分之一
+	if(!( period <= (clk_hz >> 1) ))
+     e2a:	693b      	ldr	r3, [r7, #16]
+     e2c:	085a      	lsrs	r2, r3, #1
+     e2e:	683b      	ldr	r3, [r7, #0]
+     e30:	429a      	cmp	r2, r3
+     e32:	d201      	bcs.n	e38 <pwm_init+0x40>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:36
+		return 2;		//频率大于时钟的二分之一
+     e34:	2302      	movs	r3, #2
+     e36:	e190      	b.n	115a <pwm_init+0x362>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:39
+
+	/*       计算分频因子       */
+	mod = (clk_hz >> 16 ) / period ;
+     e38:	693b      	ldr	r3, [r7, #16]
+     e3a:	0c1a      	lsrs	r2, r3, #16
+     e3c:	683b      	ldr	r3, [r7, #0]
+     e3e:	fbb2 f3f3 	udiv	r3, r2, r3
+     e42:	81fb      	strh	r3, [r7, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:40
+	for(sc_ps = 0; (mod >> sc_ps) >= 1; sc_ps++);
+     e44:	2300      	movs	r3, #0
+     e46:	75fb      	strb	r3, [r7, #23]
+     e48:	e002      	b.n	e50 <pwm_init+0x58>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:40 (discriminator 2)
+     e4a:	7dfb      	ldrb	r3, [r7, #23]
+     e4c:	3301      	adds	r3, #1
+     e4e:	75fb      	strb	r3, [r7, #23]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:40 (discriminator 1)
+     e50:	89fa      	ldrh	r2, [r7, #14]
+     e52:	7dfb      	ldrb	r3, [r7, #23]
+     e54:	fa42 f303 	asr.w	r3, r2, r3
+     e58:	2b00      	cmp	r3, #0
+     e5a:	dcf6      	bgt.n	e4a <pwm_init+0x52>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:41
+	if(period < 1000)sc_ps++;
+     e5c:	683b      	ldr	r3, [r7, #0]
+     e5e:	f5b3 7f7a 	cmp.w	r3, #1000	; 0x3e8
+     e62:	d202      	bcs.n	e6a <pwm_init+0x72>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:41 (discriminator 1)
+     e64:	7dfb      	ldrb	r3, [r7, #23]
+     e66:	3301      	adds	r3, #1
+     e68:	75fb      	strb	r3, [r7, #23]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:43
+
+	mod = (clk_hz >> sc_ps) / period;                        //频率设置因子,clk_hz = 25000000
+     e6a:	7dfb      	ldrb	r3, [r7, #23]
+     e6c:	693a      	ldr	r2, [r7, #16]
+     e6e:	40da      	lsrs	r2, r3
+     e70:	683b      	ldr	r3, [r7, #0]
+     e72:	fbb2 f3f3 	udiv	r3, r2, r3
+     e76:	81fb      	strh	r3, [r7, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:45
+
+	cv = (duty * (mod - 0 + 1)) / PWM_ACCURACY;            //占空比设置因子
+     e78:	88bb      	ldrh	r3, [r7, #4]
+     e7a:	89fa      	ldrh	r2, [r7, #14]
+     e7c:	3201      	adds	r2, #1
+     e7e:	fb02 f303 	mul.w	r3, r2, r3
+     e82:	4a88      	ldr	r2, [pc, #544]	; (10a4 <pwm_init+0x2ac>)
+     e84:	fb82 1203 	smull	r1, r2, r2, r3
+     e88:	1312      	asrs	r2, r2, #12
+     e8a:	17db      	asrs	r3, r3, #31
+     e8c:	1ad3      	subs	r3, r2, r3
+     e8e:	81bb      	strh	r3, [r7, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:49
+
+	/******************* 开启时钟 和 复用IO口*******************/
+	//注，这里代码虽然长，但编译时会删掉很多没用的部分，不影响速度
+	switch(ftmModule)
+     e90:	79fb      	ldrb	r3, [r7, #7]
+     e92:	2b01      	cmp	r3, #1
+     e94:	f000 80b5 	beq.w	1002 <pwm_init+0x20a>
+     e98:	2b02      	cmp	r3, #2
+     e9a:	f000 80e9 	beq.w	1070 <pwm_init+0x278>
+     e9e:	2b00      	cmp	r3, #0
+     ea0:	d000      	beq.n	ea4 <pwm_init+0xac>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:291
+		default:
+			return 3;
+		}
+		break;
+	default:
+		break;
+     ea2:	e109      	b.n	10b8 <pwm_init+0x2c0>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:52
+	/******************* 开启时钟 和 复用IO口*******************/
+	//注，这里代码虽然长，但编译时会删掉很多没用的部分，不影响速度
+	switch(ftmModule)
+	{
+	case FTM0:
+		SIM_SCGC6 |= SIM_SCGC6_FTM0_MASK;                           //使能FTM0时钟
+     ea4:	4980      	ldr	r1, [pc, #512]	; (10a8 <pwm_init+0x2b0>)
+     ea6:	4b80      	ldr	r3, [pc, #512]	; (10a8 <pwm_init+0x2b0>)
+     ea8:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     eac:	331c      	adds	r3, #28
+     eae:	681b      	ldr	r3, [r3, #0]
+     eb0:	f043 7280 	orr.w	r2, r3, #16777216	; 0x1000000
+     eb4:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     eb8:	331c      	adds	r3, #28
+     eba:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:53
+		switch(channel)
+     ebc:	79bb      	ldrb	r3, [r7, #6]
+     ebe:	2b07      	cmp	r3, #7
+     ec0:	f200 809c 	bhi.w	ffc <pwm_init+0x204>
+     ec4:	a201      	add	r2, pc, #4	; (adr r2, ecc <pwm_init+0xd4>)
+     ec6:	f852 f023 	ldr.w	pc, [r2, r3, lsl #2]
+     eca:	bf00      	nop
+     ecc:	00000eed 	.word	0x00000eed
+     ed0:	00000f0f 	.word	0x00000f0f
+     ed4:	00000f31 	.word	0x00000f31
+     ed8:	00000f53 	.word	0x00000f53
+     edc:	00000f75 	.word	0x00000f75
+     ee0:	00000f97 	.word	0x00000f97
+     ee4:	00000fb9 	.word	0x00000fb9
+     ee8:	00000fdb 	.word	0x00000fdb
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:58
+		{
+		case FTMCH0:
+			if(FTM0_CH0 == (PORTC|1))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTC_MASK;
+     eec:	496e      	ldr	r1, [pc, #440]	; (10a8 <pwm_init+0x2b0>)
+     eee:	4b6e      	ldr	r3, [pc, #440]	; (10a8 <pwm_init+0x2b0>)
+     ef0:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     ef4:	3318      	adds	r3, #24
+     ef6:	681b      	ldr	r3, [r3, #0]
+     ef8:	f443 6200 	orr.w	r2, r3, #2048	; 0x800
+     efc:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     f00:	3318      	adds	r3, #24
+     f02:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:59
+				PORT_PCR_REG(PORTC_BASE_PTR, 1) = PORT_PCR_MUX(4);  // PTC1
+     f04:	4b69      	ldr	r3, [pc, #420]	; (10ac <pwm_init+0x2b4>)
+     f06:	f44f 6280 	mov.w	r2, #1024	; 0x400
+     f0a:	605a      	str	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:70
+			}
+			else
+			{
+				return 3;                   //设置管脚有误？
+			}
+			break;
+     f0c:	e078      	b.n	1000 <pwm_init+0x208>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:75
+
+		case FTMCH1:
+			if(FTM0_CH1 == (PORTC|2))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTC_MASK;
+     f0e:	4966      	ldr	r1, [pc, #408]	; (10a8 <pwm_init+0x2b0>)
+     f10:	4b65      	ldr	r3, [pc, #404]	; (10a8 <pwm_init+0x2b0>)
+     f12:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     f16:	3318      	adds	r3, #24
+     f18:	681b      	ldr	r3, [r3, #0]
+     f1a:	f443 6200 	orr.w	r2, r3, #2048	; 0x800
+     f1e:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     f22:	3318      	adds	r3, #24
+     f24:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:76
+				PORT_PCR_REG(PORTC_BASE_PTR, 2) = PORT_PCR_MUX(4);  // PTC2
+     f26:	4b61      	ldr	r3, [pc, #388]	; (10ac <pwm_init+0x2b4>)
+     f28:	f44f 6280 	mov.w	r2, #1024	; 0x400
+     f2c:	609a      	str	r2, [r3, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:87
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+			}
+			break;
+     f2e:	e067      	b.n	1000 <pwm_init+0x208>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:92
+
+		case FTMCH2:
+			if(FTM0_CH2 == (PORTC|3))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTC_MASK;
+     f30:	495d      	ldr	r1, [pc, #372]	; (10a8 <pwm_init+0x2b0>)
+     f32:	4b5d      	ldr	r3, [pc, #372]	; (10a8 <pwm_init+0x2b0>)
+     f34:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     f38:	3318      	adds	r3, #24
+     f3a:	681b      	ldr	r3, [r3, #0]
+     f3c:	f443 6200 	orr.w	r2, r3, #2048	; 0x800
+     f40:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     f44:	3318      	adds	r3, #24
+     f46:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:93
+				PORT_PCR_REG(PORTC_BASE_PTR, 3) = PORT_PCR_MUX(4);  // PTC3
+     f48:	4b58      	ldr	r3, [pc, #352]	; (10ac <pwm_init+0x2b4>)
+     f4a:	f44f 6280 	mov.w	r2, #1024	; 0x400
+     f4e:	60da      	str	r2, [r3, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:104
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+			}
+			break;
+     f50:	e056      	b.n	1000 <pwm_init+0x208>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:109
+
+		case FTMCH3:
+			if(FTM0_CH3 == (PORTC|4))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTC_MASK;
+     f52:	4955      	ldr	r1, [pc, #340]	; (10a8 <pwm_init+0x2b0>)
+     f54:	4b54      	ldr	r3, [pc, #336]	; (10a8 <pwm_init+0x2b0>)
+     f56:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     f5a:	3318      	adds	r3, #24
+     f5c:	681b      	ldr	r3, [r3, #0]
+     f5e:	f443 6200 	orr.w	r2, r3, #2048	; 0x800
+     f62:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     f66:	3318      	adds	r3, #24
+     f68:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:110
+				PORT_PCR_REG(PORTC_BASE_PTR, 4) = PORT_PCR_MUX(4);  // PTC4
+     f6a:	4b50      	ldr	r3, [pc, #320]	; (10ac <pwm_init+0x2b4>)
+     f6c:	f44f 6280 	mov.w	r2, #1024	; 0x400
+     f70:	611a      	str	r2, [r3, #16]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:121
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+			}
+			break;
+     f72:	e045      	b.n	1000 <pwm_init+0x208>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:126
+
+		case FTMCH4:
+			if(FTM0_CH4 == (PORTD|4))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK;
+     f74:	494c      	ldr	r1, [pc, #304]	; (10a8 <pwm_init+0x2b0>)
+     f76:	4b4c      	ldr	r3, [pc, #304]	; (10a8 <pwm_init+0x2b0>)
+     f78:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     f7c:	3318      	adds	r3, #24
+     f7e:	681b      	ldr	r3, [r3, #0]
+     f80:	f443 5280 	orr.w	r2, r3, #4096	; 0x1000
+     f84:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     f88:	3318      	adds	r3, #24
+     f8a:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:127
+				PORT_PCR_REG(PORTD_BASE_PTR, 4) = PORT_PCR_MUX(4);  // PTD4
+     f8c:	4b48      	ldr	r3, [pc, #288]	; (10b0 <pwm_init+0x2b8>)
+     f8e:	f44f 6280 	mov.w	r2, #1024	; 0x400
+     f92:	611a      	str	r2, [r3, #16]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:138
+			}
+			else
+			{
+				return 3;                    //设置管脚有误？
+			}
+			break;
+     f94:	e034      	b.n	1000 <pwm_init+0x208>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:143
+
+		case FTMCH5:
+			if(FTM0_CH5 == (PORTD|5))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK;
+     f96:	4944      	ldr	r1, [pc, #272]	; (10a8 <pwm_init+0x2b0>)
+     f98:	4b43      	ldr	r3, [pc, #268]	; (10a8 <pwm_init+0x2b0>)
+     f9a:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     f9e:	3318      	adds	r3, #24
+     fa0:	681b      	ldr	r3, [r3, #0]
+     fa2:	f443 5280 	orr.w	r2, r3, #4096	; 0x1000
+     fa6:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     faa:	3318      	adds	r3, #24
+     fac:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:144
+				PORT_PCR_REG(PORTD_BASE_PTR, 5) = PORT_PCR_MUX(4);  // PTD5
+     fae:	4b40      	ldr	r3, [pc, #256]	; (10b0 <pwm_init+0x2b8>)
+     fb0:	f44f 6280 	mov.w	r2, #1024	; 0x400
+     fb4:	615a      	str	r2, [r3, #20]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:155
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+			}
+			break;
+     fb6:	e023      	b.n	1000 <pwm_init+0x208>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:160
+
+		case FTMCH6:
+			if(FTM0_CH6 == (PORTD|6))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK;
+     fb8:	493b      	ldr	r1, [pc, #236]	; (10a8 <pwm_init+0x2b0>)
+     fba:	4b3b      	ldr	r3, [pc, #236]	; (10a8 <pwm_init+0x2b0>)
+     fbc:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     fc0:	3318      	adds	r3, #24
+     fc2:	681b      	ldr	r3, [r3, #0]
+     fc4:	f443 5280 	orr.w	r2, r3, #4096	; 0x1000
+     fc8:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     fcc:	3318      	adds	r3, #24
+     fce:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:161
+				PORT_PCR_REG(PORTD_BASE_PTR, 6) = PORT_PCR_MUX(4);  // PTD6
+     fd0:	4b37      	ldr	r3, [pc, #220]	; (10b0 <pwm_init+0x2b8>)
+     fd2:	f44f 6280 	mov.w	r2, #1024	; 0x400
+     fd6:	619a      	str	r2, [r3, #24]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:172
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+			}
+			break;
+     fd8:	e012      	b.n	1000 <pwm_init+0x208>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:177
+
+		case FTMCH7:
+			if(FTM0_CH7 == (PORTD|7))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK;
+     fda:	4933      	ldr	r1, [pc, #204]	; (10a8 <pwm_init+0x2b0>)
+     fdc:	4b32      	ldr	r3, [pc, #200]	; (10a8 <pwm_init+0x2b0>)
+     fde:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+     fe2:	3318      	adds	r3, #24
+     fe4:	681b      	ldr	r3, [r3, #0]
+     fe6:	f443 5280 	orr.w	r2, r3, #4096	; 0x1000
+     fea:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+     fee:	3318      	adds	r3, #24
+     ff0:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:178
+				PORT_PCR_REG(PORTD_BASE_PTR, 7) = PORT_PCR_MUX(4);  // PTD7
+     ff2:	4b2f      	ldr	r3, [pc, #188]	; (10b0 <pwm_init+0x2b8>)
+     ff4:	f44f 6280 	mov.w	r2, #1024	; 0x400
+     ff8:	61da      	str	r2, [r3, #28]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:189
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+			}
+			break;
+     ffa:	e001      	b.n	1000 <pwm_init+0x208>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:191
+		default:
+			return 3;
+     ffc:	2303      	movs	r3, #3
+     ffe:	e0ac      	b.n	115a <pwm_init+0x362>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:193
+		}
+		break;
+    1000:	e05a      	b.n	10b8 <pwm_init+0x2c0>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:196
+
+	case FTM1:
+		SIM_SCGC6 |= SIM_SCGC6_FTM1_MASK;                           //使能FTM1时钟
+    1002:	4929      	ldr	r1, [pc, #164]	; (10a8 <pwm_init+0x2b0>)
+    1004:	4b28      	ldr	r3, [pc, #160]	; (10a8 <pwm_init+0x2b0>)
+    1006:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+    100a:	331c      	adds	r3, #28
+    100c:	681b      	ldr	r3, [r3, #0]
+    100e:	f043 7200 	orr.w	r2, r3, #33554432	; 0x2000000
+    1012:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+    1016:	331c      	adds	r3, #28
+    1018:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:197
+		switch(channel)
+    101a:	79bb      	ldrb	r3, [r7, #6]
+    101c:	2b00      	cmp	r3, #0
+    101e:	d002      	beq.n	1026 <pwm_init+0x22e>
+    1020:	2b01      	cmp	r3, #1
+    1022:	d011      	beq.n	1048 <pwm_init+0x250>
+    1024:	e021      	b.n	106a <pwm_init+0x272>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:207
+				SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+				PORT_PCR_REG(PORTA_BASE_PTR, 8) = PORT_PCR_MUX(3);  // PTA8
+			}
+			else if(FTM1_CH0 == (PORTA|12))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+    1026:	4920      	ldr	r1, [pc, #128]	; (10a8 <pwm_init+0x2b0>)
+    1028:	4b1f      	ldr	r3, [pc, #124]	; (10a8 <pwm_init+0x2b0>)
+    102a:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+    102e:	3318      	adds	r3, #24
+    1030:	681b      	ldr	r3, [r3, #0]
+    1032:	f443 7200 	orr.w	r2, r3, #512	; 0x200
+    1036:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+    103a:	3318      	adds	r3, #24
+    103c:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:208
+				PORT_PCR_REG(PORTA_BASE_PTR, 12) = PORT_PCR_MUX(3);  // PTA12
+    103e:	4b1d      	ldr	r3, [pc, #116]	; (10b4 <pwm_init+0x2bc>)
+    1040:	f44f 7240 	mov.w	r2, #768	; 0x300
+    1044:	631a      	str	r2, [r3, #48]	; 0x30
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:219
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+			}
+			break;
+    1046:	e012      	b.n	106e <pwm_init+0x276>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:230
+				SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+				PORT_PCR_REG(PORTA_BASE_PTR, 9) = PORT_PCR_MUX(3);  // PTA9
+			}
+			else if(FTM1_CH1 == (PORTA|13))
+			{
+				SIM_SCGC5 |= SIM_SCGC5_PORTA_MASK;
+    1048:	4917      	ldr	r1, [pc, #92]	; (10a8 <pwm_init+0x2b0>)
+    104a:	4b17      	ldr	r3, [pc, #92]	; (10a8 <pwm_init+0x2b0>)
+    104c:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+    1050:	3318      	adds	r3, #24
+    1052:	681b      	ldr	r3, [r3, #0]
+    1054:	f443 7200 	orr.w	r2, r3, #512	; 0x200
+    1058:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+    105c:	3318      	adds	r3, #24
+    105e:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:231
+				PORT_PCR_REG(PORTA_BASE_PTR, 13) = PORT_PCR_MUX(3);  // PTA13
+    1060:	4b14      	ldr	r3, [pc, #80]	; (10b4 <pwm_init+0x2bc>)
+    1062:	f44f 7240 	mov.w	r2, #768	; 0x300
+    1066:	635a      	str	r2, [r3, #52]	; 0x34
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:242
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+			}
+			break;
+    1068:	e001      	b.n	106e <pwm_init+0x276>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:245
+
+		default:
+			return 3;
+    106a:	2303      	movs	r3, #3
+    106c:	e075      	b.n	115a <pwm_init+0x362>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:247
+		}
+		break;
+    106e:	e023      	b.n	10b8 <pwm_init+0x2c0>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:249
+	case FTM2:
+		SIM_SCGC3 |= SIM_SCGC3_FTM2_MASK;                           //使能FTM2时钟
+    1070:	490d      	ldr	r1, [pc, #52]	; (10a8 <pwm_init+0x2b0>)
+    1072:	4b0d      	ldr	r3, [pc, #52]	; (10a8 <pwm_init+0x2b0>)
+    1074:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+    1078:	3310      	adds	r3, #16
+    107a:	681b      	ldr	r3, [r3, #0]
+    107c:	f043 7280 	orr.w	r2, r3, #16777216	; 0x1000000
+    1080:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+    1084:	3310      	adds	r3, #16
+    1086:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:250
+		switch(channel)
+    1088:	79bb      	ldrb	r3, [r7, #6]
+    108a:	2b00      	cmp	r3, #0
+    108c:	d002      	beq.n	1094 <pwm_init+0x29c>
+    108e:	2b01      	cmp	r3, #1
+    1090:	d002      	beq.n	1098 <pwm_init+0x2a0>
+    1092:	e003      	b.n	109c <pwm_init+0x2a4>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:265
+				SIM_SCGC5 |= SIM_SCGC5_PORTB_MASK;
+				PORT_PCR_REG(PORTA_BASE_PTR, 18) = PORT_PCR_MUX(3);  // PTB18
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+    1094:	2303      	movs	r3, #3
+    1096:	e060      	b.n	115a <pwm_init+0x362>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:282
+				SIM_SCGC5 |= SIM_SCGC5_PORTB_MASK;
+				PORT_PCR_REG(PORTA_BASE_PTR, 19) = PORT_PCR_MUX(3);  // PTB19
+			}
+			else
+			{
+				return 3;                     //设置管脚有误？
+    1098:	2303      	movs	r3, #3
+    109a:	e05e      	b.n	115a <pwm_init+0x362>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:287
+			}
+			break;
+
+		default:
+			return 3;
+    109c:	2303      	movs	r3, #3
+    109e:	e05c      	b.n	115a <pwm_init+0x362>
+    10a0:	017d7840 	.word	0x017d7840
+    10a4:	68db8bad 	.word	0x68db8bad
+    10a8:	40047000 	.word	0x40047000
+    10ac:	4004b000 	.word	0x4004b000
+    10b0:	4004c000 	.word	0x4004c000
+    10b4:	40049000 	.word	0x40049000
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:295
+	default:
+		break;
+	}
+	/******************** 选择输出模式为 边沿对齐PWM *******************/
+	//通道状态控制，根据模式来选择 边沿或电平
+	FTM_CnSC_REG(FTMx[ftmModule], channel) &= ~FTM_CnSC_ELSA_MASK;
+    10b8:	79fa      	ldrb	r2, [r7, #7]
+    10ba:	4b2b      	ldr	r3, [pc, #172]	; (1168 <pwm_init+0x370>)
+    10bc:	f853 1022 	ldr.w	r1, [r3, r2, lsl #2]
+    10c0:	79b8      	ldrb	r0, [r7, #6]
+    10c2:	79fa      	ldrb	r2, [r7, #7]
+    10c4:	4b28      	ldr	r3, [pc, #160]	; (1168 <pwm_init+0x370>)
+    10c6:	f853 2022 	ldr.w	r2, [r3, r2, lsl #2]
+    10ca:	79bb      	ldrb	r3, [r7, #6]
+    10cc:	3301      	adds	r3, #1
+    10ce:	00db      	lsls	r3, r3, #3
+    10d0:	4413      	add	r3, r2
+    10d2:	685b      	ldr	r3, [r3, #4]
+    10d4:	f023 0204 	bic.w	r2, r3, #4
+    10d8:	1c43      	adds	r3, r0, #1
+    10da:	00db      	lsls	r3, r3, #3
+    10dc:	440b      	add	r3, r1
+    10de:	605a      	str	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:296
+	FTM_CnSC_REG(FTMx[ftmModule], channel) = FTM_CnSC_MSB_MASK | FTM_CnSC_ELSB_MASK;
+    10e0:	79fa      	ldrb	r2, [r7, #7]
+    10e2:	4b21      	ldr	r3, [pc, #132]	; (1168 <pwm_init+0x370>)
+    10e4:	f853 2022 	ldr.w	r2, [r3, r2, lsl #2]
+    10e8:	79bb      	ldrb	r3, [r7, #6]
+    10ea:	3301      	adds	r3, #1
+    10ec:	00db      	lsls	r3, r3, #3
+    10ee:	4413      	add	r3, r2
+    10f0:	2228      	movs	r2, #40	; 0x28
+    10f2:	605a      	str	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:304
+	// ELSnB:ELSnA = 11   Low-true pulses   (set Output on match)
+	// Edge-aligned PWM  边沿对齐PWM波   《k16 reference manual.pdf》  P944  或者  《K60P144M100SF2RM.pdf》P1001
+
+
+	/******************** 配置时钟和分频 ********************/
+	FTM_SC_REG(FTMx[ftmModule])    = FTM_SC_CPWMS_MASK | FTM_SC_PS(sc_ps) | FTM_SC_CLKS(1);  //没有使能溢出中断
+    10f4:	79fa      	ldrb	r2, [r7, #7]
+    10f6:	4b1c      	ldr	r3, [pc, #112]	; (1168 <pwm_init+0x370>)
+    10f8:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    10fc:	7dfa      	ldrb	r2, [r7, #23]
+    10fe:	f002 0207 	and.w	r2, r2, #7
+    1102:	f042 0228 	orr.w	r2, r2, #40	; 0x28
+    1106:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:305
+	FTM_CNTIN_REG(FTMx[ftmModule]) = 0;                                                      // Channel (n) Value  。设置脉冲宽度：(CnV - CNTIN).
+    1108:	79fa      	ldrb	r2, [r7, #7]
+    110a:	4b17      	ldr	r3, [pc, #92]	; (1168 <pwm_init+0x370>)
+    110c:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1110:	2200      	movs	r2, #0
+    1112:	64da      	str	r2, [r3, #76]	; 0x4c
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:306
+	FTM_MOD_REG(FTMx[ftmModule])   = mod;                                                    //Modulo value模数, EPWM的周期为 ：MOD - CNTIN + 0x0001
+    1114:	79fa      	ldrb	r2, [r7, #7]
+    1116:	4b14      	ldr	r3, [pc, #80]	; (1168 <pwm_init+0x370>)
+    1118:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    111c:	89fa      	ldrh	r2, [r7, #14]
+    111e:	609a      	str	r2, [r3, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:307
+	FTM_CNTIN_REG(FTMx[ftmModule]) = 0;                                                      //Counter Initial Value 计数器初始化值
+    1120:	79fa      	ldrb	r2, [r7, #7]
+    1122:	4b11      	ldr	r3, [pc, #68]	; (1168 <pwm_init+0x370>)
+    1124:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1128:	2200      	movs	r2, #0
+    112a:	64da      	str	r2, [r3, #76]	; 0x4c
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:308
+	FTM_CnV_REG(FTMx[ftmModule], channel) = cv;
+    112c:	79fa      	ldrb	r2, [r7, #7]
+    112e:	4b0e      	ldr	r3, [pc, #56]	; (1168 <pwm_init+0x370>)
+    1130:	f853 1022 	ldr.w	r1, [r3, r2, lsl #2]
+    1134:	79bb      	ldrb	r3, [r7, #6]
+    1136:	89ba      	ldrh	r2, [r7, #12]
+    1138:	3301      	adds	r3, #1
+    113a:	00db      	lsls	r3, r3, #3
+    113c:	440b      	add	r3, r1
+    113e:	609a      	str	r2, [r3, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:309
+	FTM_CNT_REG(FTMx[ftmModule])   = 0;                                                      //计数器。只有低16位可用
+    1140:	79fa      	ldrb	r2, [r7, #7]
+    1142:	4b09      	ldr	r3, [pc, #36]	; (1168 <pwm_init+0x370>)
+    1144:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1148:	2200      	movs	r2, #0
+    114a:	605a      	str	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:310
+	FTM_OUTINIT_REG(FTMx[ftmModule])=0;
+    114c:	79fa      	ldrb	r2, [r7, #7]
+    114e:	4b06      	ldr	r3, [pc, #24]	; (1168 <pwm_init+0x370>)
+    1150:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1154:	2200      	movs	r2, #0
+    1156:	65da      	str	r2, [r3, #92]	; 0x5c
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:311
+	return 0;
+    1158:	2300      	movs	r3, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:312
+}
+    115a:	4618      	mov	r0, r3
+    115c:	371c      	adds	r7, #28
+    115e:	46bd      	mov	sp, r7
+    1160:	f85d 7b04 	ldr.w	r7, [sp], #4
+    1164:	4770      	bx	lr
+    1166:	bf00      	nop
+    1168:	1fff0000 	.word	0x1fff0000
+
+0000116c <pwm_set>:
+pwm_set():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:323
+//			period：周期 单位微秒（比如0.1ms为100,1ms为1000）
+//			duty：占空比    0~PWM_ACCURACY(在PWM.h中定义)
+//函数返回：无
+//=========================================================================
+uint8_t pwm_set(uint8_t ftmModule, uint8_t channel, uint32_t period, uint16_t duty)
+{
+    116c:	b480      	push	{r7}
+    116e:	b087      	sub	sp, #28
+    1170:	af00      	add	r7, sp, #0
+    1172:	603a      	str	r2, [r7, #0]
+    1174:	4602      	mov	r2, r0
+    1176:	71fa      	strb	r2, [r7, #7]
+    1178:	460a      	mov	r2, r1
+    117a:	71ba      	strb	r2, [r7, #6]
+    117c:	80bb      	strh	r3, [r7, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:324
+	uint32_t clk_hz = (bus_clk_khz * 1000) >> 1;        //bus频率/2
+    117e:	4b41      	ldr	r3, [pc, #260]	; (1284 <pwm_set+0x118>)
+    1180:	613b      	str	r3, [r7, #16]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:329
+	uint16_t cv;
+	uint16_t mod;
+    uint8_t sc_ps;
+
+	if(!( (ftmModule == FTM0) || ( (ftmModule == FTM1 || ftmModule == FTM2 ) && (channel <= FTMCH1)) )) //检查传递进来的通道是否正确
+    1182:	79fb      	ldrb	r3, [r7, #7]
+    1184:	2b00      	cmp	r3, #0
+    1186:	d00a      	beq.n	119e <pwm_set+0x32>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:329 (discriminator 1)
+    1188:	79fb      	ldrb	r3, [r7, #7]
+    118a:	2b01      	cmp	r3, #1
+    118c:	d002      	beq.n	1194 <pwm_set+0x28>
+    118e:	79fb      	ldrb	r3, [r7, #7]
+    1190:	2b02      	cmp	r3, #2
+    1192:	d102      	bne.n	119a <pwm_set+0x2e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:329 (discriminator 2)
+    1194:	79bb      	ldrb	r3, [r7, #6]
+    1196:	2b01      	cmp	r3, #1
+    1198:	d901      	bls.n	119e <pwm_set+0x32>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:330
+		return 1;
+    119a:	2301      	movs	r3, #1
+    119c:	e06b      	b.n	1276 <pwm_set+0x10a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:331
+	if(!( period <= (clk_hz >> 1) ))    //检测 频率 是否正常 ,频率必须小于时钟二分之一
+    119e:	693b      	ldr	r3, [r7, #16]
+    11a0:	085a      	lsrs	r2, r3, #1
+    11a2:	683b      	ldr	r3, [r7, #0]
+    11a4:	429a      	cmp	r2, r3
+    11a6:	d201      	bcs.n	11ac <pwm_set+0x40>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:332
+		return 2;
+    11a8:	2302      	movs	r3, #2
+    11aa:	e064      	b.n	1276 <pwm_set+0x10a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:333
+	if(!(duty <= PWM_ACCURACY))     //检测 占空比是否合理
+    11ac:	88ba      	ldrh	r2, [r7, #4]
+    11ae:	f242 7310 	movw	r3, #10000	; 0x2710
+    11b2:	429a      	cmp	r2, r3
+    11b4:	d901      	bls.n	11ba <pwm_set+0x4e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:334
+		return 3;
+    11b6:	2303      	movs	r3, #3
+    11b8:	e05d      	b.n	1276 <pwm_set+0x10a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:338
+
+
+	//占空比 = (CnV-CNTIN)/(MOD-CNTIN+1)
+	mod = FTM_MOD_REG(FTMx[ftmModule]);        //读取 MOD 的值
+    11ba:	79fa      	ldrb	r2, [r7, #7]
+    11bc:	4b32      	ldr	r3, [pc, #200]	; (1288 <pwm_set+0x11c>)
+    11be:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    11c2:	689b      	ldr	r3, [r3, #8]
+    11c4:	81fb      	strh	r3, [r7, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:340
+
+	cv = (duty * (mod - 0 + 1)) / PWM_ACCURACY;
+    11c6:	88bb      	ldrh	r3, [r7, #4]
+    11c8:	89fa      	ldrh	r2, [r7, #14]
+    11ca:	3201      	adds	r2, #1
+    11cc:	fb02 f303 	mul.w	r3, r2, r3
+    11d0:	4a2e      	ldr	r2, [pc, #184]	; (128c <pwm_set+0x120>)
+    11d2:	fb82 1203 	smull	r1, r2, r2, r3
+    11d6:	1312      	asrs	r2, r2, #12
+    11d8:	17db      	asrs	r3, r3, #31
+    11da:	1ad3      	subs	r3, r2, r3
+    11dc:	81bb      	strh	r3, [r7, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:346
+
+	// 配置FTM通道值
+	//FTM_CnV_REG(FTMx[ftmModule], channel) = cv;
+
+	/*       计算频率设置        */
+	mod = (clk_hz >> 16 ) / period ;
+    11de:	693b      	ldr	r3, [r7, #16]
+    11e0:	0c1a      	lsrs	r2, r3, #16
+    11e2:	683b      	ldr	r3, [r7, #0]
+    11e4:	fbb2 f3f3 	udiv	r3, r2, r3
+    11e8:	81fb      	strh	r3, [r7, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:347
+	for(sc_ps = 0; (mod >> sc_ps) >= 1; sc_ps++);
+    11ea:	2300      	movs	r3, #0
+    11ec:	75fb      	strb	r3, [r7, #23]
+    11ee:	e002      	b.n	11f6 <pwm_set+0x8a>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:347 (discriminator 2)
+    11f0:	7dfb      	ldrb	r3, [r7, #23]
+    11f2:	3301      	adds	r3, #1
+    11f4:	75fb      	strb	r3, [r7, #23]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:347 (discriminator 1)
+    11f6:	89fa      	ldrh	r2, [r7, #14]
+    11f8:	7dfb      	ldrb	r3, [r7, #23]
+    11fa:	fa42 f303 	asr.w	r3, r2, r3
+    11fe:	2b00      	cmp	r3, #0
+    1200:	dcf6      	bgt.n	11f0 <pwm_set+0x84>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:348
+	mod = (clk_hz >> sc_ps) / period;
+    1202:	7dfb      	ldrb	r3, [r7, #23]
+    1204:	693a      	ldr	r2, [r7, #16]
+    1206:	40da      	lsrs	r2, r3
+    1208:	683b      	ldr	r3, [r7, #0]
+    120a:	fbb2 f3f3 	udiv	r3, r2, r3
+    120e:	81fb      	strh	r3, [r7, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:357
+
+
+
+
+	/******************** 配置时钟和分频 ********************/
+	FTM_SC_REG(FTMx[ftmModule])    = FTM_SC_CPWMS_MASK | FTM_SC_PS(sc_ps) | FTM_SC_CLKS(1);  //没有使能溢出中断
+    1210:	79fa      	ldrb	r2, [r7, #7]
+    1212:	4b1d      	ldr	r3, [pc, #116]	; (1288 <pwm_set+0x11c>)
+    1214:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1218:	7dfa      	ldrb	r2, [r7, #23]
+    121a:	f002 0207 	and.w	r2, r2, #7
+    121e:	f042 0228 	orr.w	r2, r2, #40	; 0x28
+    1222:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:358
+	FTM_CNTIN_REG(FTMx[ftmModule]) = 0;                                                      // Channel (n) Value  。设置脉冲宽度：(CnV - CNTIN).
+    1224:	79fa      	ldrb	r2, [r7, #7]
+    1226:	4b18      	ldr	r3, [pc, #96]	; (1288 <pwm_set+0x11c>)
+    1228:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    122c:	2200      	movs	r2, #0
+    122e:	64da      	str	r2, [r3, #76]	; 0x4c
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:359
+	FTM_MOD_REG(FTMx[ftmModule])   = mod;                                                    //Modulo value模数, EPWM的周期为 ：MOD - CNTIN + 0x0001
+    1230:	79fa      	ldrb	r2, [r7, #7]
+    1232:	4b15      	ldr	r3, [pc, #84]	; (1288 <pwm_set+0x11c>)
+    1234:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1238:	89fa      	ldrh	r2, [r7, #14]
+    123a:	609a      	str	r2, [r3, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:360
+	FTM_CNTIN_REG(FTMx[ftmModule]) = 0;                                                      //Counter Initial Value 计数器初始化值
+    123c:	79fa      	ldrb	r2, [r7, #7]
+    123e:	4b12      	ldr	r3, [pc, #72]	; (1288 <pwm_set+0x11c>)
+    1240:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1244:	2200      	movs	r2, #0
+    1246:	64da      	str	r2, [r3, #76]	; 0x4c
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:361
+	FTM_CnV_REG(FTMx[ftmModule], channel) = cv;
+    1248:	79fa      	ldrb	r2, [r7, #7]
+    124a:	4b0f      	ldr	r3, [pc, #60]	; (1288 <pwm_set+0x11c>)
+    124c:	f853 1022 	ldr.w	r1, [r3, r2, lsl #2]
+    1250:	79bb      	ldrb	r3, [r7, #6]
+    1252:	89ba      	ldrh	r2, [r7, #12]
+    1254:	3301      	adds	r3, #1
+    1256:	00db      	lsls	r3, r3, #3
+    1258:	440b      	add	r3, r1
+    125a:	609a      	str	r2, [r3, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:362
+	FTM_CNT_REG(FTMx[ftmModule])   = 0;                                                      //计数器。只有低16位可用
+    125c:	79fa      	ldrb	r2, [r7, #7]
+    125e:	4b0a      	ldr	r3, [pc, #40]	; (1288 <pwm_set+0x11c>)
+    1260:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1264:	2200      	movs	r2, #0
+    1266:	605a      	str	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:363
+	FTM_OUTINIT_REG(FTMx[ftmModule])=0;
+    1268:	79fa      	ldrb	r2, [r7, #7]
+    126a:	4b07      	ldr	r3, [pc, #28]	; (1288 <pwm_set+0x11c>)
+    126c:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    1270:	2200      	movs	r2, #0
+    1272:	65da      	str	r2, [r3, #92]	; 0x5c
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:364
+	return 0;
+    1274:	2300      	movs	r3, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160324\Debug/../05_Driver/pwm/pwm.c:365
+}
+    1276:	4618      	mov	r0, r3
+    1278:	371c      	adds	r7, #28
+    127a:	46bd      	mov	sp, r7
+    127c:	f85d 7b04 	ldr.w	r7, [sp], #4
+    1280:	4770      	bx	lr
+    1282:	bf00      	nop
+    1284:	017d7840 	.word	0x017d7840
+    1288:	1fff0000 	.word	0x1fff0000
+    128c:	68db8bad 	.word	0x68db8bad
+
+00001290 <gpio_port_pin_resolution>:
+gpio_port_pin_resolution():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:25
+//	      pin:引脚号（0~31，实际取值由芯片的物理引脚决定）
+//功能概要：将传进参数port_pin进行解析，得出具体端口号与引脚号（例：PORTD|(3)
+//        解析为PORTD与3，并将其分别赋值给port与pin）
+//===========================================================================
+static void gpio_port_pin_resolution(uint16_t port_pin,uint8_t* port,uint8_t* pin)
+{
+    1290:	b480      	push	{r7}
+    1292:	b085      	sub	sp, #20
+    1294:	af00      	add	r7, sp, #0
+    1296:	4603      	mov	r3, r0
+    1298:	60b9      	str	r1, [r7, #8]
+    129a:	607a      	str	r2, [r7, #4]
+    129c:	81fb      	strh	r3, [r7, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:26
+    *port = port_pin>>8;
+    129e:	89fb      	ldrh	r3, [r7, #14]
+    12a0:	0a1b      	lsrs	r3, r3, #8
+    12a2:	b29b      	uxth	r3, r3
+    12a4:	b2da      	uxtb	r2, r3
+    12a6:	68bb      	ldr	r3, [r7, #8]
+    12a8:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:27
+    * pin = port_pin;
+    12aa:	89fb      	ldrh	r3, [r7, #14]
+    12ac:	b2da      	uxtb	r2, r3
+    12ae:	687b      	ldr	r3, [r7, #4]
+    12b0:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:28
+}
+    12b2:	3714      	adds	r7, #20
+    12b4:	46bd      	mov	sp, r7
+    12b6:	f85d 7b04 	ldr.w	r7, [sp], #4
+    12ba:	4770      	bx	lr
+
+000012bc <gpio_init>:
+gpio_init():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:45
+//        state：端口引脚初始状态（0=低电平，1=高电平）
+//功能概要：初始化指定端口引脚作为GPIO引脚功能，并定义为输入或输出，若是输出，
+//        还指定初始状态是低电平或高电平
+//===========================================================================
+void gpio_init(uint16_t port_pin, uint8_t dir, uint8_t state)
+{
+    12bc:	b580      	push	{r7, lr}
+    12be:	b086      	sub	sp, #24
+    12c0:	af00      	add	r7, sp, #0
+    12c2:	4613      	mov	r3, r2
+    12c4:	4602      	mov	r2, r0
+    12c6:	80fa      	strh	r2, [r7, #6]
+    12c8:	460a      	mov	r2, r1
+    12ca:	717a      	strb	r2, [r7, #5]
+    12cc:	713b      	strb	r3, [r7, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:52
+    PORT_MemMapPtr port_ptr;    //声明port_ptr为PORT结构体类型指针
+    GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针
+    uint8_t port;                //端口号
+    uint8_t pin;                 //引脚号
+    //获得端口号与引脚号，分别赋给port、pin
+    gpio_port_pin_resolution(port_pin , &port ,	 &pin);
+    12ce:	88f9      	ldrh	r1, [r7, #6]
+    12d0:	f107 020f 	add.w	r2, r7, #15
+    12d4:	f107 030e 	add.w	r3, r7, #14
+    12d8:	4608      	mov	r0, r1
+    12da:	4611      	mov	r1, r2
+    12dc:	461a      	mov	r2, r3
+    12de:	f7ff ffd7 	bl	1290 <gpio_port_pin_resolution>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:55
+
+    //根据端口号port，给局部变量port_ptr、gpio_ptr赋值(获得两个基地址)
+    port_ptr = PORT_ARR[port];  //获得PORT模块相应口基地址
+    12e2:	7bfb      	ldrb	r3, [r7, #15]
+    12e4:	461a      	mov	r2, r3
+    12e6:	4b21      	ldr	r3, [pc, #132]	; (136c <gpio_init+0xb0>)
+    12e8:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    12ec:	617b      	str	r3, [r7, #20]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:56
+    gpio_ptr = GPIO_ARR[port];  //获得GPIO模块相应口基地址
+    12ee:	7bfb      	ldrb	r3, [r7, #15]
+    12f0:	461a      	mov	r2, r3
+    12f2:	4b1f      	ldr	r3, [pc, #124]	; (1370 <gpio_init+0xb4>)
+    12f4:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    12f8:	613b      	str	r3, [r7, #16]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:59
+
+    //根据引脚号pin,指定该引脚功能为GPIO功能(即令引脚控制寄存器的MUX=0b001)
+    port_ptr->PCR[pin] &= ~PORT_PCR_MUX_MASK;   //先令MUX=0b000
+    12fa:	7bbb      	ldrb	r3, [r7, #14]
+    12fc:	461a      	mov	r2, r3
+    12fe:	7bbb      	ldrb	r3, [r7, #14]
+    1300:	4619      	mov	r1, r3
+    1302:	697b      	ldr	r3, [r7, #20]
+    1304:	f853 3021 	ldr.w	r3, [r3, r1, lsl #2]
+    1308:	f423 61e0 	bic.w	r1, r3, #1792	; 0x700
+    130c:	697b      	ldr	r3, [r7, #20]
+    130e:	f843 1022 	str.w	r1, [r3, r2, lsl #2]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:60
+    port_ptr->PCR[pin] |= PORT_PCR_MUX(1);      //再令MUX=0b001
+    1312:	7bbb      	ldrb	r3, [r7, #14]
+    1314:	461a      	mov	r2, r3
+    1316:	7bbb      	ldrb	r3, [r7, #14]
+    1318:	4619      	mov	r1, r3
+    131a:	697b      	ldr	r3, [r7, #20]
+    131c:	f853 3021 	ldr.w	r3, [r3, r1, lsl #2]
+    1320:	f443 7180 	orr.w	r1, r3, #256	; 0x100
+    1324:	697b      	ldr	r3, [r7, #20]
+    1326:	f843 1022 	str.w	r1, [r3, r2, lsl #2]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:63
+    
+    //根据带入参数dir，决定引脚为输出还是输入
+    if (1 == dir)   //希望为输出
+    132a:	797b      	ldrb	r3, [r7, #5]
+    132c:	2b01      	cmp	r3, #1
+    132e:	d10f      	bne.n	1350 <gpio_init+0x94>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:65
+       {
+         BSET(pin,gpio_ptr->PDDR);   //数据方向寄存器的pin位=1，定义为输出
+    1330:	693b      	ldr	r3, [r7, #16]
+    1332:	695a      	ldr	r2, [r3, #20]
+    1334:	7bbb      	ldrb	r3, [r7, #14]
+    1336:	2101      	movs	r1, #1
+    1338:	fa01 f303 	lsl.w	r3, r1, r3
+    133c:	431a      	orrs	r2, r3
+    133e:	693b      	ldr	r3, [r7, #16]
+    1340:	615a      	str	r2, [r3, #20]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:66
+         gpio_set(port_pin, state);  //调用gpio_set函数，设定引脚初始状态
+    1342:	88fa      	ldrh	r2, [r7, #6]
+    1344:	793b      	ldrb	r3, [r7, #4]
+    1346:	4610      	mov	r0, r2
+    1348:	4619      	mov	r1, r3
+    134a:	f000 f813 	bl	1374 <gpio_set>
+    134e:	e009      	b.n	1364 <gpio_init+0xa8>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:69
+       }
+       else         //希望为输入
+       BCLR(pin,gpio_ptr->PDDR);    //数据方向寄存器的pin位=0，定义为输入
+    1350:	693b      	ldr	r3, [r7, #16]
+    1352:	695a      	ldr	r2, [r3, #20]
+    1354:	7bbb      	ldrb	r3, [r7, #14]
+    1356:	2101      	movs	r1, #1
+    1358:	fa01 f303 	lsl.w	r3, r1, r3
+    135c:	43db      	mvns	r3, r3
+    135e:	401a      	ands	r2, r3
+    1360:	693b      	ldr	r3, [r7, #16]
+    1362:	615a      	str	r2, [r3, #20]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:70
+}
+    1364:	3718      	adds	r7, #24
+    1366:	46bd      	mov	sp, r7
+    1368:	bd80      	pop	{r7, pc}
+    136a:	bf00      	nop
+    136c:	00001ad4 	.word	0x00001ad4
+    1370:	00001ae8 	.word	0x00001ae8
+
+00001374 <gpio_set>:
+gpio_set():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:81
+//参数说明：port_pin：端口号|引脚号（例：PORTD|(3) 表示为D口3号脚）
+//		  state：引脚初始状态（0=低电平，1=高电平）
+//功能概要：设定引脚状态为低电平或高电平
+//===========================================================================
+void gpio_set(uint16_t port_pin, uint8_t state)
+{
+    1374:	b580      	push	{r7, lr}
+    1376:	b084      	sub	sp, #16
+    1378:	af00      	add	r7, sp, #0
+    137a:	4602      	mov	r2, r0
+    137c:	460b      	mov	r3, r1
+    137e:	80fa      	strh	r2, [r7, #6]
+    1380:	717b      	strb	r3, [r7, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:85
+    GPIO_MemMapPtr gpio_ptr;    //声明port_ptr为GPIO结构体类型指针
+    uint8_t port;
+    uint8_t pin;
+    gpio_port_pin_resolution(port_pin , &port , &pin);
+    1382:	88f9      	ldrh	r1, [r7, #6]
+    1384:	f107 020b 	add.w	r2, r7, #11
+    1388:	f107 030a 	add.w	r3, r7, #10
+    138c:	4608      	mov	r0, r1
+    138e:	4611      	mov	r1, r2
+    1390:	461a      	mov	r2, r3
+    1392:	f7ff ff7d 	bl	1290 <gpio_port_pin_resolution>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:88
+
+    //根据带入参数port，给局部变量gpio_ptr赋值（GPIO基地址）
+    gpio_ptr = GPIO_ARR[port];
+    1396:	7afb      	ldrb	r3, [r7, #11]
+    1398:	461a      	mov	r2, r3
+    139a:	4b0f      	ldr	r3, [pc, #60]	; (13d8 <gpio_set+0x64>)
+    139c:	f853 3022 	ldr.w	r3, [r3, r2, lsl #2]
+    13a0:	60fb      	str	r3, [r7, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:91
+
+    //根据带入参数state，决定引脚为输出1还是0
+    if (1==state)
+    13a2:	797b      	ldrb	r3, [r7, #5]
+    13a4:	2b01      	cmp	r3, #1
+    13a6:	d109      	bne.n	13bc <gpio_set+0x48>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:92
+        {BSET(pin,gpio_ptr->PDOR);}
+    13a8:	68fb      	ldr	r3, [r7, #12]
+    13aa:	681a      	ldr	r2, [r3, #0]
+    13ac:	7abb      	ldrb	r3, [r7, #10]
+    13ae:	2101      	movs	r1, #1
+    13b0:	fa01 f303 	lsl.w	r3, r1, r3
+    13b4:	431a      	orrs	r2, r3
+    13b6:	68fb      	ldr	r3, [r7, #12]
+    13b8:	601a      	str	r2, [r3, #0]
+    13ba:	e009      	b.n	13d0 <gpio_set+0x5c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:94
+    else
+	{BCLR(pin,gpio_ptr->PDOR);}
+    13bc:	68fb      	ldr	r3, [r7, #12]
+    13be:	681a      	ldr	r2, [r3, #0]
+    13c0:	7abb      	ldrb	r3, [r7, #10]
+    13c2:	2101      	movs	r1, #1
+    13c4:	fa01 f303 	lsl.w	r3, r1, r3
+    13c8:	43db      	mvns	r3, r3
+    13ca:	401a      	ands	r2, r3
+    13cc:	68fb      	ldr	r3, [r7, #12]
+    13ce:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../05_Driver/gpio/gpio.c:95
+}
+    13d0:	3710      	adds	r7, #16
+    13d2:	46bd      	mov	sp, r7
+    13d4:	bd80      	pop	{r7, pc}
+    13d6:	bf00      	nop
+    13d8:	00001ae8 	.word	0x00001ae8
+
+000013dc <zero_fill_bss>:
+zero_fill_bss():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:61
+
+//#endif
+
+static void zero_fill_bss(void)
+
+{
+    13dc:	b580      	push	{r7, lr}
+    13de:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:64
+	extern char __START_BSS[];
+	extern char __END_BSS[];
+	memset(__START_BSS, 0, (__END_BSS - __START_BSS));
+    13e0:	4a04      	ldr	r2, [pc, #16]	; (13f4 <zero_fill_bss+0x18>)
+    13e2:	4b05      	ldr	r3, [pc, #20]	; (13f8 <zero_fill_bss+0x1c>)
+    13e4:	1ad3      	subs	r3, r2, r3
+    13e6:	4804      	ldr	r0, [pc, #16]	; (13f8 <zero_fill_bss+0x1c>)
+    13e8:	2100      	movs	r1, #0
+    13ea:	461a      	mov	r2, r3
+    13ec:	f000 fb54 	bl	1a98 <memset>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:65
+}
+    13f0:	bd80      	pop	{r7, pc}
+    13f2:	bf00      	nop
+    13f4:	1fff00fc 	.word	0x1fff00fc
+    13f8:	1fff006c 	.word	0x1fff006c
+
+000013fc <gpio_io_init>:
+gpio_io_init():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:68
+extern uint32_t __vector_table[];
+void gpio_io_init( void )
+{
+    13fc:	b480      	push	{r7}
+    13fe:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:70
+    /* Enable clock gating to all ports */
+    SIM_SCGC5 |=   SIM_SCGC5_PORTA_MASK \
+    1400:	4907      	ldr	r1, [pc, #28]	; (1420 <gpio_io_init+0x24>)
+    1402:	4b07      	ldr	r3, [pc, #28]	; (1420 <gpio_io_init+0x24>)
+    1404:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+    1408:	3318      	adds	r3, #24
+    140a:	681b      	ldr	r3, [r3, #0]
+    140c:	f443 5278 	orr.w	r2, r3, #15872	; 0x3e00
+    1410:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+    1414:	3318      	adds	r3, #24
+    1416:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:75
+                 | SIM_SCGC5_PORTB_MASK \
+                 | SIM_SCGC5_PORTC_MASK \
+                 | SIM_SCGC5_PORTD_MASK \
+                 | SIM_SCGC5_PORTE_MASK;
+}
+    1418:	46bd      	mov	sp, r7
+    141a:	f85d 7b04 	ldr.w	r7, [sp], #4
+    141e:	4770      	bx	lr
+    1420:	40047000 	.word	0x40047000
+
+00001424 <wdog_disable1>:
+wdog_disable1():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:77
+void wdog_disable1(void)
+{  
+    1424:	b480      	push	{r7}
+    1426:	b083      	sub	sp, #12
+    1428:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:80
+	WDOG_MemMapPtr reg;
+	
+	reg = WDOG_BASE_PTR;
+    142a:	4b0b      	ldr	r3, [pc, #44]	; (1458 <wdog_disable1+0x34>)
+    142c:	607b      	str	r3, [r7, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:82
+    /* unlock watchdog */
+    reg->UNLOCK = 0xc520;
+    142e:	687b      	ldr	r3, [r7, #4]
+    1430:	f24c 5220 	movw	r2, #50464	; 0xc520
+    1434:	81da      	strh	r2, [r3, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:83
+    reg->UNLOCK = 0xd928;
+    1436:	687b      	ldr	r3, [r7, #4]
+    1438:	f64d 1228 	movw	r2, #55592	; 0xd928
+    143c:	81da      	strh	r2, [r3, #14]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:85
+    /* disable watchdog */
+    reg->STCTRLH &= ~(WDOG_STCTRLH_WDOGEN_MASK);
+    143e:	687b      	ldr	r3, [r7, #4]
+    1440:	881b      	ldrh	r3, [r3, #0]
+    1442:	b29b      	uxth	r3, r3
+    1444:	f023 0301 	bic.w	r3, r3, #1
+    1448:	b29a      	uxth	r2, r3
+    144a:	687b      	ldr	r3, [r7, #4]
+    144c:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:86
+}
+    144e:	370c      	adds	r7, #12
+    1450:	46bd      	mov	sp, r7
+    1452:	f85d 7b04 	ldr.w	r7, [sp], #4
+    1456:	4770      	bx	lr
+    1458:	40052000 	.word	0x40052000
+
+0000145c <__flush_cache>:
+__flush_cache():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:101
+
+/*
+ * Routine to flush cache follow the ROM to RAM copy
+ */
+void __flush_cache(unsigned long dst, unsigned long size)
+{
+    145c:	b480      	push	{r7}
+    145e:	b083      	sub	sp, #12
+    1460:	af00      	add	r7, sp, #0
+    1462:	6078      	str	r0, [r7, #4]
+    1464:	6039      	str	r1, [r7, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:103
+	//TBD
+}
+    1466:	370c      	adds	r7, #12
+    1468:	46bd      	mov	sp, r7
+    146a:	f85d 7b04 	ldr.w	r7, [sp], #4
+    146e:	4770      	bx	lr
+
+00001470 <__copy_rom_section>:
+__copy_rom_section():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:110
+
+/*
+ *	Routine to copy a single section from ROM to RAM ...
+ */
+void __copy_rom_section(unsigned long dst, unsigned long src, unsigned long size)
+{
+    1470:	b480      	push	{r7}
+    1472:	b08b      	sub	sp, #44	; 0x2c
+    1474:	af00      	add	r7, sp, #0
+    1476:	60f8      	str	r0, [r7, #12]
+    1478:	60b9      	str	r1, [r7, #8]
+    147a:	607a      	str	r2, [r7, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:111
+	unsigned long len = size;
+    147c:	687b      	ldr	r3, [r7, #4]
+    147e:	627b      	str	r3, [r7, #36]	; 0x24
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:113
+
+	const int size_int = sizeof(int);
+    1480:	2304      	movs	r3, #4
+    1482:	623b      	str	r3, [r7, #32]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:114
+	const int mask_int = sizeof(int)-1;
+    1484:	2303      	movs	r3, #3
+    1486:	61fb      	str	r3, [r7, #28]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:116
+
+	const int size_short = sizeof(short);
+    1488:	2302      	movs	r3, #2
+    148a:	61bb      	str	r3, [r7, #24]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:117
+	const int mask_short = sizeof(short)-1;
+    148c:	2301      	movs	r3, #1
+    148e:	617b      	str	r3, [r7, #20]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:119
+
+	const int size_char = sizeof(char);
+    1490:	2301      	movs	r3, #1
+    1492:	613b      	str	r3, [r7, #16]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:121
+
+	if( dst == src || size == 0)
+    1494:	68fa      	ldr	r2, [r7, #12]
+    1496:	68bb      	ldr	r3, [r7, #8]
+    1498:	429a      	cmp	r2, r3
+    149a:	d002      	beq.n	14a2 <__copy_rom_section+0x32>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:121 (discriminator 1)
+    149c:	687b      	ldr	r3, [r7, #4]
+    149e:	2b00      	cmp	r3, #0
+    14a0:	d100      	bne.n	14a4 <__copy_rom_section+0x34>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:123
+	{
+		return;
+    14a2:	e051      	b.n	1548 <__copy_rom_section+0xd8>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:127
+	}
+
+
+	while( len > 0)
+    14a4:	e04d      	b.n	1542 <__copy_rom_section+0xd2>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:130
+	{
+
+		if( !(src & mask_int) && !(dst & mask_int) && len >= size_int)
+    14a6:	69fa      	ldr	r2, [r7, #28]
+    14a8:	68bb      	ldr	r3, [r7, #8]
+    14aa:	4013      	ands	r3, r2
+    14ac:	2b00      	cmp	r3, #0
+    14ae:	d119      	bne.n	14e4 <__copy_rom_section+0x74>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:130 (discriminator 1)
+    14b0:	69fa      	ldr	r2, [r7, #28]
+    14b2:	68fb      	ldr	r3, [r7, #12]
+    14b4:	4013      	ands	r3, r2
+    14b6:	2b00      	cmp	r3, #0
+    14b8:	d114      	bne.n	14e4 <__copy_rom_section+0x74>
+    14ba:	6a3a      	ldr	r2, [r7, #32]
+    14bc:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+    14be:	429a      	cmp	r2, r3
+    14c0:	d810      	bhi.n	14e4 <__copy_rom_section+0x74>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:132
+		{
+			*((int *)dst)  = *((int*)src);
+    14c2:	68fb      	ldr	r3, [r7, #12]
+    14c4:	68ba      	ldr	r2, [r7, #8]
+    14c6:	6812      	ldr	r2, [r2, #0]
+    14c8:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:133
+			dst += size_int;
+    14ca:	6a3b      	ldr	r3, [r7, #32]
+    14cc:	68fa      	ldr	r2, [r7, #12]
+    14ce:	4413      	add	r3, r2
+    14d0:	60fb      	str	r3, [r7, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:134
+			src += size_int;
+    14d2:	6a3b      	ldr	r3, [r7, #32]
+    14d4:	68ba      	ldr	r2, [r7, #8]
+    14d6:	4413      	add	r3, r2
+    14d8:	60bb      	str	r3, [r7, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:135
+			len -= size_int;
+    14da:	6a3b      	ldr	r3, [r7, #32]
+    14dc:	6a7a      	ldr	r2, [r7, #36]	; 0x24
+    14de:	1ad3      	subs	r3, r2, r3
+    14e0:	627b      	str	r3, [r7, #36]	; 0x24
+    14e2:	e02e      	b.n	1542 <__copy_rom_section+0xd2>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:137
+		}
+		else if( !(src & mask_short) && !(dst & mask_short) && len >= size_short)
+    14e4:	697a      	ldr	r2, [r7, #20]
+    14e6:	68bb      	ldr	r3, [r7, #8]
+    14e8:	4013      	ands	r3, r2
+    14ea:	2b00      	cmp	r3, #0
+    14ec:	d119      	bne.n	1522 <__copy_rom_section+0xb2>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:137 (discriminator 1)
+    14ee:	697a      	ldr	r2, [r7, #20]
+    14f0:	68fb      	ldr	r3, [r7, #12]
+    14f2:	4013      	ands	r3, r2
+    14f4:	2b00      	cmp	r3, #0
+    14f6:	d114      	bne.n	1522 <__copy_rom_section+0xb2>
+    14f8:	69ba      	ldr	r2, [r7, #24]
+    14fa:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+    14fc:	429a      	cmp	r2, r3
+    14fe:	d810      	bhi.n	1522 <__copy_rom_section+0xb2>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:139
+		{
+			*((short *)dst)  = *((short*)src);
+    1500:	68fb      	ldr	r3, [r7, #12]
+    1502:	68ba      	ldr	r2, [r7, #8]
+    1504:	8812      	ldrh	r2, [r2, #0]
+    1506:	801a      	strh	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:140
+			dst += size_short;
+    1508:	69bb      	ldr	r3, [r7, #24]
+    150a:	68fa      	ldr	r2, [r7, #12]
+    150c:	4413      	add	r3, r2
+    150e:	60fb      	str	r3, [r7, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:141
+			src += size_short;
+    1510:	69bb      	ldr	r3, [r7, #24]
+    1512:	68ba      	ldr	r2, [r7, #8]
+    1514:	4413      	add	r3, r2
+    1516:	60bb      	str	r3, [r7, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:142
+			len -= size_short;
+    1518:	69bb      	ldr	r3, [r7, #24]
+    151a:	6a7a      	ldr	r2, [r7, #36]	; 0x24
+    151c:	1ad3      	subs	r3, r2, r3
+    151e:	627b      	str	r3, [r7, #36]	; 0x24
+    1520:	e00f      	b.n	1542 <__copy_rom_section+0xd2>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:146
+		}
+		else
+		{
+			*((char *)dst)  = *((char*)src);
+    1522:	68fb      	ldr	r3, [r7, #12]
+    1524:	68ba      	ldr	r2, [r7, #8]
+    1526:	7812      	ldrb	r2, [r2, #0]
+    1528:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:147
+			dst += size_char;
+    152a:	693b      	ldr	r3, [r7, #16]
+    152c:	68fa      	ldr	r2, [r7, #12]
+    152e:	4413      	add	r3, r2
+    1530:	60fb      	str	r3, [r7, #12]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:148
+			src += size_char;
+    1532:	693b      	ldr	r3, [r7, #16]
+    1534:	68ba      	ldr	r2, [r7, #8]
+    1536:	4413      	add	r3, r2
+    1538:	60bb      	str	r3, [r7, #8]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:149
+			len -= size_char;
+    153a:	693b      	ldr	r3, [r7, #16]
+    153c:	6a7a      	ldr	r2, [r7, #36]	; 0x24
+    153e:	1ad3      	subs	r3, r2, r3
+    1540:	627b      	str	r3, [r7, #36]	; 0x24
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:127 (discriminator 1)
+	{
+		return;
+	}
+
+
+	while( len > 0)
+    1542:	6a7b      	ldr	r3, [r7, #36]	; 0x24
+    1544:	2b00      	cmp	r3, #0
+    1546:	d1ae      	bne.n	14a6 <__copy_rom_section+0x36>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:152
+			dst += size_char;
+			src += size_char;
+			len -= size_char;
+		}
+	}
+}
+    1548:	372c      	adds	r7, #44	; 0x2c
+    154a:	46bd      	mov	sp, r7
+    154c:	f85d 7b04 	ldr.w	r7, [sp], #4
+    1550:	4770      	bx	lr
+    1552:	bf00      	nop
+
+00001554 <__copy_rom_sections_to_ram>:
+__copy_rom_sections_to_ram():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:164
+ *  It is a table of RomInfo
+ *	structures.  The final entry in the table has all-zero
+ *	fields.
+ */
+void __copy_rom_sections_to_ram(void)
+{
+    1554:	b590      	push	{r4, r7, lr}
+    1556:	b083      	sub	sp, #12
+    1558:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:168
+
+	int				index;
+
+	if (__S_romp == 0L) return;
+    155a:	4b2e      	ldr	r3, [pc, #184]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    155c:	2b00      	cmp	r3, #0
+    155e:	d100      	bne.n	1562 <__copy_rom_sections_to_ram+0xe>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:168 (discriminator 1)
+    1560:	e055      	b.n	160e <__copy_rom_sections_to_ram+0xba>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:173
+
+	/*
+	 *	Go through the entire table, copying sections from ROM to RAM.
+	 */
+	for (index = 0;
+    1562:	2300      	movs	r3, #0
+    1564:	607b      	str	r3, [r7, #4]
+    1566:	e033      	b.n	15d0 <__copy_rom_sections_to_ram+0x7c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:179
+		 __S_romp[index].Source != 0 ||
+		 __S_romp[index].Target != 0 ||
+		 __S_romp[index].Size != 0;
+		 ++index)
+	{
+		__copy_rom_section( __S_romp[index].Target,
+    1568:	492a      	ldr	r1, [pc, #168]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    156a:	687a      	ldr	r2, [r7, #4]
+    156c:	4613      	mov	r3, r2
+    156e:	005b      	lsls	r3, r3, #1
+    1570:	4413      	add	r3, r2
+    1572:	009b      	lsls	r3, r3, #2
+    1574:	440b      	add	r3, r1
+    1576:	6858      	ldr	r0, [r3, #4]
+    1578:	4926      	ldr	r1, [pc, #152]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    157a:	687a      	ldr	r2, [r7, #4]
+    157c:	4613      	mov	r3, r2
+    157e:	005b      	lsls	r3, r3, #1
+    1580:	4413      	add	r3, r2
+    1582:	009b      	lsls	r3, r3, #2
+    1584:	440b      	add	r3, r1
+    1586:	6819      	ldr	r1, [r3, #0]
+    1588:	4c22      	ldr	r4, [pc, #136]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    158a:	687a      	ldr	r2, [r7, #4]
+    158c:	4613      	mov	r3, r2
+    158e:	005b      	lsls	r3, r3, #1
+    1590:	4413      	add	r3, r2
+    1592:	009b      	lsls	r3, r3, #2
+    1594:	4423      	add	r3, r4
+    1596:	3308      	adds	r3, #8
+    1598:	681b      	ldr	r3, [r3, #0]
+    159a:	461a      	mov	r2, r3
+    159c:	f7ff ff68 	bl	1470 <__copy_rom_section>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:183
+							__S_romp[index].Source,
+							__S_romp[index].Size );
+
+		__flush_cache( __S_romp[index].Target, __S_romp[index].Size);
+    15a0:	491c      	ldr	r1, [pc, #112]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    15a2:	687a      	ldr	r2, [r7, #4]
+    15a4:	4613      	mov	r3, r2
+    15a6:	005b      	lsls	r3, r3, #1
+    15a8:	4413      	add	r3, r2
+    15aa:	009b      	lsls	r3, r3, #2
+    15ac:	440b      	add	r3, r1
+    15ae:	6859      	ldr	r1, [r3, #4]
+    15b0:	4818      	ldr	r0, [pc, #96]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    15b2:	687a      	ldr	r2, [r7, #4]
+    15b4:	4613      	mov	r3, r2
+    15b6:	005b      	lsls	r3, r3, #1
+    15b8:	4413      	add	r3, r2
+    15ba:	009b      	lsls	r3, r3, #2
+    15bc:	4403      	add	r3, r0
+    15be:	3308      	adds	r3, #8
+    15c0:	681b      	ldr	r3, [r3, #0]
+    15c2:	4608      	mov	r0, r1
+    15c4:	4619      	mov	r1, r3
+    15c6:	f7ff ff49 	bl	145c <__flush_cache>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:177
+	 */
+	for (index = 0;
+		 __S_romp[index].Source != 0 ||
+		 __S_romp[index].Target != 0 ||
+		 __S_romp[index].Size != 0;
+		 ++index)
+    15ca:	687b      	ldr	r3, [r7, #4]
+    15cc:	3301      	adds	r3, #1
+    15ce:	607b      	str	r3, [r7, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:174 (discriminator 1)
+
+	/*
+	 *	Go through the entire table, copying sections from ROM to RAM.
+	 */
+	for (index = 0;
+		 __S_romp[index].Source != 0 ||
+    15d0:	4910      	ldr	r1, [pc, #64]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    15d2:	687a      	ldr	r2, [r7, #4]
+    15d4:	4613      	mov	r3, r2
+    15d6:	005b      	lsls	r3, r3, #1
+    15d8:	4413      	add	r3, r2
+    15da:	009b      	lsls	r3, r3, #2
+    15dc:	440b      	add	r3, r1
+    15de:	681b      	ldr	r3, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:173 (discriminator 1)
+	if (__S_romp == 0L) return;
+
+	/*
+	 *	Go through the entire table, copying sections from ROM to RAM.
+	 */
+	for (index = 0;
+    15e0:	2b00      	cmp	r3, #0
+    15e2:	d1c1      	bne.n	1568 <__copy_rom_sections_to_ram+0x14>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:175
+		 __S_romp[index].Source != 0 ||
+		 __S_romp[index].Target != 0 ||
+    15e4:	490b      	ldr	r1, [pc, #44]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    15e6:	687a      	ldr	r2, [r7, #4]
+    15e8:	4613      	mov	r3, r2
+    15ea:	005b      	lsls	r3, r3, #1
+    15ec:	4413      	add	r3, r2
+    15ee:	009b      	lsls	r3, r3, #2
+    15f0:	440b      	add	r3, r1
+    15f2:	685b      	ldr	r3, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:174
+
+	/*
+	 *	Go through the entire table, copying sections from ROM to RAM.
+	 */
+	for (index = 0;
+		 __S_romp[index].Source != 0 ||
+    15f4:	2b00      	cmp	r3, #0
+    15f6:	d1b7      	bne.n	1568 <__copy_rom_sections_to_ram+0x14>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:176
+		 __S_romp[index].Target != 0 ||
+		 __S_romp[index].Size != 0;
+    15f8:	4906      	ldr	r1, [pc, #24]	; (1614 <__copy_rom_sections_to_ram+0xc0>)
+    15fa:	687a      	ldr	r2, [r7, #4]
+    15fc:	4613      	mov	r3, r2
+    15fe:	005b      	lsls	r3, r3, #1
+    1600:	4413      	add	r3, r2
+    1602:	009b      	lsls	r3, r3, #2
+    1604:	440b      	add	r3, r1
+    1606:	3308      	adds	r3, #8
+    1608:	681b      	ldr	r3, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:175
+	/*
+	 *	Go through the entire table, copying sections from ROM to RAM.
+	 */
+	for (index = 0;
+		 __S_romp[index].Source != 0 ||
+		 __S_romp[index].Target != 0 ||
+    160a:	2b00      	cmp	r3, #0
+    160c:	d1ac      	bne.n	1568 <__copy_rom_sections_to_ram+0x14>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:187
+
+		__flush_cache( __S_romp[index].Target, __S_romp[index].Size);
+
+
+	}
+}
+    160e:	370c      	adds	r7, #12
+    1610:	46bd      	mov	sp, r7
+    1612:	bd90      	pop	{r4, r7, pc}
+    1614:	00001b70 	.word	0x00001b70
+
+00001618 <__init_hardware>:
+__init_hardware():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:190
+
+void __init_hardware()
+{
+    1618:	b480      	push	{r7}
+    161a:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:191
+	SCB_VTOR = (uint32_t)__vector_table; /* Set the interrupt vector table position */
+    161c:	f04f 23e0 	mov.w	r3, #3758153728	; 0xe000e000
+    1620:	4a03      	ldr	r2, [pc, #12]	; (1630 <__init_hardware+0x18>)
+    1622:	f8c3 2d08 	str.w	r2, [r3, #3336]	; 0xd08
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:192
+}
+    1626:	46bd      	mov	sp, r7
+    1628:	f85d 7b04 	ldr.w	r7, [sp], #4
+    162c:	4770      	bx	lr
+    162e:	bf00      	nop
+    1630:	00000000 	.word	0x00000000
+
+00001634 <__thumb_startup>:
+__thumb_startup():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:195
+
+void __thumb_startup(void)
+{
+    1634:	b580      	push	{r7, lr}
+    1636:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:197
+	//设置看门狗
+    wdog_disable1();
+    1638:	f7ff fef4 	bl	1424 <wdog_disable1>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:199
+    //设置端口时钟门控
+    gpio_io_init();
+    163c:	f7ff fede 	bl	13fc <gpio_io_init>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:201
+	//
+    __init_hardware();
+    1640:	f7ff ffea 	bl	1618 <__init_hardware>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:203
+    //初始化全局变量
+	zero_fill_bss();
+    1644:	f7ff feca 	bl	13dc <zero_fill_bss>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:206
+	//拷贝ROM至RAM
+#if SUPPORT_ROM_TO_RAM
+	if (__S_romp != 0L)
+    1648:	4b08      	ldr	r3, [pc, #32]	; (166c <__thumb_startup+0x38>)
+    164a:	2b00      	cmp	r3, #0
+    164c:	d001      	beq.n	1652 <__thumb_startup+0x1e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:207
+		__copy_rom_sections_to_ram();
+    164e:	f7ff ff81 	bl	1554 <__copy_rom_sections_to_ram>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:214
+	//静态变量初始化
+//	__call_static_initializers();
+	//初始化用户变量
+//	__init_user();
+	//设置系统时钟
+	SystemClockSetup(ClockSource_EX50M,CoreClock_96M);
+    1652:	2005      	movs	r0, #5
+    1654:	2111      	movs	r1, #17
+    1656:	f000 f80d 	bl	1674 <SystemClockSetup>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/startup.c:217
+	//sys_pll_init1();
+	//进入主程序Main
+	exit(main(0, argv));
+    165a:	2000      	movs	r0, #0
+    165c:	4904      	ldr	r1, [pc, #16]	; (1670 <__thumb_startup+0x3c>)
+    165e:	f7ff f9c9 	bl	9f4 <main>
+    1662:	4603      	mov	r3, r0
+    1664:	4618      	mov	r0, r3
+    1666:	f000 fa03 	bl	1a70 <exit>
+    166a:	bf00      	nop
+    166c:	00001b70 	.word	0x00001b70
+    1670:	1fff007c 	.word	0x1fff007c
+
+00001674 <SystemClockSetup>:
+SystemClockSetup():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:35
+ * @retval None
+ * 
+ * 使用该函数来选择时钟源经过倍频得到希望的内核时钟。
+ */
+void SystemClockSetup(uint8_t ClockOption,uint16_t CoreClock)
+{
+    1674:	b480      	push	{r7}
+    1676:	b083      	sub	sp, #12
+    1678:	af00      	add	r7, sp, #0
+    167a:	4602      	mov	r2, r0
+    167c:	460b      	mov	r3, r1
+    167e:	71fa      	strb	r2, [r7, #7]
+    1680:	80bb      	strh	r3, [r7, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:36
+    if(ClockOption == ClockSource_IRC)
+    1682:	79fb      	ldrb	r3, [r7, #7]
+    1684:	2b00      	cmp	r3, #0
+    1686:	d176      	bne.n	1776 <SystemClockSetup+0x102>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:39
+    {
+        // 进入 FEI 模式
+        MCG_C1 = (uint8_t)0x06u;  //内部32KHz时钟被选择
+    1688:	4bad      	ldr	r3, [pc, #692]	; (1940 <SystemClockSetup+0x2cc>)
+    168a:	2206      	movs	r2, #6
+    168c:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:40
+        MCG_C2 = (uint8_t)0x00u;
+    168e:	4bac      	ldr	r3, [pc, #688]	; (1940 <SystemClockSetup+0x2cc>)
+    1690:	2200      	movs	r2, #0
+    1692:	705a      	strb	r2, [r3, #1]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:41
+        MCG_C4 &= ~((1<<6)|(1<<7)|(1<<5));
+    1694:	4baa      	ldr	r3, [pc, #680]	; (1940 <SystemClockSetup+0x2cc>)
+    1696:	4aaa      	ldr	r2, [pc, #680]	; (1940 <SystemClockSetup+0x2cc>)
+    1698:	78d2      	ldrb	r2, [r2, #3]
+    169a:	b2d2      	uxtb	r2, r2
+    169c:	f002 021f 	and.w	r2, r2, #31
+    16a0:	b2d2      	uxtb	r2, r2
+    16a2:	70da      	strb	r2, [r3, #3]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:42
+        switch(CoreClock)
+    16a4:	88bb      	ldrh	r3, [r7, #4]
+    16a6:	2b10      	cmp	r3, #16
+    16a8:	d016      	beq.n	16d8 <SystemClockSetup+0x64>
+    16aa:	2b11      	cmp	r3, #17
+    16ac:	d002      	beq.n	16b4 <SystemClockSetup+0x40>
+    16ae:	2b08      	cmp	r3, #8
+    16b0:	d025      	beq.n	16fe <SystemClockSetup+0x8a>
+    16b2:	e037      	b.n	1724 <SystemClockSetup+0xb0>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:45
+        {
+            case CoreClock_96M:
+                MCG_C4|= (1<<6)|(1<<7)|(1<<5);  
+    16b4:	4ba2      	ldr	r3, [pc, #648]	; (1940 <SystemClockSetup+0x2cc>)
+    16b6:	4aa2      	ldr	r2, [pc, #648]	; (1940 <SystemClockSetup+0x2cc>)
+    16b8:	78d2      	ldrb	r2, [r2, #3]
+    16ba:	b2d2      	uxtb	r2, r2
+    16bc:	f062 021f 	orn	r2, r2, #31
+    16c0:	b2d2      	uxtb	r2, r2
+    16c2:	70da      	strb	r2, [r3, #3]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:46
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(1)
+    16c4:	4b9f      	ldr	r3, [pc, #636]	; (1944 <SystemClockSetup+0x2d0>)
+    16c6:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    16ca:	3304      	adds	r3, #4
+    16cc:	4a9e      	ldr	r2, [pc, #632]	; (1948 <SystemClockSetup+0x2d4>)
+    16ce:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:48
+                        |SIM_CLKDIV1_OUTDIV3(1)|SIM_CLKDIV1_OUTDIV4(3));
+                SystemCoreClock    = 96000000;
+    16d0:	4b9e      	ldr	r3, [pc, #632]	; (194c <SystemClockSetup+0x2d8>)
+    16d2:	4a9f      	ldr	r2, [pc, #636]	; (1950 <SystemClockSetup+0x2dc>)
+    16d4:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:49
+                break;
+    16d6:	e038      	b.n	174a <SystemClockSetup+0xd6>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:51
+            case CoreClock_72M:
+                MCG_C4|= (1<<6)|(1<<7)|(0<<5);  
+    16d8:	4b99      	ldr	r3, [pc, #612]	; (1940 <SystemClockSetup+0x2cc>)
+    16da:	4a99      	ldr	r2, [pc, #612]	; (1940 <SystemClockSetup+0x2cc>)
+    16dc:	78d2      	ldrb	r2, [r2, #3]
+    16de:	b2d2      	uxtb	r2, r2
+    16e0:	f062 023f 	orn	r2, r2, #63	; 0x3f
+    16e4:	b2d2      	uxtb	r2, r2
+    16e6:	70da      	strb	r2, [r3, #3]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:52
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(1)
+    16e8:	4b96      	ldr	r3, [pc, #600]	; (1944 <SystemClockSetup+0x2d0>)
+    16ea:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    16ee:	3304      	adds	r3, #4
+    16f0:	f04f 7289 	mov.w	r2, #17956864	; 0x1120000
+    16f4:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:54
+                        |SIM_CLKDIV1_OUTDIV3(1)|SIM_CLKDIV1_OUTDIV4(2));    
+                SystemCoreClock    = 72000000;
+    16f6:	4b95      	ldr	r3, [pc, #596]	; (194c <SystemClockSetup+0x2d8>)
+    16f8:	4a96      	ldr	r2, [pc, #600]	; (1954 <SystemClockSetup+0x2e0>)
+    16fa:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:55
+                break;
+    16fc:	e025      	b.n	174a <SystemClockSetup+0xd6>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:57
+            case CoreClock_48M:
+                MCG_C4|= (0<<6)|(1<<7)|(1<<5);  
+    16fe:	4b90      	ldr	r3, [pc, #576]	; (1940 <SystemClockSetup+0x2cc>)
+    1700:	4a8f      	ldr	r2, [pc, #572]	; (1940 <SystemClockSetup+0x2cc>)
+    1702:	78d2      	ldrb	r2, [r2, #3]
+    1704:	b2d2      	uxtb	r2, r2
+    1706:	f062 025f 	orn	r2, r2, #95	; 0x5f
+    170a:	b2d2      	uxtb	r2, r2
+    170c:	70da      	strb	r2, [r3, #3]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:58
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(0)
+    170e:	4b8d      	ldr	r3, [pc, #564]	; (1944 <SystemClockSetup+0x2d0>)
+    1710:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    1714:	3304      	adds	r3, #4
+    1716:	f44f 3280 	mov.w	r2, #65536	; 0x10000
+    171a:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:60
+                        |SIM_CLKDIV1_OUTDIV3(0)|SIM_CLKDIV1_OUTDIV4(1));    
+                SystemCoreClock    = 48000000;
+    171c:	4b8b      	ldr	r3, [pc, #556]	; (194c <SystemClockSetup+0x2d8>)
+    171e:	4a8e      	ldr	r2, [pc, #568]	; (1958 <SystemClockSetup+0x2e4>)
+    1720:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:61
+                break;
+    1722:	e012      	b.n	174a <SystemClockSetup+0xd6>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:63
+            default: //48M
+                MCG_C4|= (0<<6)|(1<<7)|(1<<5);  
+    1724:	4b86      	ldr	r3, [pc, #536]	; (1940 <SystemClockSetup+0x2cc>)
+    1726:	4a86      	ldr	r2, [pc, #536]	; (1940 <SystemClockSetup+0x2cc>)
+    1728:	78d2      	ldrb	r2, [r2, #3]
+    172a:	b2d2      	uxtb	r2, r2
+    172c:	f062 025f 	orn	r2, r2, #95	; 0x5f
+    1730:	b2d2      	uxtb	r2, r2
+    1732:	70da      	strb	r2, [r3, #3]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:64
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(0)
+    1734:	4b83      	ldr	r3, [pc, #524]	; (1944 <SystemClockSetup+0x2d0>)
+    1736:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    173a:	3304      	adds	r3, #4
+    173c:	f44f 3280 	mov.w	r2, #65536	; 0x10000
+    1740:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:66
+                        |SIM_CLKDIV1_OUTDIV3(0)|SIM_CLKDIV1_OUTDIV4(1));    
+                SystemCoreClock    = 48000000;
+    1742:	4b82      	ldr	r3, [pc, #520]	; (194c <SystemClockSetup+0x2d8>)
+    1744:	4a84      	ldr	r2, [pc, #528]	; (1958 <SystemClockSetup+0x2e4>)
+    1746:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:67
+                break;
+    1748:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:69
+        }
+        MCG_C5 = (uint8_t)0x00u;
+    174a:	4b7d      	ldr	r3, [pc, #500]	; (1940 <SystemClockSetup+0x2cc>)
+    174c:	2200      	movs	r2, #0
+    174e:	711a      	strb	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:70
+        MCG_C6 = (uint8_t)0x00u;
+    1750:	4b7b      	ldr	r3, [pc, #492]	; (1940 <SystemClockSetup+0x2cc>)
+    1752:	2200      	movs	r2, #0
+    1754:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:71
+        while((MCG_S & MCG_S_IREFST_MASK) == 0u);  //检查 FLL参考时钟是内部参考时钟
+    1756:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:71 (discriminator 1)
+    1758:	4b79      	ldr	r3, [pc, #484]	; (1940 <SystemClockSetup+0x2cc>)
+    175a:	799b      	ldrb	r3, [r3, #6]
+    175c:	b2db      	uxtb	r3, r3
+    175e:	f003 0310 	and.w	r3, r3, #16
+    1762:	2b00      	cmp	r3, #0
+    1764:	d0f8      	beq.n	1758 <SystemClockSetup+0xe4>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:72
+        while((MCG_S & 0x0Cu) != 0x00u);           //等待FLL被选择
+    1766:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:72 (discriminator 1)
+    1768:	4b75      	ldr	r3, [pc, #468]	; (1940 <SystemClockSetup+0x2cc>)
+    176a:	799b      	ldrb	r3, [r3, #6]
+    176c:	b2db      	uxtb	r3, r3
+    176e:	f003 030c 	and.w	r3, r3, #12
+    1772:	2b00      	cmp	r3, #0
+    1774:	d1f8      	bne.n	1768 <SystemClockSetup+0xf4>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:74
+    }
+    if(ClockOption == ClockSource_EX4M || ClockOption == ClockSource_EX50M)
+    1776:	79fb      	ldrb	r3, [r7, #7]
+    1778:	2b06      	cmp	r3, #6
+    177a:	d003      	beq.n	1784 <SystemClockSetup+0x110>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:74 (discriminator 1)
+    177c:	79fb      	ldrb	r3, [r7, #7]
+    177e:	2b05      	cmp	r3, #5
+    1780:	f040 815b 	bne.w	1a3a <SystemClockSetup+0x3c6>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:76
+    {
+        SIM_SCGC5 |= (uint32_t)0x0200UL; // 使能引脚时钟门控，从外部获得时钟源
+    1784:	496f      	ldr	r1, [pc, #444]	; (1944 <SystemClockSetup+0x2d0>)
+    1786:	4b6f      	ldr	r3, [pc, #444]	; (1944 <SystemClockSetup+0x2d0>)
+    1788:	f503 5381 	add.w	r3, r3, #4128	; 0x1020
+    178c:	3318      	adds	r3, #24
+    178e:	681b      	ldr	r3, [r3, #0]
+    1790:	f443 7200 	orr.w	r2, r3, #512	; 0x200
+    1794:	f501 5381 	add.w	r3, r1, #4128	; 0x1020
+    1798:	3318      	adds	r3, #24
+    179a:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:77
+        if ( *((uint8_t*) 0x03FFU) != 0xFFU) 
+    179c:	f240 33ff 	movw	r3, #1023	; 0x3ff
+    17a0:	781b      	ldrb	r3, [r3, #0]
+    17a2:	2bff      	cmp	r3, #255	; 0xff
+    17a4:	d014      	beq.n	17d0 <SystemClockSetup+0x15c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:79
+        {
+            MCG_C3 = *((uint8_t*) 0x03FFU);
+    17a6:	4b66      	ldr	r3, [pc, #408]	; (1940 <SystemClockSetup+0x2cc>)
+    17a8:	f240 32ff 	movw	r2, #1023	; 0x3ff
+    17ac:	7812      	ldrb	r2, [r2, #0]
+    17ae:	709a      	strb	r2, [r3, #2]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:80
+            MCG_C4 = (MCG_C4 & 0xE0U) | ((*((uint8_t*) 0x03FEU)) & 0x1FU);
+    17b0:	4b63      	ldr	r3, [pc, #396]	; (1940 <SystemClockSetup+0x2cc>)
+    17b2:	4a63      	ldr	r2, [pc, #396]	; (1940 <SystemClockSetup+0x2cc>)
+    17b4:	78d2      	ldrb	r2, [r2, #3]
+    17b6:	b2d2      	uxtb	r2, r2
+    17b8:	f022 021f 	bic.w	r2, r2, #31
+    17bc:	b2d1      	uxtb	r1, r2
+    17be:	f240 32fe 	movw	r2, #1022	; 0x3fe
+    17c2:	7812      	ldrb	r2, [r2, #0]
+    17c4:	f002 021f 	and.w	r2, r2, #31
+    17c8:	b2d2      	uxtb	r2, r2
+    17ca:	430a      	orrs	r2, r1
+    17cc:	b2d2      	uxtb	r2, r2
+    17ce:	70da      	strb	r2, [r3, #3]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:82
+        }
+        SIM_CLKDIV1 = (uint32_t)0x01130000UL; // 更新时钟系统预分频
+    17d0:	4b5c      	ldr	r3, [pc, #368]	; (1944 <SystemClockSetup+0x2d0>)
+    17d2:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    17d6:	3304      	adds	r3, #4
+    17d8:	4a5b      	ldr	r2, [pc, #364]	; (1948 <SystemClockSetup+0x2d4>)
+    17da:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:83
+        SIM_CLKDIV2 = (uint32_t)((SIM_CLKDIV2 & (uint32_t)~0x0DUL) 
+    17dc:	4959      	ldr	r1, [pc, #356]	; (1944 <SystemClockSetup+0x2d0>)
+    17de:	4b59      	ldr	r3, [pc, #356]	; (1944 <SystemClockSetup+0x2d0>)
+    17e0:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    17e4:	3308      	adds	r3, #8
+    17e6:	681b      	ldr	r3, [r3, #0]
+    17e8:	f023 030f 	bic.w	r3, r3, #15
+    17ec:	f043 0202 	orr.w	r2, r3, #2
+    17f0:	f501 5382 	add.w	r3, r1, #4160	; 0x1040
+    17f4:	3308      	adds	r3, #8
+    17f6:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:85
+                    | (uint32_t)0x02UL);      // 更新USB时钟与分频
+        SIM_SOPT2 |= (uint32_t)0x00010000UL;  // 选定PLL为外设时钟源
+    17f8:	4952      	ldr	r1, [pc, #328]	; (1944 <SystemClockSetup+0x2d0>)
+    17fa:	4b52      	ldr	r3, [pc, #328]	; (1944 <SystemClockSetup+0x2d0>)
+    17fc:	f503 5380 	add.w	r3, r3, #4096	; 0x1000
+    1800:	3304      	adds	r3, #4
+    1802:	681b      	ldr	r3, [r3, #0]
+    1804:	f443 3280 	orr.w	r2, r3, #65536	; 0x10000
+    1808:	f501 5380 	add.w	r3, r1, #4096	; 0x1000
+    180c:	3304      	adds	r3, #4
+    180e:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:86
+        SIM_SOPT1 |= (uint32_t)0x00080000UL;  // 配置32kHz时钟源
+    1810:	4b4c      	ldr	r3, [pc, #304]	; (1944 <SystemClockSetup+0x2d0>)
+    1812:	4a4c      	ldr	r2, [pc, #304]	; (1944 <SystemClockSetup+0x2d0>)
+    1814:	6812      	ldr	r2, [r2, #0]
+    1816:	f442 2200 	orr.w	r2, r2, #524288	; 0x80000
+    181a:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:87
+        PORTA_PCR18 &= (uint32_t)~0x01000700UL;
+    181c:	4a4f      	ldr	r2, [pc, #316]	; (195c <SystemClockSetup+0x2e8>)
+    181e:	4b4f      	ldr	r3, [pc, #316]	; (195c <SystemClockSetup+0x2e8>)
+    1820:	6c9b      	ldr	r3, [r3, #72]	; 0x48
+    1822:	f023 7380 	bic.w	r3, r3, #16777216	; 0x1000000
+    1826:	f423 63e0 	bic.w	r3, r3, #1792	; 0x700
+    182a:	6493      	str	r3, [r2, #72]	; 0x48
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:90
+        
+        //进入 FEI 模式，转到 FBE 模式 
+        OSC_CR = (uint8_t)0x00u;
+    182c:	4b4c      	ldr	r3, [pc, #304]	; (1960 <SystemClockSetup+0x2ec>)
+    182e:	2200      	movs	r2, #0
+    1830:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:91
+        SIM_SOPT2 &= (uint8_t)~(uint8_t)0x01u;
+    1832:	4944      	ldr	r1, [pc, #272]	; (1944 <SystemClockSetup+0x2d0>)
+    1834:	4b43      	ldr	r3, [pc, #268]	; (1944 <SystemClockSetup+0x2d0>)
+    1836:	f503 5380 	add.w	r3, r3, #4096	; 0x1000
+    183a:	3304      	adds	r3, #4
+    183c:	681b      	ldr	r3, [r3, #0]
+    183e:	f003 02fe 	and.w	r2, r3, #254	; 0xfe
+    1842:	f501 5380 	add.w	r3, r1, #4096	; 0x1000
+    1846:	3304      	adds	r3, #4
+    1848:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:92
+        MCG_C2 = (uint8_t)0x21u;    //选用外部高频参考时钟
+    184a:	4b3d      	ldr	r3, [pc, #244]	; (1940 <SystemClockSetup+0x2cc>)
+    184c:	2221      	movs	r2, #33	; 0x21
+    184e:	705a      	strb	r2, [r3, #1]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:93
+        MCG_C1 = (uint8_t)0xA8u;    //选用外部参考时钟，分频因子为1024
+    1850:	4b3b      	ldr	r3, [pc, #236]	; (1940 <SystemClockSetup+0x2cc>)
+    1852:	22a8      	movs	r2, #168	; 0xa8
+    1854:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:95
+
+        while((MCG_S & MCG_S_IREFST_MASK) != 0u); //检查 FLL参考时钟是外部参考时钟
+    1856:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:95 (discriminator 1)
+    1858:	4b39      	ldr	r3, [pc, #228]	; (1940 <SystemClockSetup+0x2cc>)
+    185a:	799b      	ldrb	r3, [r3, #6]
+    185c:	b2db      	uxtb	r3, r3
+    185e:	f003 0310 	and.w	r3, r3, #16
+    1862:	2b00      	cmp	r3, #0
+    1864:	d1f8      	bne.n	1858 <SystemClockSetup+0x1e4>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:96
+        while((MCG_S & 0x0Cu) != 0x08u);          //等待外部参考时钟被选定为MCG输出
+    1866:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:96 (discriminator 1)
+    1868:	4b35      	ldr	r3, [pc, #212]	; (1940 <SystemClockSetup+0x2cc>)
+    186a:	799b      	ldrb	r3, [r3, #6]
+    186c:	b2db      	uxtb	r3, r3
+    186e:	f003 030c 	and.w	r3, r3, #12
+    1872:	2b08      	cmp	r3, #8
+    1874:	d1f8      	bne.n	1868 <SystemClockSetup+0x1f4>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:99
+        
+        //进入FBE，转到PBE模式
+        if(ClockOption == ClockSource_EX4M)
+    1876:	79fb      	ldrb	r3, [r7, #7]
+    1878:	2b06      	cmp	r3, #6
+    187a:	d103      	bne.n	1884 <SystemClockSetup+0x210>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:101
+        {
+            MCG_C5 = (uint8_t)(0x20|MCG_C5_PRDIV(1));        //4/2 = 2M
+    187c:	4b30      	ldr	r3, [pc, #192]	; (1940 <SystemClockSetup+0x2cc>)
+    187e:	2221      	movs	r2, #33	; 0x21
+    1880:	711a      	strb	r2, [r3, #4]
+    1882:	e005      	b.n	1890 <SystemClockSetup+0x21c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:103
+        }
+        else if (ClockOption == ClockSource_EX50M)
+    1884:	79fb      	ldrb	r3, [r7, #7]
+    1886:	2b05      	cmp	r3, #5
+    1888:	d102      	bne.n	1890 <SystemClockSetup+0x21c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:105
+        {
+            MCG_C5 = (uint8_t)(0x20|MCG_C5_PRDIV(24));       //50/25 = 2M
+    188a:	4b2d      	ldr	r3, [pc, #180]	; (1940 <SystemClockSetup+0x2cc>)
+    188c:	2238      	movs	r2, #56	; 0x38
+    188e:	711a      	strb	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:107
+        }
+        switch(CoreClock)
+    1890:	88bb      	ldrh	r3, [r7, #4]
+    1892:	3b08      	subs	r3, #8
+    1894:	2b0b      	cmp	r3, #11
+    1896:	f200 8097 	bhi.w	19c8 <SystemClockSetup+0x354>
+    189a:	a201      	add	r2, pc, #4	; (adr r2, 18a0 <SystemClockSetup+0x22c>)
+    189c:	f852 f023 	ldr.w	pc, [r2, r3, lsl #2]
+    18a0:	000018d1 	.word	0x000018d1
+    18a4:	000018ed 	.word	0x000018ed
+    18a8:	000019c9 	.word	0x000019c9
+    18ac:	000019c9 	.word	0x000019c9
+    18b0:	000019c9 	.word	0x000019c9
+    18b4:	000019c9 	.word	0x000019c9
+    18b8:	000019c9 	.word	0x000019c9
+    18bc:	000019c9 	.word	0x000019c9
+    18c0:	00001909 	.word	0x00001909
+    18c4:	00001925 	.word	0x00001925
+    18c8:	00001969 	.word	0x00001969
+    18cc:	00001983 	.word	0x00001983
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:110
+        {
+            case CoreClock_48M:
+                MCG_C6 = (uint8_t)(0x40u|MCG_C6_VDIV(0));
+    18d0:	4b1b      	ldr	r3, [pc, #108]	; (1940 <SystemClockSetup+0x2cc>)
+    18d2:	2240      	movs	r2, #64	; 0x40
+    18d4:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:111
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(0)
+    18d6:	4b1b      	ldr	r3, [pc, #108]	; (1944 <SystemClockSetup+0x2d0>)
+    18d8:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    18dc:	3304      	adds	r3, #4
+    18de:	f44f 3280 	mov.w	r2, #65536	; 0x10000
+    18e2:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:113
+                        |SIM_CLKDIV1_OUTDIV3(0)|SIM_CLKDIV1_OUTDIV4(1));    
+                SystemCoreClock    = 48000000;
+    18e4:	4b19      	ldr	r3, [pc, #100]	; (194c <SystemClockSetup+0x2d8>)
+    18e6:	4a1c      	ldr	r2, [pc, #112]	; (1958 <SystemClockSetup+0x2e4>)
+    18e8:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:114
+                break;        
+    18ea:	e07b      	b.n	19e4 <SystemClockSetup+0x370>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:116
+            case CoreClock_64M:
+                MCG_C6 = (uint8_t)(0x40u|MCG_C6_VDIV(8));
+    18ec:	4b14      	ldr	r3, [pc, #80]	; (1940 <SystemClockSetup+0x2cc>)
+    18ee:	2248      	movs	r2, #72	; 0x48
+    18f0:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:117
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(1)
+    18f2:	4b14      	ldr	r3, [pc, #80]	; (1944 <SystemClockSetup+0x2d0>)
+    18f4:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    18f8:	3304      	adds	r3, #4
+    18fa:	f04f 7289 	mov.w	r2, #17956864	; 0x1120000
+    18fe:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:119
+                        |SIM_CLKDIV1_OUTDIV3(1)|SIM_CLKDIV1_OUTDIV4(2));
+                SystemCoreClock    = 64000000;
+    1900:	4b12      	ldr	r3, [pc, #72]	; (194c <SystemClockSetup+0x2d8>)
+    1902:	4a18      	ldr	r2, [pc, #96]	; (1964 <SystemClockSetup+0x2f0>)
+    1904:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:120
+                break;        
+    1906:	e06d      	b.n	19e4 <SystemClockSetup+0x370>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:122
+            case CoreClock_72M:
+                MCG_C6 = (uint8_t)(0x40u|MCG_C6_VDIV(12));
+    1908:	4b0d      	ldr	r3, [pc, #52]	; (1940 <SystemClockSetup+0x2cc>)
+    190a:	224c      	movs	r2, #76	; 0x4c
+    190c:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:123
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(1)
+    190e:	4b0d      	ldr	r3, [pc, #52]	; (1944 <SystemClockSetup+0x2d0>)
+    1910:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    1914:	3304      	adds	r3, #4
+    1916:	f04f 7289 	mov.w	r2, #17956864	; 0x1120000
+    191a:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:125
+                        |SIM_CLKDIV1_OUTDIV3(1)|SIM_CLKDIV1_OUTDIV4(2));
+                SystemCoreClock    = 72000000;
+    191c:	4b0b      	ldr	r3, [pc, #44]	; (194c <SystemClockSetup+0x2d8>)
+    191e:	4a0d      	ldr	r2, [pc, #52]	; (1954 <SystemClockSetup+0x2e0>)
+    1920:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:126
+                break;            
+    1922:	e05f      	b.n	19e4 <SystemClockSetup+0x370>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:128
+            case CoreClock_96M:
+                MCG_C6 = (uint8_t)(0x40u|MCG_C6_VDIV(24));
+    1924:	4b06      	ldr	r3, [pc, #24]	; (1940 <SystemClockSetup+0x2cc>)
+    1926:	2258      	movs	r2, #88	; 0x58
+    1928:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:129
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(1)
+    192a:	4b06      	ldr	r3, [pc, #24]	; (1944 <SystemClockSetup+0x2d0>)
+    192c:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    1930:	3304      	adds	r3, #4
+    1932:	4a05      	ldr	r2, [pc, #20]	; (1948 <SystemClockSetup+0x2d4>)
+    1934:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:131
+                        |SIM_CLKDIV1_OUTDIV3(1)|SIM_CLKDIV1_OUTDIV4(3));        
+                SystemCoreClock    = 96000000;
+    1936:	4b05      	ldr	r3, [pc, #20]	; (194c <SystemClockSetup+0x2d8>)
+    1938:	4a05      	ldr	r2, [pc, #20]	; (1950 <SystemClockSetup+0x2dc>)
+    193a:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:132
+                break;        
+    193c:	e052      	b.n	19e4 <SystemClockSetup+0x370>
+    193e:	bf00      	nop
+    1940:	40064000 	.word	0x40064000
+    1944:	40047000 	.word	0x40047000
+    1948:	01130000 	.word	0x01130000
+    194c:	1fff00d4 	.word	0x1fff00d4
+    1950:	05b8d800 	.word	0x05b8d800
+    1954:	044aa200 	.word	0x044aa200
+    1958:	02dc6c00 	.word	0x02dc6c00
+    195c:	40049000 	.word	0x40049000
+    1960:	40065000 	.word	0x40065000
+    1964:	03d09000 	.word	0x03d09000
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:134
+            case CoreClock_100M:
+                MCG_C6 = (uint8_t)(0x40u|MCG_C6_VDIV(26));
+    1968:	4b36      	ldr	r3, [pc, #216]	; (1a44 <SystemClockSetup+0x3d0>)
+    196a:	225a      	movs	r2, #90	; 0x5a
+    196c:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:135
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(1)
+    196e:	4b36      	ldr	r3, [pc, #216]	; (1a48 <SystemClockSetup+0x3d4>)
+    1970:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    1974:	3304      	adds	r3, #4
+    1976:	4a35      	ldr	r2, [pc, #212]	; (1a4c <SystemClockSetup+0x3d8>)
+    1978:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:137
+                        |SIM_CLKDIV1_OUTDIV3(1)|SIM_CLKDIV1_OUTDIV4(3));    
+                SystemCoreClock    = 100000000;
+    197a:	4b35      	ldr	r3, [pc, #212]	; (1a50 <SystemClockSetup+0x3dc>)
+    197c:	4a35      	ldr	r2, [pc, #212]	; (1a54 <SystemClockSetup+0x3e0>)
+    197e:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:138
+                break;    
+    1980:	e030      	b.n	19e4 <SystemClockSetup+0x370>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:140
+            case CoreClock_200M:
+                if(ClockOption == ClockSource_EX4M)
+    1982:	79fb      	ldrb	r3, [r7, #7]
+    1984:	2b06      	cmp	r3, #6
+    1986:	d10c      	bne.n	19a2 <SystemClockSetup+0x32e>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:142
+                {
+                    MCG_C5 = (uint8_t)MCG_C5_PRDIV(0);        //4/1 = 4M
+    1988:	4b2e      	ldr	r3, [pc, #184]	; (1a44 <SystemClockSetup+0x3d0>)
+    198a:	2200      	movs	r2, #0
+    198c:	711a      	strb	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:143
+                    MCG_C6 = (uint8_t)(0x40u|MCG_C6_VDIV(26));
+    198e:	4b2d      	ldr	r3, [pc, #180]	; (1a44 <SystemClockSetup+0x3d0>)
+    1990:	225a      	movs	r2, #90	; 0x5a
+    1992:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:144
+                    SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(1)
+    1994:	4b2c      	ldr	r3, [pc, #176]	; (1a48 <SystemClockSetup+0x3d4>)
+    1996:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    199a:	3304      	adds	r3, #4
+    199c:	4a2e      	ldr	r2, [pc, #184]	; (1a58 <SystemClockSetup+0x3e4>)
+    199e:	601a      	str	r2, [r3, #0]
+    19a0:	e00e      	b.n	19c0 <SystemClockSetup+0x34c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:147
+                            |SIM_CLKDIV1_OUTDIV3(1)|SIM_CLKDIV1_OUTDIV4(7));    
+                }
+                else if (ClockOption == ClockSource_EX50M)
+    19a2:	79fb      	ldrb	r3, [r7, #7]
+    19a4:	2b05      	cmp	r3, #5
+    19a6:	d10b      	bne.n	19c0 <SystemClockSetup+0x34c>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:149
+                {
+                    MCG_C5 = (uint8_t)MCG_C5_PRDIV(12);
+    19a8:	4b26      	ldr	r3, [pc, #152]	; (1a44 <SystemClockSetup+0x3d0>)
+    19aa:	220c      	movs	r2, #12
+    19ac:	711a      	strb	r2, [r3, #4]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:150
+                    MCG_C6 = (uint8_t)(0x40u|MCG_C6_VDIV(28));
+    19ae:	4b25      	ldr	r3, [pc, #148]	; (1a44 <SystemClockSetup+0x3d0>)
+    19b0:	225c      	movs	r2, #92	; 0x5c
+    19b2:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:151
+                    SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(1)
+    19b4:	4b24      	ldr	r3, [pc, #144]	; (1a48 <SystemClockSetup+0x3d4>)
+    19b6:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    19ba:	3304      	adds	r3, #4
+    19bc:	4a26      	ldr	r2, [pc, #152]	; (1a58 <SystemClockSetup+0x3e4>)
+    19be:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:154
+                            |SIM_CLKDIV1_OUTDIV3(1)|SIM_CLKDIV1_OUTDIV4(7));    
+                }
+                SystemCoreClock    = 200000000;
+    19c0:	4b23      	ldr	r3, [pc, #140]	; (1a50 <SystemClockSetup+0x3dc>)
+    19c2:	4a26      	ldr	r2, [pc, #152]	; (1a5c <SystemClockSetup+0x3e8>)
+    19c4:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:155
+                break;            
+    19c6:	e00d      	b.n	19e4 <SystemClockSetup+0x370>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:157
+            default:
+                MCG_C6 = (uint8_t)(0x40u|MCG_C6_VDIV(0));
+    19c8:	4b1e      	ldr	r3, [pc, #120]	; (1a44 <SystemClockSetup+0x3d0>)
+    19ca:	2240      	movs	r2, #64	; 0x40
+    19cc:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:158
+                SIM_CLKDIV1 =(SIM_CLKDIV1_OUTDIV1(0)|SIM_CLKDIV1_OUTDIV2(0)
+    19ce:	4b1e      	ldr	r3, [pc, #120]	; (1a48 <SystemClockSetup+0x3d4>)
+    19d0:	f503 5382 	add.w	r3, r3, #4160	; 0x1040
+    19d4:	3304      	adds	r3, #4
+    19d6:	f44f 3280 	mov.w	r2, #65536	; 0x10000
+    19da:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:160
+                        |SIM_CLKDIV1_OUTDIV3(0)|SIM_CLKDIV1_OUTDIV4(1));
+                SystemCoreClock    = 48000000;
+    19dc:	4b1c      	ldr	r3, [pc, #112]	; (1a50 <SystemClockSetup+0x3dc>)
+    19de:	4a20      	ldr	r2, [pc, #128]	; (1a60 <SystemClockSetup+0x3ec>)
+    19e0:	601a      	str	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:161
+                break;
+    19e2:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:163
+        } 
+        while((MCG_S & 0x0Cu) != 0x08u);           //等待外部参考时钟被选定为MCG输出    
+    19e4:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:163 (discriminator 1)
+    19e6:	4b17      	ldr	r3, [pc, #92]	; (1a44 <SystemClockSetup+0x3d0>)
+    19e8:	799b      	ldrb	r3, [r3, #6]
+    19ea:	b2db      	uxtb	r3, r3
+    19ec:	f003 030c 	and.w	r3, r3, #12
+    19f0:	2b08      	cmp	r3, #8
+    19f2:	d1f8      	bne.n	19e6 <SystemClockSetup+0x372>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:164
+        while((MCG_S & MCG_S_LOCK_MASK) == 0u);    //等待锁定
+    19f4:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:164 (discriminator 1)
+    19f6:	4b13      	ldr	r3, [pc, #76]	; (1a44 <SystemClockSetup+0x3d0>)
+    19f8:	799b      	ldrb	r3, [r3, #6]
+    19fa:	b2db      	uxtb	r3, r3
+    19fc:	f003 0340 	and.w	r3, r3, #64	; 0x40
+    1a00:	2b00      	cmp	r3, #0
+    1a02:	d0f8      	beq.n	19f6 <SystemClockSetup+0x382>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:167
+        
+        //转到PEE
+        MCG_C1 = (uint8_t)0x28u;                   //选择PLL“作为时钟源
+    1a04:	4b0f      	ldr	r3, [pc, #60]	; (1a44 <SystemClockSetup+0x3d0>)
+    1a06:	2228      	movs	r2, #40	; 0x28
+    1a08:	701a      	strb	r2, [r3, #0]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:168
+        while((MCG_S & 0x0Cu) != 0x0Cu);           //等待PLL输出
+    1a0a:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:168 (discriminator 1)
+    1a0c:	4b0d      	ldr	r3, [pc, #52]	; (1a44 <SystemClockSetup+0x3d0>)
+    1a0e:	799b      	ldrb	r3, [r3, #6]
+    1a10:	b2db      	uxtb	r3, r3
+    1a12:	f003 030c 	and.w	r3, r3, #12
+    1a16:	2b0c      	cmp	r3, #12
+    1a18:	d1f8      	bne.n	1a0c <SystemClockSetup+0x398>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:169
+        while((MCG_S & MCG_S_LOCK_MASK) == 0u);    //等待PLL锁定
+    1a1a:	bf00      	nop
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:169 (discriminator 1)
+    1a1c:	4b09      	ldr	r3, [pc, #36]	; (1a44 <SystemClockSetup+0x3d0>)
+    1a1e:	799b      	ldrb	r3, [r3, #6]
+    1a20:	b2db      	uxtb	r3, r3
+    1a22:	f003 0340 	and.w	r3, r3, #64	; 0x40
+    1a26:	2b00      	cmp	r3, #0
+    1a28:	d0f8      	beq.n	1a1c <SystemClockSetup+0x3a8>
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:170
+        MCG_C6 |= (uint8_t)0x20U; // 使能时钟监控
+    1a2a:	4b06      	ldr	r3, [pc, #24]	; (1a44 <SystemClockSetup+0x3d0>)
+    1a2c:	4a05      	ldr	r2, [pc, #20]	; (1a44 <SystemClockSetup+0x3d0>)
+    1a2e:	7952      	ldrb	r2, [r2, #5]
+    1a30:	b2d2      	uxtb	r2, r2
+    1a32:	f042 0220 	orr.w	r2, r2, #32
+    1a36:	b2d2      	uxtb	r2, r2
+    1a38:	715a      	strb	r2, [r3, #5]
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/sysint.c:172
+    }
+}
+    1a3a:	370c      	adds	r7, #12
+    1a3c:	46bd      	mov	sp, r7
+    1a3e:	f85d 7b04 	ldr.w	r7, [sp], #4
+    1a42:	4770      	bx	lr
+    1a44:	40064000 	.word	0x40064000
+    1a48:	40047000 	.word	0x40047000
+    1a4c:	01130000 	.word	0x01130000
+    1a50:	1fff00d4 	.word	0x1fff00d4
+    1a54:	05f5e100 	.word	0x05f5e100
+    1a58:	01170000 	.word	0x01170000
+    1a5c:	0bebc200 	.word	0x0bebc200
+    1a60:	02dc6c00 	.word	0x02dc6c00
+
+00001a64 <default_isr>:
+default_isr():
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/vectors.c:162
+	VECTOR_109,
+	VECTOR_110
+};
+
+// 默认终端服务例程函数
+void default_isr(void){
+    1a64:	b480      	push	{r7}
+    1a66:	af00      	add	r7, sp, #0
+H:\Elec_Team_gexinyue_16_03_07\04-software\K60_SmartCar_20160307\Debug/../03_MCU/vectors.c:164
+
+}
+    1a68:	46bd      	mov	sp, r7
+    1a6a:	f85d 7b04 	ldr.w	r7, [sp], #4
+    1a6e:	4770      	bx	lr
+
+00001a70 <exit>:
+exit():
+    1a70:	b508      	push	{r3, lr}
+    1a72:	4b07      	ldr	r3, [pc, #28]	; (1a90 <exit+0x20>)
+    1a74:	4604      	mov	r4, r0
+    1a76:	b113      	cbz	r3, 1a7e <exit+0xe>
+    1a78:	2100      	movs	r1, #0
+    1a7a:	f3af 8000 	nop.w
+    1a7e:	4b05      	ldr	r3, [pc, #20]	; (1a94 <exit+0x24>)
+    1a80:	6818      	ldr	r0, [r3, #0]
+    1a82:	6a83      	ldr	r3, [r0, #40]	; 0x28
+    1a84:	b103      	cbz	r3, 1a88 <exit+0x18>
+    1a86:	4798      	blx	r3
+    1a88:	4620      	mov	r0, r4
+    1a8a:	f000 f80d 	bl	1aa8 <_exit>
+    1a8e:	bf00      	nop
+    1a90:	00000000 	.word	0x00000000
+    1a94:	00001b00 	.word	0x00001b00
+
+00001a98 <memset>:
+memset():
+    1a98:	4402      	add	r2, r0
+    1a9a:	4603      	mov	r3, r0
+    1a9c:	4293      	cmp	r3, r2
+    1a9e:	d002      	beq.n	1aa6 <memset+0xe>
+    1aa0:	f803 1b01 	strb.w	r1, [r3], #1
+    1aa4:	e7fa      	b.n	1a9c <memset+0x4>
+    1aa6:	4770      	bx	lr
+
+00001aa8 <_exit>:
+_exit():
+    1aa8:	e7fe      	b.n	1aa8 <_exit>
+    1aaa:	bf00      	nop
+$d():
+    1aac:	6c6c6548 	.word	0x6c6c6548
+    1ab0:	4f57206f 	.word	0x4f57206f
+    1ab4:	21444c52 	.word	0x21444c52
+    1ab8:	0000000a 	.word	0x0000000a
+
+00001abc <UART_ARR>:
+    1abc:	4006a000 4006b000 4006c000 4006d000     ...@...@...@...@
+    1acc:	400ea000 400eb000                       ...@...@
+
+00001ad4 <PORT_ARR>:
+    1ad4:	40049000 4004a000 4004b000 4004c000     ...@...@...@...@
+    1ae4:	4004d000                                ...@
+
+00001ae8 <GPIO_ARR>:
+    1ae8:	400ff000 400ff040 400ff080 400ff0c0     ...@@..@...@...@
+    1af8:	400ff100 00000043                       ...@C...
+
+00001b00 <_global_impure_ptr>:
+    1b00:	1fff000c                                ....

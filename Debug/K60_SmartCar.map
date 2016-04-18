@@ -1,0 +1,1618 @@
+Archive member included because of file (symbol)
+
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+                              ./06_App_Component/GyroAcce/GyroAcce.o (__aeabi_dsub)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+                              ./08_Sources/main.o (__aeabi_dmul)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixdfsi.o)
+                              ./08_Sources/main.o (__aeabi_d2iz)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+                              ./06_App_Component/GyroAcce/GyroAcce.o (__aeabi_d2f)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+                              ./07_Soft_Component/control/control.o (__aeabi_fsub)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+                              ./07_Soft_Component/control/control.o (__aeabi_fmul)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpsf2.o)
+                              ./06_App_Component/GyroAcce/GyroAcce.o (__aeabi_fcmplt)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixsfsi.o)
+                              ./08_Sources/main.o (__aeabi_f2iz)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o)
+                              ./08_Sources/main.o (asin)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_asin.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o) (__ieee754_asin)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_sqrt.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_asin.o) (__ieee754_sqrt)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fabs.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o) (fabs)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fpclassify.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o) (__fpclassifyd)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_lib_ver.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o) (__fdlib_version)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_matherr.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o) (matherr)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_nan.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o) (nan)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-errno.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o) (__errno)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o)
+                              ./03_MCU/startup.o (exit)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o) (_global_impure_ptr)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
+                              ./03_MCU/startup.o (memset)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpdf2.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o) (__aeabi_dcmpgt)
+f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libnosys.a(_exit.o)
+                              f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o) (_exit)
+
+Allocating common symbols
+Common symbol       size              file
+
+Speed_I             0x4               ./08_Sources/main.o
+TurnPriodCt         0x1               ./08_Sources/main.o
+TIME0flag_5ms       0x1               ./08_Sources/main.o
+Speed_P             0x4               ./08_Sources/main.o
+AAngPeriodCount     0x1               ./08_Sources/main.o
+OutData             0x10              ./08_Sources/isr.o
+AAngleAcceleArry    0xc               ./08_Sources/main.o
+AAngAcceCount       0x1               ./08_Sources/main.o
+Angle_D             0x4               ./08_Sources/main.o
+SystemCoreClock     0x4               ./03_MCU/sysint.o
+Runstop             0x1               ./08_Sources/main.o
+SpeedAD             0x2               ./08_Sources/main.o
+LeftSpeedC          0x2               ./08_Sources/isr.o
+RightSpeedC         0x2               ./08_Sources/isr.o
+RunCountLast        0x2               ./08_Sources/main.o
+run_flag            0x1               ./08_Sources/main.o
+SpeedPeriodCount    0x2               ./08_Sources/main.o
+AAngPWM             0x2               ./08_Sources/main.o
+TIME0flag_15ms      0x1               ./08_Sources/main.o
+MotorAAngPWM        0x2               ./08_Sources/main.o
+TIME0flag_20ms      0x1               ./08_Sources/main.o
+MotorSpeedPWMR      0x2               ./08_Sources/main.o
+PWMout              0x2               ./08_Sources/main.o
+AD_EMS              0x18              ./06_App_Component/SC_Status/SC_Status.o
+Speed_D             0x4               ./08_Sources/main.o
+TIME0flag_100ms     0x2               ./08_Sources/main.o
+CPUInfo             0x24              ./03_MCU/sysint.o
+RunCountLast1       0x2               ./08_Sources/main.o
+AMotorTurnPWM       0x2               ./08_Sources/main.o
+RunCount            0x2               ./08_Sources/isr.o
+MotorSpeedPWM       0x2               ./08_Sources/main.o
+count               0x2               ./08_Sources/isr.o
+min_AD              0x18              ./06_App_Component/SC_Status/SC_Status.o
+LastAAngPWM         0x2               ./08_Sources/main.o
+TIME0flag_10ms      0x1               ./08_Sources/main.o
+max_AD              0x18              ./06_App_Component/SC_Status/SC_Status.o
+AInitC              0x1               ./08_Sources/main.o
+ATurnPWM            0x2               ./08_Sources/main.o
+TIME0flag_1s        0x4               ./08_Sources/main.o
+AAngleArrySCI       0x18              ./08_Sources/main.o
+ALastTurnPWM        0x2               ./08_Sources/main.o
+Angle_P             0x4               ./08_Sources/main.o
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/isr.o
+ .text          0x00000000        0x0 ./08_Sources/isr.o
+ .data          0x00000000        0x0 ./08_Sources/isr.o
+ .bss           0x00000000        0x0 ./08_Sources/isr.o
+ .data.PI       0x00000000        0x4 ./08_Sources/isr.o
+ .rodata.PORT_ARR
+                0x00000000       0x14 ./08_Sources/isr.o
+ .rodata.GPIO_ARR
+                0x00000000       0x14 ./08_Sources/isr.o
+ .rodata.UART_ARR
+                0x00000000       0x18 ./08_Sources/isr.o
+ .rodata.table_irq_uart
+                0x00000000        0x8 ./08_Sources/isr.o
+ .data.g        0x00000000        0x4 ./08_Sources/isr.o
+ .bss.pluse_countL
+                0x00000000        0x2 ./08_Sources/isr.o
+ .bss.pluse_countR
+                0x00000000        0x2 ./08_Sources/isr.o
+ .text.isr_uart0_re
+                0x00000000       0x34 ./08_Sources/isr.o
+ .text.isr_uart3_re
+                0x00000000       0x34 ./08_Sources/isr.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./08_Sources/main.o
+ .text          0x00000000        0x0 ./08_Sources/main.o
+ .data          0x00000000        0x0 ./08_Sources/main.o
+ .bss           0x00000000        0x0 ./08_Sources/main.o
+ .rodata.PORT_ARR
+                0x00000000       0x14 ./08_Sources/main.o
+ .rodata.GPIO_ARR
+                0x00000000       0x14 ./08_Sources/main.o
+ .rodata.UART_ARR
+                0x00000000       0x18 ./08_Sources/main.o
+ .rodata.table_irq_uart
+                0x00000000        0x8 ./08_Sources/main.o
+ .data.g        0x00000000        0x4 ./08_Sources/main.o
+ .bss.PITCounter
+                0x00000000        0x4 ./08_Sources/main.o
+ .data.APWMflg  0x00000000        0x1 ./08_Sources/main.o
+ .bss.count1    0x00000000        0x2 ./08_Sources/main.o
+ .bss.SpeedPWM  0x00000000        0x2 ./08_Sources/main.o
+ .bss.SpeedPWMR
+                0x00000000        0x2 ./08_Sources/main.o
+ .bss.LastSpeedPWM
+                0x00000000        0x2 ./08_Sources/main.o
+ .bss.LastSpeedPWMR
+                0x00000000        0x2 ./08_Sources/main.o
+ .debug_macro   0x00000000      0x83e ./08_Sources/main.o
+ .debug_macro   0x00000000       0x16 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x44 ./08_Sources/main.o
+ .debug_macro   0x00000000      0x209 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x22 ./08_Sources/main.o
+ .debug_macro   0x00000000    0x10979 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x1c ./08_Sources/main.o
+ .debug_macro   0x00000000       0x9a ./08_Sources/main.o
+ .debug_macro   0x00000000       0x28 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x52 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x22 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x40 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x22 ./08_Sources/main.o
+ .debug_macro   0x00000000       0xca ./08_Sources/main.o
+ .debug_macro   0x00000000       0xa6 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x4c ./08_Sources/main.o
+ .debug_macro   0x00000000       0x22 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x4c ./08_Sources/main.o
+ .debug_macro   0x00000000       0x46 ./08_Sources/main.o
+ .debug_macro   0x00000000       0x10 ./08_Sources/main.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/control/control.o
+ .text          0x00000000        0x0 ./07_Soft_Component/control/control.o
+ .data          0x00000000        0x0 ./07_Soft_Component/control/control.o
+ .bss           0x00000000        0x0 ./07_Soft_Component/control/control.o
+ .data.PI       0x00000000        0x4 ./07_Soft_Component/control/control.o
+ .text.SpeedPID
+                0x00000000      0x120 ./07_Soft_Component/control/control.o
+ .bss.SumErrSpeed.5474
+                0x00000000        0x4 ./07_Soft_Component/control/control.o
+ .bss.Speed1_Err.5473
+                0x00000000        0x4 ./07_Soft_Component/control/control.o
+ .debug_info    0x00000000      0x1c9 ./07_Soft_Component/control/control.o
+ .debug_abbrev  0x00000000       0x94 ./07_Soft_Component/control/control.o
+ .debug_aranges
+                0x00000000       0x20 ./07_Soft_Component/control/control.o
+ .debug_ranges  0x00000000       0x10 ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000       0x92 ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000      0x83e ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000       0x16 ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000       0x44 ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000      0x209 ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000       0x22 ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000    0x10979 ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000       0x1c ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000       0x9a ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000       0x28 ./07_Soft_Component/control/control.o
+ .debug_macro   0x00000000       0x40 ./07_Soft_Component/control/control.o
+ .debug_line    0x00000000      0x293 ./07_Soft_Component/control/control.o
+ .debug_str     0x00000000    0x5ca95 ./07_Soft_Component/control/control.o
+ .comment       0x00000000       0x71 ./07_Soft_Component/control/control.o
+ .ARM.attributes
+                0x00000000       0x33 ./07_Soft_Component/control/control.o
+ .debug_frame   0x00000000       0x30 ./07_Soft_Component/control/control.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./07_Soft_Component/common/common.o
+ .text          0x00000000        0x0 ./07_Soft_Component/common/common.o
+ .data          0x00000000        0x0 ./07_Soft_Component/common/common.o
+ .bss           0x00000000        0x0 ./07_Soft_Component/common/common.o
+ .data.PI       0x00000000        0x4 ./07_Soft_Component/common/common.o
+ .text.init_critical
+                0x00000000       0x18 ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000      0x83e ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000       0x16 ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000       0x44 ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000      0x209 ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000       0x22 ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000    0x10979 ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000       0x1c ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000       0x9a ./07_Soft_Component/common/common.o
+ .debug_macro   0x00000000       0x28 ./07_Soft_Component/common/common.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .text          0x00000000        0x0 ./06_App_Component/speed/speed.o
+ .data          0x00000000        0x0 ./06_App_Component/speed/speed.o
+ .bss           0x00000000        0x0 ./06_App_Component/speed/speed.o
+ .data.PI       0x00000000        0x4 ./06_App_Component/speed/speed.o
+ .rodata.PORT_ARR
+                0x00000000       0x14 ./06_App_Component/speed/speed.o
+ .rodata.GPIO_ARR
+                0x00000000       0x14 ./06_App_Component/speed/speed.o
+ .rodata.UART_ARR
+                0x00000000       0x18 ./06_App_Component/speed/speed.o
+ .rodata.table_irq_uart
+                0x00000000        0x8 ./06_App_Component/speed/speed.o
+ .data.g        0x00000000        0x4 ./06_App_Component/speed/speed.o
+ .text.speed_init
+                0x00000000       0x30 ./06_App_Component/speed/speed.o
+ .text.speed_get
+                0x00000000       0x78 ./06_App_Component/speed/speed.o
+ .debug_info    0x00000000      0x525 ./06_App_Component/speed/speed.o
+ .debug_abbrev  0x00000000      0x132 ./06_App_Component/speed/speed.o
+ .debug_aranges
+                0x00000000       0x28 ./06_App_Component/speed/speed.o
+ .debug_ranges  0x00000000       0x18 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0xf6 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000      0x83e ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x16 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x44 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000      0x209 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x22 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000    0x10979 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x1c ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x9a ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x28 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x52 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x22 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x40 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x22 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0xca ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0xa6 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x4c ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x4c ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x46 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x10 ./06_App_Component/speed/speed.o
+ .debug_macro   0x00000000       0x22 ./06_App_Component/speed/speed.o
+ .debug_line    0x00000000      0x60f ./06_App_Component/speed/speed.o
+ .debug_str     0x00000000    0x5d352 ./06_App_Component/speed/speed.o
+ .comment       0x00000000       0x71 ./06_App_Component/speed/speed.o
+ .ARM.attributes
+                0x00000000       0x33 ./06_App_Component/speed/speed.o
+ .debug_frame   0x00000000       0x54 ./06_App_Component/speed/speed.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/motor/motor.o
+ .text          0x00000000        0x0 ./06_App_Component/motor/motor.o
+ .data          0x00000000        0x0 ./06_App_Component/motor/motor.o
+ .bss           0x00000000        0x0 ./06_App_Component/motor/motor.o
+ .data.PI       0x00000000        0x4 ./06_App_Component/motor/motor.o
+ .rodata.PORT_ARR
+                0x00000000       0x14 ./06_App_Component/motor/motor.o
+ .rodata.GPIO_ARR
+                0x00000000       0x14 ./06_App_Component/motor/motor.o
+ .text.motor_set
+                0x00000000       0xb0 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000      0x83e ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000       0x16 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000       0x44 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000      0x209 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000       0x22 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000    0x10979 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000       0x1c ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000       0x9a ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000       0x28 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00000000       0x52 ./06_App_Component/motor/motor.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/light/light.o
+ .text          0x00000000        0x0 ./06_App_Component/light/light.o
+ .data          0x00000000        0x0 ./06_App_Component/light/light.o
+ .bss           0x00000000        0x0 ./06_App_Component/light/light.o
+ .data.PI       0x00000000        0x4 ./06_App_Component/light/light.o
+ .rodata.PORT_ARR
+                0x00000000       0x14 ./06_App_Component/light/light.o
+ .rodata.GPIO_ARR
+                0x00000000       0x14 ./06_App_Component/light/light.o
+ .text.light_control
+                0x00000000       0x20 ./06_App_Component/light/light.o
+ .debug_macro   0x00000000      0x83e ./06_App_Component/light/light.o
+ .debug_macro   0x00000000       0x16 ./06_App_Component/light/light.o
+ .debug_macro   0x00000000       0x44 ./06_App_Component/light/light.o
+ .debug_macro   0x00000000      0x209 ./06_App_Component/light/light.o
+ .debug_macro   0x00000000       0x22 ./06_App_Component/light/light.o
+ .debug_macro   0x00000000    0x10979 ./06_App_Component/light/light.o
+ .debug_macro   0x00000000       0x1c ./06_App_Component/light/light.o
+ .debug_macro   0x00000000       0x9a ./06_App_Component/light/light.o
+ .debug_macro   0x00000000       0x28 ./06_App_Component/light/light.o
+ .debug_macro   0x00000000       0x52 ./06_App_Component/light/light.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/SC_Status/SC_Status.o
+ .text          0x00000000        0x0 ./06_App_Component/SC_Status/SC_Status.o
+ .data          0x00000000        0x0 ./06_App_Component/SC_Status/SC_Status.o
+ .bss           0x00000000        0x0 ./06_App_Component/SC_Status/SC_Status.o
+ .data.PI       0x00000000        0x4 ./06_App_Component/SC_Status/SC_Status.o
+ .text.SC_init  0x00000000       0x70 ./06_App_Component/SC_Status/SC_Status.o
+ .text.SC_EMS_Get
+                0x00000000      0x108 ./06_App_Component/SC_Status/SC_Status.o
+ .text.SC_Status_Get
+                0x00000000      0x270 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_info    0x00000000      0x18c ./06_App_Component/SC_Status/SC_Status.o
+ .debug_abbrev  0x00000000       0xc9 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_aranges
+                0x00000000       0x30 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_ranges  0x00000000       0x20 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0x9b ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000      0x83e ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0x16 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0x44 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000      0x209 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0x22 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000    0x10979 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0x1c ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0x9a ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0x28 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0x70 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_macro   0x00000000       0xca ./06_App_Component/SC_Status/SC_Status.o
+ .debug_line    0x00000000      0x368 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_str     0x00000000    0x5cc98 ./06_App_Component/SC_Status/SC_Status.o
+ .comment       0x00000000       0x71 ./06_App_Component/SC_Status/SC_Status.o
+ .ARM.attributes
+                0x00000000       0x33 ./06_App_Component/SC_Status/SC_Status.o
+ .debug_frame   0x00000000       0x6c ./06_App_Component/SC_Status/SC_Status.o
+ COMMON         0x00000000       0x48 ./06_App_Component/SC_Status/SC_Status.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .text          0x00000000        0x0 ./06_App_Component/GyroAcce/GyroAcce.o
+ .data          0x00000000        0x0 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss           0x00000000        0x0 ./06_App_Component/GyroAcce/GyroAcce.o
+ .rodata.UART_ARR
+                0x00000000       0x18 ./06_App_Component/GyroAcce/GyroAcce.o
+ .rodata.table_irq_uart
+                0x00000000        0x8 ./06_App_Component/GyroAcce/GyroAcce.o
+ .rodata.PORT_ARR
+                0x00000000       0x14 ./06_App_Component/GyroAcce/GyroAcce.o
+ .rodata.GPIO_ARR
+                0x00000000       0x14 ./06_App_Component/GyroAcce/GyroAcce.o
+ .text.AngleControl
+                0x00000000      0x120 ./06_App_Component/GyroAcce/GyroAcce.o
+ .text.AAangPWMOut
+                0x00000000       0x40 ./06_App_Component/GyroAcce/GyroAcce.o
+ .text.TURNPWMOut
+                0x00000000       0x44 ./06_App_Component/GyroAcce/GyroAcce.o
+ .text.SpeedPWMOut
+                0x00000000       0x50 ./06_App_Component/GyroAcce/GyroAcce.o
+ .text.MotorSpeedOut
+                0x00000000       0x84 ./06_App_Component/GyroAcce/GyroAcce.o
+ .rodata.C_0.5583
+                0x00000000        0x1 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.gyro_err.5606
+                0x00000000        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000      0x83e ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x16 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x44 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000      0x209 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x22 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000    0x10979 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x1c ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x9a ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x28 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x40 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0xca ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x52 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0xa0 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00000000       0x46 ./06_App_Component/GyroAcce/GyroAcce.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/uart/uart.o
+ .text          0x00000000        0x0 ./05_Driver/uart/uart.o
+ .data          0x00000000        0x0 ./05_Driver/uart/uart.o
+ .bss           0x00000000        0x0 ./05_Driver/uart/uart.o
+ .data.PI       0x00000000        0x4 ./05_Driver/uart/uart.o
+ .text.uart_sendN
+                0x00000000       0x54 ./05_Driver/uart/uart.o
+ .text.uart_send_string
+                0x00000000       0x54 ./05_Driver/uart/uart.o
+ .text.uart_reN
+                0x00000000       0x5c ./05_Driver/uart/uart.o
+ .text.uart_disable_re_int
+                0x00000000       0x40 ./05_Driver/uart/uart.o
+ .text.CRC_CHECK
+                0x00000000       0x78 ./05_Driver/uart/uart.o
+ .text.OutPut_Data
+                0x00000000      0x174 ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000      0x83e ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000       0x16 ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000       0x44 ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000      0x209 ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000       0x22 ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000    0x10979 ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000       0x1c ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000       0x9a ./05_Driver/uart/uart.o
+ .debug_macro   0x00000000       0x28 ./05_Driver/uart/uart.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pwm/pwm.o
+ .text          0x00000000        0x0 ./05_Driver/pwm/pwm.o
+ .data          0x00000000        0x0 ./05_Driver/pwm/pwm.o
+ .bss           0x00000000        0x0 ./05_Driver/pwm/pwm.o
+ .data.PI       0x00000000        0x4 ./05_Driver/pwm/pwm.o
+ .rodata.PORT_ARR
+                0x00000000       0x14 ./05_Driver/pwm/pwm.o
+ .rodata.GPIO_ARR
+                0x00000000       0x14 ./05_Driver/pwm/pwm.o
+ .text.pwm_set  0x00000000      0x118 ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000      0x83e ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000       0x16 ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000       0x44 ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000      0x209 ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000       0x22 ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000    0x10979 ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000       0x1c ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000       0x9a ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000       0x28 ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000       0x52 ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00000000       0xa0 ./05_Driver/pwm/pwm.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/pit/pit.o
+ .text          0x00000000        0x0 ./05_Driver/pit/pit.o
+ .data          0x00000000        0x0 ./05_Driver/pit/pit.o
+ .bss           0x00000000        0x0 ./05_Driver/pit/pit.o
+ .data.PI       0x00000000        0x4 ./05_Driver/pit/pit.o
+ .text.disable_pit_int
+                0x00000000       0x74 ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000      0x83e ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000       0x16 ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000       0x44 ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000      0x209 ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000       0x22 ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000    0x10979 ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000       0x1c ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000       0x9a ./05_Driver/pit/pit.o
+ .debug_macro   0x00000000       0x28 ./05_Driver/pit/pit.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/gpio/gpio.o
+ .text          0x00000000        0x0 ./05_Driver/gpio/gpio.o
+ .data          0x00000000        0x0 ./05_Driver/gpio/gpio.o
+ .bss           0x00000000        0x0 ./05_Driver/gpio/gpio.o
+ .data.PI       0x00000000        0x4 ./05_Driver/gpio/gpio.o
+ .text.gpio_get
+                0x00000000       0x50 ./05_Driver/gpio/gpio.o
+ .text.gpio_pull
+                0x00000000       0xd0 ./05_Driver/gpio/gpio.o
+ .text.gpio_drive_strength
+                0x00000000       0x88 ./05_Driver/gpio/gpio.o
+ .text.gpio_enable_int
+                0x00000000       0xb0 ./05_Driver/gpio/gpio.o
+ .text.gpio_disable_int
+                0x00000000       0x68 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000      0x83e ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x16 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x44 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000      0x209 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x22 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000    0x10979 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x1c ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x9a ./05_Driver/gpio/gpio.o
+ .debug_macro   0x00000000       0x28 ./05_Driver/gpio/gpio.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./05_Driver/adc/adc.o
+ .text          0x00000000        0x0 ./05_Driver/adc/adc.o
+ .data          0x00000000        0x0 ./05_Driver/adc/adc.o
+ .bss           0x00000000        0x0 ./05_Driver/adc/adc.o
+ .data.PI       0x00000000        0x4 ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000      0x83e ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000       0x16 ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000       0x44 ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000      0x209 ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000       0x22 ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000    0x10979 ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000       0x1c ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000       0x9a ./05_Driver/adc/adc.o
+ .debug_macro   0x00000000       0x28 ./05_Driver/adc/adc.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/startup.o
+ .text          0x00000000        0x0 ./03_MCU/startup.o
+ .data          0x00000000        0x0 ./03_MCU/startup.o
+ .bss           0x00000000        0x0 ./03_MCU/startup.o
+ .data.PI       0x00000000        0x4 ./03_MCU/startup.o
+ .debug_macro   0x00000000      0x83e ./03_MCU/startup.o
+ .debug_macro   0x00000000       0x16 ./03_MCU/startup.o
+ .debug_macro   0x00000000       0x22 ./03_MCU/startup.o
+ .debug_macro   0x00000000       0x1c ./03_MCU/startup.o
+ .debug_macro   0x00000000       0x28 ./03_MCU/startup.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/sysint.o
+ .text          0x00000000        0x0 ./03_MCU/sysint.o
+ .data          0x00000000        0x0 ./03_MCU/sysint.o
+ .bss           0x00000000        0x0 ./03_MCU/sysint.o
+ .data.PI       0x00000000        0x4 ./03_MCU/sysint.o
+ .text.SetVectorTable
+                0x00000000       0x1c ./03_MCU/sysint.o
+ .text.GetCPUInfo
+                0x00000000      0x414 ./03_MCU/sysint.o
+ .debug_macro   0x00000000      0x83e ./03_MCU/sysint.o
+ .debug_macro   0x00000000       0x16 ./03_MCU/sysint.o
+ .debug_macro   0x00000000       0x44 ./03_MCU/sysint.o
+ .debug_macro   0x00000000      0x209 ./03_MCU/sysint.o
+ .debug_macro   0x00000000       0x22 ./03_MCU/sysint.o
+ .debug_macro   0x00000000       0x1c ./03_MCU/sysint.o
+ .debug_macro   0x00000000       0x94 ./03_MCU/sysint.o
+ .group         0x00000000        0x8 ./03_MCU/vectors.o
+ .group         0x00000000        0x8 ./03_MCU/vectors.o
+ .group         0x00000000        0x8 ./03_MCU/vectors.o
+ .text          0x00000000        0x0 ./03_MCU/vectors.o
+ .data          0x00000000        0x0 ./03_MCU/vectors.o
+ .bss           0x00000000        0x0 ./03_MCU/vectors.o
+ .debug_macro   0x00000000      0x83e ./03_MCU/vectors.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .group         0x00000000        0x8 ./02_CPU/arm_cm4.o
+ .text          0x00000000        0x0 ./02_CPU/arm_cm4.o
+ .data          0x00000000        0x0 ./02_CPU/arm_cm4.o
+ .bss           0x00000000        0x0 ./02_CPU/arm_cm4.o
+ .data.PI       0x00000000        0x4 ./02_CPU/arm_cm4.o
+ .text.stop     0x00000000       0x24 ./02_CPU/arm_cm4.o
+ .text.wait     0x00000000       0x24 ./02_CPU/arm_cm4.o
+ .text.write_vtor
+                0x00000000       0x20 ./02_CPU/arm_cm4.o
+ .text.disable_irq
+                0x00000000       0x74 ./02_CPU/arm_cm4.o
+ .text.set_irq_priority
+                0x00000000       0x44 ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000      0x83e ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000       0x16 ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000       0x44 ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000      0x209 ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000       0x22 ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000    0x10979 ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000       0x1c ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000       0x9a ./02_CPU/arm_cm4.o
+ .debug_macro   0x00000000       0x28 ./02_CPU/arm_cm4.o
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixdfsi.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixdfsi.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+ .text          0x00000000       0xec f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpsf2.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpsf2.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpsf2.o)
+ .ARM.attributes
+                0x00000000       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpsf2.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixsfsi.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixsfsi.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_asin.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_asin.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_asin.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_sqrt.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_sqrt.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_sqrt.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fabs.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fabs.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fabs.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fpclassify.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fpclassify.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fpclassify.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_lib_ver.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_lib_ver.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_lib_ver.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_matherr.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_matherr.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_matherr.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_nan.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_nan.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_nan.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-errno.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-errno.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpdf2.o)
+ .text          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libnosys.a(_exit.o)
+ .data          0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libnosys.a(_exit.o)
+ .bss           0x00000000        0x0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libnosys.a(_exit.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+m_interrupts     0x00000000         0x000001e0         xr
+m_cfmprotrom     0x00000400         0x00000010         xr
+m_text           0x00000800         0x0007f800         xr
+m_data           0x1fff0000         0x00010000         xrw
+m_data2          0x20000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./08_Sources/isr.o
+LOAD ./08_Sources/main.o
+LOAD ./07_Soft_Component/control/control.o
+LOAD ./07_Soft_Component/common/common.o
+LOAD ./06_App_Component/speed/speed.o
+LOAD ./06_App_Component/motor/motor.o
+LOAD ./06_App_Component/light/light.o
+LOAD ./06_App_Component/SC_Status/SC_Status.o
+LOAD ./06_App_Component/GyroAcce/GyroAcce.o
+LOAD ./05_Driver/uart/uart.o
+LOAD ./05_Driver/pwm/pwm.o
+LOAD ./05_Driver/pit/pit.o
+LOAD ./05_Driver/gpio/gpio.o
+LOAD ./05_Driver/adc/adc.o
+LOAD ./03_MCU/startup.o
+LOAD ./03_MCU/sysint.o
+LOAD ./03_MCU/vectors.o
+LOAD ./02_CPU/arm_cm4.o
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libstdc++.a
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a
+START GROUP
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libg_s.a
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a
+END GROUP
+START GROUP
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a
+LOAD f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libnosys.a
+END GROUP
+                0x20000000                _estack = 0x20000000
+                0x20000000                __SP_INIT = _estack
+                0x00000800                __heap_size = 0x800
+                0x00000800                __stack_size = 0x800
+
+.interrupts     0x00000000      0x1bc
+                0x00000000                __vector_table = .
+                0x00000000                . = ALIGN (0x4)
+ *(.vectortable)
+ .vectortable   0x00000000      0x1bc ./03_MCU/vectors.o
+                0x00000000                InterruptVector
+                0x000001bc                . = ALIGN (0x4)
+
+.cfmprotect     0x00000400        0x0
+                0x00000400                . = ALIGN (0x4)
+ *(.cfmconfig)
+                0x00000400                . = ALIGN (0x4)
+
+.text           0x00000800     0x31d8
+                0x00000800                . = ALIGN (0x4)
+ *(.text)
+ .text          0x00000800      0x370 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+                0x00000800                __aeabi_drsub
+                0x00000808                __aeabi_dsub
+                0x00000808                __subdf3
+                0x0000080c                __aeabi_dadd
+                0x0000080c                __adddf3
+                0x00000a84                __floatunsidf
+                0x00000a84                __aeabi_ui2d
+                0x00000aa4                __floatsidf
+                0x00000aa4                __aeabi_i2d
+                0x00000ac8                __aeabi_f2d
+                0x00000ac8                __extendsfdf2
+                0x00000b04                __floatundidf
+                0x00000b04                __aeabi_ul2d
+                0x00000b14                __floatdidf
+                0x00000b14                __aeabi_l2d
+ .text          0x00000b70      0x424 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+                0x00000b70                __aeabi_dmul
+                0x00000b70                __muldf3
+                0x00000dc4                __divdf3
+                0x00000dc4                __aeabi_ddiv
+ .text          0x00000f94       0x50 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixdfsi.o)
+                0x00000f94                __aeabi_d2iz
+                0x00000f94                __fixdfsi
+ .text          0x00000fe4       0xa0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+                0x00000fe4                __truncdfsf2
+                0x00000fe4                __aeabi_d2f
+ .text          0x00001084      0x21c f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+                0x00001084                __aeabi_frsub
+                0x0000108c                __subsf3
+                0x0000108c                __aeabi_fsub
+                0x00001090                __aeabi_fadd
+                0x00001090                __addsf3
+                0x000011f0                __aeabi_ui2f
+                0x000011f0                __floatunsisf
+                0x000011f8                __aeabi_i2f
+                0x000011f8                __floatsisf
+                0x00001214                __aeabi_ul2f
+                0x00001214                __floatundisf
+                0x00001224                __aeabi_l2f
+                0x00001224                __floatdisf
+ .text          0x000012a0      0x2a0 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+                0x000012a0                __mulsf3
+                0x000012a0                __aeabi_fmul
+                0x00001408                __aeabi_fdiv
+                0x00001408                __divsf3
+ .text          0x00001540       0x4c f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixsfsi.o)
+                0x00001540                __aeabi_f2iz
+                0x00001540                __fixsfsi
+ .text          0x0000158c      0x110 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpdf2.o)
+                0x0000158c                __gtdf2
+                0x0000158c                __gedf2
+                0x00001594                __ltdf2
+                0x00001594                __ledf2
+                0x0000159c                __nedf2
+                0x0000159c                __eqdf2
+                0x0000159c                __cmpdf2
+                0x00001618                __aeabi_cdrcmple
+                0x00001628                __aeabi_cdcmpeq
+                0x00001628                __aeabi_cdcmple
+                0x00001638                __aeabi_dcmpeq
+                0x0000164c                __aeabi_dcmplt
+                0x00001660                __aeabi_dcmple
+                0x00001674                __aeabi_dcmpge
+                0x00001688                __aeabi_dcmpgt
+ *(.text*)
+ .text.isr_uart5_re
+                0x0000169c       0x24 ./08_Sources/isr.o
+                0x0000169c                isr_uart5_re
+ .text.pit0_isr
+                0x000016c0      0x120 ./08_Sources/isr.o
+                0x000016c0                pit0_isr
+ .text.PORTD_isr
+                0x000017e0       0x94 ./08_Sources/isr.o
+                0x000017e0                PORTD_isr
+ .text.main     0x00001874      0x190 ./08_Sources/main.o
+                0x00001874                main
+ .text.enter_critical
+                0x00001a04       0x24 ./07_Soft_Component/common/common.o
+                0x00001a04                enter_critical
+ .text.exit_critical
+                0x00001a28       0x2c ./07_Soft_Component/common/common.o
+                0x00001a28                exit_critical
+ .text.motor_init
+                0x00001a54       0x58 ./06_App_Component/motor/motor.o
+                0x00001a54                motor_init
+ .text.light_init
+                0x00001aac       0x24 ./06_App_Component/light/light.o
+                0x00001aac                light_init
+ .text.light_change
+                0x00001ad0       0x18 ./06_App_Component/light/light.o
+                0x00001ad0                light_change
+ .text.GyroAcce_init
+                0x00001ae8        0xc ./06_App_Component/GyroAcce/GyroAcce.o
+                0x00001ae8                GyroAcce_init
+ .text.GyroAcce_getAD
+                0x00001af4       0x44 ./06_App_Component/GyroAcce/GyroAcce.o
+                0x00001af4                GyroAcce_getAD
+ .text.GyroAccePHYToAngle
+                0x00001b38      0x3f0 ./06_App_Component/GyroAcce/GyroAcce.o
+                0x00001b38                GyroAccePHYToAngle
+ .text.ADToGyroAccePHY
+                0x00001f28       0xe8 ./06_App_Component/GyroAcce/GyroAcce.o
+                0x00001f28                ADToGyroAccePHY
+ .text.uart_init
+                0x00002010      0x1c8 ./05_Driver/uart/uart.o
+                0x00002010                uart_init
+ .text.uart_send1
+                0x000021d8       0x64 ./05_Driver/uart/uart.o
+                0x000021d8                uart_send1
+ .text.uart_re1
+                0x0000223c       0x70 ./05_Driver/uart/uart.o
+                0x0000223c                uart_re1
+ .text.uart_enable_re_int
+                0x000022ac       0x40 ./05_Driver/uart/uart.o
+                0x000022ac                uart_enable_re_int
+ .text.pwm_init
+                0x000022ec      0x374 ./05_Driver/pwm/pwm.o
+                0x000022ec                pwm_init
+ .text.pit_init
+                0x00002660       0x9c ./05_Driver/pit/pit.o
+                0x00002660                pit_init
+ .text.enable_pit_int
+                0x000026fc       0x74 ./05_Driver/pit/pit.o
+                0x000026fc                enable_pit_int
+ .text.gpio_port_pin_resolution
+                0x00002770       0x2c ./05_Driver/gpio/gpio.o
+ .text.gpio_init
+                0x0000279c       0xb8 ./05_Driver/gpio/gpio.o
+                0x0000279c                gpio_init
+ .text.gpio_set
+                0x00002854       0x68 ./05_Driver/gpio/gpio.o
+                0x00002854                gpio_set
+ .text.gpio_reverse
+                0x000028bc       0x48 ./05_Driver/gpio/gpio.o
+                0x000028bc                gpio_reverse
+ .text.adc_init
+                0x00002904       0x60 ./05_Driver/adc/adc.o
+                0x00002904                adc_init
+ .text.adc_once
+                0x00002964       0xd0 ./05_Driver/adc/adc.o
+                0x00002964                adc_once
+ .text.adc_mid  0x00002a34       0x7c ./05_Driver/adc/adc.o
+                0x00002a34                adc_mid
+ .text.adc_ave  0x00002ab0       0x50 ./05_Driver/adc/adc.o
+                0x00002ab0                adc_ave
+ .text.zero_fill_bss
+                0x00002b00       0x20 ./03_MCU/startup.o
+ .text.gpio_io_init
+                0x00002b20       0x28 ./03_MCU/startup.o
+                0x00002b20                gpio_io_init
+ .text.wdog_disable1
+                0x00002b48       0x38 ./03_MCU/startup.o
+                0x00002b48                wdog_disable1
+ .text.__flush_cache
+                0x00002b80       0x14 ./03_MCU/startup.o
+                0x00002b80                __flush_cache
+ .text.__copy_rom_section
+                0x00002b94       0xe4 ./03_MCU/startup.o
+                0x00002b94                __copy_rom_section
+ .text.__copy_rom_sections_to_ram
+                0x00002c78       0xc4 ./03_MCU/startup.o
+                0x00002c78                __copy_rom_sections_to_ram
+ .text.__init_hardware
+                0x00002d3c       0x1c ./03_MCU/startup.o
+                0x00002d3c                __init_hardware
+ .text.__thumb_startup
+                0x00002d58       0x40 ./03_MCU/startup.o
+                0x00002d58                __thumb_startup
+ .text.SystemClockSetup
+                0x00002d98      0x3f0 ./03_MCU/sysint.o
+                0x00002d98                SystemClockSetup
+ .text.default_isr
+                0x00003188        0xc ./03_MCU/vectors.o
+                0x00003188                default_isr
+ .text.enable_irq
+                0x00003194       0xa4 ./02_CPU/arm_cm4.o
+                0x00003194                enable_irq
+ .text.asin     0x00003238       0xa8 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o)
+                0x00003238                asin
+ .text.__ieee754_asin
+                0x000032e0      0x470 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_asin.o)
+                0x000032e0                __ieee754_asin
+ .text.__ieee754_sqrt
+                0x00003750      0x180 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_sqrt.o)
+                0x00003750                __ieee754_sqrt
+ .text.fabs     0x000038d0        0x8 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fabs.o)
+                0x000038d0                fabs
+ .text.__fpclassifyd
+                0x000038d8       0x50 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fpclassify.o)
+                0x000038d8                __fpclassifyd
+ .text.matherr  0x00003928        0x4 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_matherr.o)
+                0x00003928                matherr
+ .text.nan      0x0000392c        0xc f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_nan.o)
+                0x0000392c                nan
+ .text.__errno  0x00003938        0xc f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-errno.o)
+                0x00003938                __errno
+ .text.exit     0x00003944       0x28 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o)
+                0x00003944                exit
+ .text.memset   0x0000396c       0x10 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
+                0x0000396c                memset
+ .text._exit    0x0000397c        0x4 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libnosys.a(_exit.o)
+                0x0000397c                _exit
+ *(.rodata)
+ *(.rodata*)
+ .rodata.UART_ARR
+                0x00003980       0x18 ./05_Driver/uart/uart.o
+ .rodata.table_irq_uart
+                0x00003998        0x8 ./05_Driver/uart/uart.o
+ .rodata.PORT_ARR
+                0x000039a0       0x14 ./05_Driver/gpio/gpio.o
+ .rodata.GPIO_ARR
+                0x000039b4       0x14 ./05_Driver/gpio/gpio.o
+ .rodata.str1.4
+                0x000039c8        0x8 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o)
+                                  0xc (size before relaxing)
+ .rodata.str1.1
+                0x000039d0        0x2 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+ *fill*         0x000039d2        0x2 
+ .rodata._global_impure_ptr
+                0x000039d4        0x4 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+                0x000039d4                _global_impure_ptr
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.eh_frame)
+ *(.init)
+ *(.fini)
+                0x000039d8                . = ALIGN (0x4)
+                0x000039d8                _etext = .
+
+.vfp11_veneer   0x000039d8        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x000039d8        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x000039d8        0x0
+ .iplt          0x00000000        0x0 ./08_Sources/isr.o
+
+.rel.dyn        0x000039d8        0x0
+ .rel.iplt      0x00000000        0x0 ./08_Sources/isr.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM            0x000039d8        0x0
+                0x000039d8                __exidx_start = .
+ *(.ARM.exidx*)
+                0x000039d8                __exidx_end = .
+
+.ctors          0x000039d8        0x0
+                0x000039d8                __CTOR_LIST__ = .
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x000039d8                __CTOR_END__ = .
+
+.dtors          0x000039d8        0x0
+                0x000039d8                __DTOR_LIST__ = .
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x000039d8                __DTOR_END__ = .
+
+.preinit_array  0x000039d8        0x0
+                0x000039d8                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array*)
+                0x000039d8                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x000039d8        0x0
+                0x000039d8                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array*)
+                0x000039d8                PROVIDE (__init_array_end, .)
+
+.fini_array     0x000039d8        0x0
+                0x000039d8                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*))
+ *(.fini_array*)
+                0x000039d8                PROVIDE (__fini_array_end, .)
+                0x000039d8                ___ROM_AT = .
+
+.data           0x1fff0000       0x8c load address 0x000039d8
+                0x1fff0000                . = ALIGN (0x4)
+                0x1fff0000                _sdata = .
+ *(.data)
+ *(.data*)
+ .data.PI       0x1fff0000        0x4 ./08_Sources/main.o
+ .data.PI       0x1fff0004        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .data.P.5581   0x1fff0008       0x10 ./06_App_Component/GyroAcce/GyroAcce.o
+ .data.FTMx     0x1fff0018        0xc ./05_Driver/pwm/pwm.o
+                0x1fff0018                FTMx
+ .data.__fdlib_version
+                0x1fff0024        0x1 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_lib_ver.o)
+                0x1fff0024                __fdlib_version
+ *fill*         0x1fff0025        0x3 
+ .data.impure_data
+                0x1fff0028       0x60 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x1fff0088        0x4 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+                0x1fff0088                _impure_ptr
+                0x1fff008c                . = ALIGN (0x4)
+                0x1fff008c                _edata = .
+                0x0000008c                ___data_size = (_edata - _sdata)
+                0x00003a64                ___m_data2_ROMStart = (___ROM_AT + SIZEOF (.data))
+
+.igot.plt       0x1fff008c        0x0 load address 0x00003a64
+ .igot.plt      0x00000000        0x0 ./08_Sources/isr.o
+
+.user_data2     0x20000000        0x0 load address 0x00003a64
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                ___m_data2_RAMStart = .
+ *(.data2)
+                0x20000000                ___m_data2_RAMEnd = .
+                0x20000000                . = ALIGN (0x4)
+                0x00000000                ___m_data2_ROMSize = (___m_data2_RAMEnd - ___m_data2_RAMStart)
+                0x20000000                . = ALIGN (0x4)
+
+.bss            0x1fff008c       0xfc load address 0x00003a64
+                0x1fff008c                __START_BSS = .
+                0x1fff008c                PROVIDE (__bss_start__, __START_BSS)
+ *(.bss)
+ *(.bss*)
+ .bss.TimerCnt5ms.5622
+                0x1fff008c        0x1 ./08_Sources/isr.o
+ .bss.TimerCnt10ms.5623
+                0x1fff008d        0x1 ./08_Sources/isr.o
+ .bss.TimerCnt15ms.5624
+                0x1fff008e        0x1 ./08_Sources/isr.o
+ .bss.TimerCnt20ms.5625
+                0x1fff008f        0x1 ./08_Sources/isr.o
+ .bss.TimerCnt100ms.5626
+                0x1fff0090        0x2 ./08_Sources/isr.o
+ *fill*         0x1fff0092        0x2 
+ .bss.TimerCnt1s.5627
+                0x1fff0094        0x4 ./08_Sources/isr.o
+ .bss.int_disable_level
+                0x1fff0098        0x4 ./07_Soft_Component/common/common.o
+ .bss.q_bias.5584
+                0x1fff009c        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.Pdot.5582
+                0x1fff00a0       0x10 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.angle_err.5585
+                0x1fff00b0        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.PCt_0.5586
+                0x1fff00b4        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.PCt_1.5587
+                0x1fff00b8        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.EE.5588   0x1fff00bc        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.K_0.5589  0x1fff00c0        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.K_1.5590  0x1fff00c4        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.t_0.5591  0x1fff00c8        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.t_1.5592  0x1fff00cc        0x4 ./06_App_Component/GyroAcce/GyroAcce.o
+ .bss.argv      0x1fff00d0        0x4 ./03_MCU/startup.o
+ *(COMMON)
+ COMMON         0x1fff00d4       0x18 ./08_Sources/isr.o
+                0x1fff00d4                OutData
+                0x1fff00e4                LeftSpeedC
+                0x1fff00e6                RightSpeedC
+                0x1fff00e8                RunCount
+                0x1fff00ea                count
+ COMMON         0x1fff00ec       0x74 ./08_Sources/main.o
+                0x1fff00ec                Speed_I
+                0x1fff00f0                TurnPriodCt
+                0x1fff00f1                TIME0flag_5ms
+                0x1fff00f4                Speed_P
+                0x1fff00f8                AAngPeriodCount
+                0x1fff00fc                AAngleAcceleArry
+                0x1fff0108                AAngAcceCount
+                0x1fff010c                Angle_D
+                0x1fff0110                Runstop
+                0x1fff0112                SpeedAD
+                0x1fff0114                RunCountLast
+                0x1fff0116                run_flag
+                0x1fff0118                SpeedPeriodCount
+                0x1fff011a                AAngPWM
+                0x1fff011c                TIME0flag_15ms
+                0x1fff011e                MotorAAngPWM
+                0x1fff0120                TIME0flag_20ms
+                0x1fff0122                MotorSpeedPWMR
+                0x1fff0124                PWMout
+                0x1fff0128                Speed_D
+                0x1fff012c                TIME0flag_100ms
+                0x1fff012e                RunCountLast1
+                0x1fff0130                AMotorTurnPWM
+                0x1fff0132                MotorSpeedPWM
+                0x1fff0134                LastAAngPWM
+                0x1fff0136                TIME0flag_10ms
+                0x1fff0137                AInitC
+                0x1fff0138                ATurnPWM
+                0x1fff013c                TIME0flag_1s
+                0x1fff0140                AAngleArrySCI
+                0x1fff0158                ALastTurnPWM
+                0x1fff015c                Angle_P
+ COMMON         0x1fff0160       0x28 ./03_MCU/sysint.o
+                0x1fff0160                SystemCoreClock
+                0x1fff0164                CPUInfo
+                0x1fff0188                . = ALIGN (0x4)
+                0x1fff0188                __END_BSS = .
+                0x1fff0188                PROVIDE (__bss_end__, __END_BSS)
+
+._user_heap_stack
+                0x1fff0188     0x1000 load address 0x00003b60
+                0x1fff0188                . = ALIGN (0x4)
+                0x1fff0188                PROVIDE (end, .)
+                0x1fff0188                PROVIDE (_end, .)
+                0x1fff0188                __heap_addr = .
+                0x1fff0988                . = (. + __heap_size)
+ *fill*         0x1fff0188      0x800 
+                0x1fff1188                . = (. + __stack_size)
+ *fill*         0x1fff0988      0x800 
+                0x1fff1188                . = ALIGN (0x4)
+                0x00003a64                _romp_at = ((___ROM_AT + SIZEOF (.data)) + SIZEOF (.user_data2))
+
+.romp           0x20000000       0x24 load address 0x00003a64
+                0x00003a64                __S_romp = _romp_at
+                0x20000000        0x4 LONG 0x39d8 ___ROM_AT
+                0x20000004        0x4 LONG 0x1fff0000 _sdata
+                0x20000008        0x4 LONG 0x8c ___data_size
+                0x2000000c        0x4 LONG 0x3a64 ___m_data2_ROMStart
+                0x20000010        0x4 LONG 0x20000000 ___m_data2_RAMStart
+                0x20000014        0x4 LONG 0x0 ___m_data2_ROMSize
+                0x20000018        0x4 LONG 0x0
+                0x2000001c        0x4 LONG 0x0
+                0x20000020        0x4 LONG 0x0
+
+.ARM.attributes
+                0x00000000       0x33
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x33 ./08_Sources/isr.o
+ .ARM.attributes
+                0x00000033       0x33 ./08_Sources/main.o
+ .ARM.attributes
+                0x00000066       0x33 ./07_Soft_Component/common/common.o
+ .ARM.attributes
+                0x00000099       0x33 ./06_App_Component/motor/motor.o
+ .ARM.attributes
+                0x000000cc       0x33 ./06_App_Component/light/light.o
+ .ARM.attributes
+                0x000000ff       0x33 ./06_App_Component/GyroAcce/GyroAcce.o
+ .ARM.attributes
+                0x00000132       0x33 ./05_Driver/uart/uart.o
+ .ARM.attributes
+                0x00000165       0x33 ./05_Driver/pwm/pwm.o
+ .ARM.attributes
+                0x00000198       0x33 ./05_Driver/pit/pit.o
+ .ARM.attributes
+                0x000001cb       0x33 ./05_Driver/gpio/gpio.o
+ .ARM.attributes
+                0x000001fe       0x33 ./05_Driver/adc/adc.o
+ .ARM.attributes
+                0x00000231       0x33 ./03_MCU/startup.o
+ .ARM.attributes
+                0x00000264       0x33 ./03_MCU/sysint.o
+ .ARM.attributes
+                0x00000297       0x33 ./03_MCU/vectors.o
+ .ARM.attributes
+                0x000002ca       0x33 ./02_CPU/arm_cm4.o
+ .ARM.attributes
+                0x000002fd       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x0000031b       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000339       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x00000357       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_truncdfsf2.o)
+ .ARM.attributes
+                0x00000375       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_addsubsf3.o)
+ .ARM.attributes
+                0x00000393       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_muldivsf3.o)
+ .ARM.attributes
+                0x000003b1       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_fixsfsi.o)
+ .ARM.attributes
+                0x000003cf       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o)
+ .ARM.attributes
+                0x000003fd       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_asin.o)
+ .ARM.attributes
+                0x0000042b       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_sqrt.o)
+ .ARM.attributes
+                0x00000459       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fabs.o)
+ .ARM.attributes
+                0x00000487       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fpclassify.o)
+ .ARM.attributes
+                0x000004b5       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_lib_ver.o)
+ .ARM.attributes
+                0x000004e3       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_matherr.o)
+ .ARM.attributes
+                0x00000511       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_nan.o)
+ .ARM.attributes
+                0x0000053f       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-errno.o)
+ .ARM.attributes
+                0x0000056d       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o)
+ .ARM.attributes
+                0x0000059b       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000005c9       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000005f7       0x1e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv7e-m\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x00000615       0x2e f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libnosys.a(_exit.o)
+OUTPUT(K60_SmartCar.elf elf32-littlearm)
+
+.debug_info     0x00000000     0x505a
+ .debug_info    0x00000000      0x755 ./08_Sources/isr.o
+ .debug_info    0x00000755      0x88e ./08_Sources/main.o
+ .debug_info    0x00000fe3       0xdd ./07_Soft_Component/common/common.o
+ .debug_info    0x000010c0      0x2af ./06_App_Component/motor/motor.o
+ .debug_info    0x0000136f      0x2e1 ./06_App_Component/light/light.o
+ .debug_info    0x00001650      0x8fb ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_info    0x00001f4b      0x931 ./05_Driver/uart/uart.o
+ .debug_info    0x0000287c      0x6d8 ./05_Driver/pwm/pwm.o
+ .debug_info    0x00002f54      0x393 ./05_Driver/pit/pit.o
+ .debug_info    0x000032e7      0x575 ./05_Driver/gpio/gpio.o
+ .debug_info    0x0000385c      0x57c ./05_Driver/adc/adc.o
+ .debug_info    0x00003dd8      0x6ab ./03_MCU/startup.o
+ .debug_info    0x00004483      0x6ff ./03_MCU/sysint.o
+ .debug_info    0x00004b82       0x87 ./03_MCU/vectors.o
+ .debug_info    0x00004c09      0x451 ./02_CPU/arm_cm4.o
+
+.debug_abbrev   0x00000000     0x11e4
+ .debug_abbrev  0x00000000      0x15d ./08_Sources/isr.o
+ .debug_abbrev  0x0000015d      0x153 ./08_Sources/main.o
+ .debug_abbrev  0x000002b0       0x70 ./07_Soft_Component/common/common.o
+ .debug_abbrev  0x00000320       0xe4 ./06_App_Component/motor/motor.o
+ .debug_abbrev  0x00000404       0xe4 ./06_App_Component/light/light.o
+ .debug_abbrev  0x000004e8      0x17e ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_abbrev  0x00000666      0x1f0 ./05_Driver/uart/uart.o
+ .debug_abbrev  0x00000856      0x174 ./05_Driver/pwm/pwm.o
+ .debug_abbrev  0x000009ca      0x10d ./05_Driver/pit/pit.o
+ .debug_abbrev  0x00000ad7      0x127 ./05_Driver/gpio/gpio.o
+ .debug_abbrev  0x00000bfe      0x131 ./05_Driver/adc/adc.o
+ .debug_abbrev  0x00000d2f      0x1c6 ./03_MCU/startup.o
+ .debug_abbrev  0x00000ef5      0x149 ./03_MCU/sysint.o
+ .debug_abbrev  0x0000103e       0x8a ./03_MCU/vectors.o
+ .debug_abbrev  0x000010c8      0x11c ./02_CPU/arm_cm4.o
+
+.debug_aranges  0x00000000      0x390
+ .debug_aranges
+                0x00000000       0x40 ./08_Sources/isr.o
+ .debug_aranges
+                0x00000040       0x20 ./08_Sources/main.o
+ .debug_aranges
+                0x00000060       0x30 ./07_Soft_Component/common/common.o
+ .debug_aranges
+                0x00000090       0x28 ./06_App_Component/motor/motor.o
+ .debug_aranges
+                0x000000b8       0x30 ./06_App_Component/light/light.o
+ .debug_aranges
+                0x000000e8       0x60 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_aranges
+                0x00000148       0x68 ./05_Driver/uart/uart.o
+ .debug_aranges
+                0x000001b0       0x28 ./05_Driver/pwm/pwm.o
+ .debug_aranges
+                0x000001d8       0x30 ./05_Driver/pit/pit.o
+ .debug_aranges
+                0x00000208       0x60 ./05_Driver/gpio/gpio.o
+ .debug_aranges
+                0x00000268       0x38 ./05_Driver/adc/adc.o
+ .debug_aranges
+                0x000002a0       0x58 ./03_MCU/startup.o
+ .debug_aranges
+                0x000002f8       0x30 ./03_MCU/sysint.o
+ .debug_aranges
+                0x00000328       0x20 ./03_MCU/vectors.o
+ .debug_aranges
+                0x00000348       0x48 ./02_CPU/arm_cm4.o
+
+.debug_ranges   0x00000000      0x2a0
+ .debug_ranges  0x00000000       0x30 ./08_Sources/isr.o
+ .debug_ranges  0x00000030       0x10 ./08_Sources/main.o
+ .debug_ranges  0x00000040       0x20 ./07_Soft_Component/common/common.o
+ .debug_ranges  0x00000060       0x18 ./06_App_Component/motor/motor.o
+ .debug_ranges  0x00000078       0x20 ./06_App_Component/light/light.o
+ .debug_ranges  0x00000098       0x50 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_ranges  0x000000e8       0x58 ./05_Driver/uart/uart.o
+ .debug_ranges  0x00000140       0x18 ./05_Driver/pwm/pwm.o
+ .debug_ranges  0x00000158       0x20 ./05_Driver/pit/pit.o
+ .debug_ranges  0x00000178       0x50 ./05_Driver/gpio/gpio.o
+ .debug_ranges  0x000001c8       0x28 ./05_Driver/adc/adc.o
+ .debug_ranges  0x000001f0       0x48 ./03_MCU/startup.o
+ .debug_ranges  0x00000238       0x20 ./03_MCU/sysint.o
+ .debug_ranges  0x00000258       0x10 ./03_MCU/vectors.o
+ .debug_ranges  0x00000268       0x38 ./02_CPU/arm_cm4.o
+
+.debug_macro    0x00000000    0x34641
+ .debug_macro   0x00000000       0xf6 ./08_Sources/isr.o
+ .debug_macro   0x000000f6      0x83e ./08_Sources/isr.o
+ .debug_macro   0x00000934       0x16 ./08_Sources/isr.o
+ .debug_macro   0x0000094a       0x44 ./08_Sources/isr.o
+ .debug_macro   0x0000098e      0x209 ./08_Sources/isr.o
+ .debug_macro   0x00000b97       0x22 ./08_Sources/isr.o
+ .debug_macro   0x00000bb9    0x10979 ./08_Sources/isr.o
+ .debug_macro   0x00011532       0x1c ./08_Sources/isr.o
+ .debug_macro   0x0001154e       0x9a ./08_Sources/isr.o
+ .debug_macro   0x000115e8       0x28 ./08_Sources/isr.o
+ .debug_macro   0x00011610       0x52 ./08_Sources/isr.o
+ .debug_macro   0x00011662       0x22 ./08_Sources/isr.o
+ .debug_macro   0x00011684       0x40 ./08_Sources/isr.o
+ .debug_macro   0x000116c4       0x22 ./08_Sources/isr.o
+ .debug_macro   0x000116e6       0xca ./08_Sources/isr.o
+ .debug_macro   0x000117b0       0xa6 ./08_Sources/isr.o
+ .debug_macro   0x00011856       0x4c ./08_Sources/isr.o
+ .debug_macro   0x000118a2       0x22 ./08_Sources/isr.o
+ .debug_macro   0x000118c4       0x4c ./08_Sources/isr.o
+ .debug_macro   0x00011910       0x46 ./08_Sources/isr.o
+ .debug_macro   0x00011956       0x10 ./08_Sources/isr.o
+ .debug_macro   0x00011966       0xf6 ./08_Sources/main.o
+ .debug_macro   0x00011a5c       0x83 ./07_Soft_Component/common/common.o
+ .debug_macro   0x00011adf       0xaa ./06_App_Component/motor/motor.o
+ .debug_macro   0x00011b89       0xa0 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00011c29       0x46 ./06_App_Component/motor/motor.o
+ .debug_macro   0x00011c6f       0x9b ./06_App_Component/light/light.o
+ .debug_macro   0x00011d0a       0x1c ./06_App_Component/light/light.o
+ .debug_macro   0x00011d26       0xcb ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00011df1       0x46 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_macro   0x00011e37       0x92 ./05_Driver/uart/uart.o
+ .debug_macro   0x00011ec9       0x3a ./05_Driver/uart/uart.o
+ .debug_macro   0x00011f03       0x9b ./05_Driver/pwm/pwm.o
+ .debug_macro   0x00011f9e       0x92 ./05_Driver/pit/pit.o
+ .debug_macro   0x00012030       0x1c ./05_Driver/pit/pit.o
+ .debug_macro   0x0001204c       0x92 ./05_Driver/gpio/gpio.o
+ .debug_macro   0x000120de       0x4c ./05_Driver/gpio/gpio.o
+ .debug_macro   0x0001212a       0x92 ./05_Driver/adc/adc.o
+ .debug_macro   0x000121bc       0xc4 ./05_Driver/adc/adc.o
+ .debug_macro   0x00012280      0x16d ./03_MCU/startup.o
+ .debug_macro   0x000123ed       0x58 ./03_MCU/startup.o
+ .debug_macro   0x00012445       0x35 ./03_MCU/startup.o
+ .debug_macro   0x0001247a       0xa2 ./03_MCU/startup.o
+ .debug_macro   0x0001251c      0x166 ./03_MCU/startup.o
+ .debug_macro   0x00012682       0x4a ./03_MCU/startup.o
+ .debug_macro   0x000126cc       0x52 ./03_MCU/startup.o
+ .debug_macro   0x0001271e       0x16 ./03_MCU/startup.o
+ .debug_macro   0x00012734       0x43 ./03_MCU/startup.o
+ .debug_macro   0x00012777      0x180 ./03_MCU/startup.o
+ .debug_macro   0x000128f7      0x2a6 ./03_MCU/startup.o
+ .debug_macro   0x00012b9d       0x10 ./03_MCU/startup.o
+ .debug_macro   0x00012bad       0x35 ./03_MCU/startup.o
+ .debug_macro   0x00012be2       0x1f ./03_MCU/startup.o
+ .debug_macro   0x00012c01       0x16 ./03_MCU/startup.o
+ .debug_macro   0x00012c17       0x16 ./03_MCU/startup.o
+ .debug_macro   0x00012c2d       0x29 ./03_MCU/startup.o
+ .debug_macro   0x00012c56       0x16 ./03_MCU/startup.o
+ .debug_macro   0x00012c6c      0x20f ./03_MCU/startup.o
+ .debug_macro   0x00012e7b    0x10967 ./03_MCU/startup.o
+ .debug_macro   0x000237e2       0x94 ./03_MCU/startup.o
+ .debug_macro   0x00023876       0x88 ./03_MCU/sysint.o
+ .debug_macro   0x000238fe       0x16 ./03_MCU/sysint.o
+ .debug_macro   0x00023914    0x10967 ./03_MCU/sysint.o
+ .debug_macro   0x0003427b       0x2e ./03_MCU/sysint.o
+ .debug_macro   0x000342a9       0x3c ./03_MCU/vectors.o
+ .debug_macro   0x000342e5      0x2ab ./03_MCU/vectors.o
+ .debug_macro   0x00034590       0x2e ./03_MCU/vectors.o
+ .debug_macro   0x000345be       0x83 ./02_CPU/arm_cm4.o
+
+.debug_line     0x00000000     0x35c6
+ .debug_line    0x00000000      0x662 ./08_Sources/isr.o
+ .debug_line    0x00000662      0x621 ./08_Sources/main.o
+ .debug_line    0x00000c83      0x2a3 ./07_Soft_Component/common/common.o
+ .debug_line    0x00000f26      0x330 ./06_App_Component/motor/motor.o
+ .debug_line    0x00001256      0x2e6 ./06_App_Component/light/light.o
+ .debug_line    0x0000153c      0x4fa ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_line    0x00001a36      0x3fb ./05_Driver/uart/uart.o
+ .debug_line    0x00001e31      0x376 ./05_Driver/pwm/pwm.o
+ .debug_line    0x000021a7      0x2a3 ./05_Driver/pit/pit.o
+ .debug_line    0x0000244a      0x332 ./05_Driver/gpio/gpio.o
+ .debug_line    0x0000277c      0x2e1 ./05_Driver/adc/adc.o
+ .debug_line    0x00002a5d      0x42b ./03_MCU/startup.o
+ .debug_line    0x00002e88      0x3a4 ./03_MCU/sysint.o
+ .debug_line    0x0000322c       0xa7 ./03_MCU/vectors.o
+ .debug_line    0x000032d3      0x2f3 ./02_CPU/arm_cm4.o
+
+.debug_str      0x00000000    0x610f5
+ .debug_str     0x00000000    0x5d2dc ./08_Sources/isr.o
+                              0x5d481 (size before relaxing)
+ .debug_str     0x0005d2dc      0x1c3 ./08_Sources/main.o
+                              0x5d574 (size before relaxing)
+ .debug_str     0x0005d49f       0x6c ./07_Soft_Component/common/common.o
+                              0x5c942 (size before relaxing)
+ .debug_str     0x0005d50b       0x42 ./06_App_Component/motor/motor.o
+                              0x5ccec (size before relaxing)
+ .debug_str     0x0005d54d       0x57 ./06_App_Component/light/light.o
+                              0x5cb05 (size before relaxing)
+ .debug_str     0x0005d5a4      0x1c2 ./06_App_Component/GyroAcce/GyroAcce.o
+                              0x5d37b (size before relaxing)
+ .debug_str     0x0005d766      0x195 ./05_Driver/uart/uart.o
+                              0x5cc36 (size before relaxing)
+ .debug_str     0x0005d8fb       0xf7 ./05_Driver/pwm/pwm.o
+                              0x5cd8c (size before relaxing)
+ .debug_str     0x0005d9f2       0x4d ./05_Driver/pit/pit.o
+                              0x5ca69 (size before relaxing)
+ .debug_str     0x0005da3f       0xc4 ./05_Driver/gpio/gpio.o
+                              0x5cb3e (size before relaxing)
+ .debug_str     0x0005db03       0xd3 ./05_Driver/adc/adc.o
+                              0x5cd22 (size before relaxing)
+ .debug_str     0x0005dbd6     0x27ad ./03_MCU/startup.o
+                              0x5f215 (size before relaxing)
+ .debug_str     0x00060383      0x149 ./03_MCU/sysint.o
+                              0x5cbd3 (size before relaxing)
+ .debug_str     0x000604cc      0xb62 ./03_MCU/vectors.o
+                               0x2ef8 (size before relaxing)
+ .debug_str     0x0006102e       0xc7 ./02_CPU/arm_cm4.o
+                              0x5ca64 (size before relaxing)
+
+.comment        0x00000000       0x70
+ .comment       0x00000000       0x70 ./08_Sources/isr.o
+                                 0x71 (size before relaxing)
+ .comment       0x00000000       0x71 ./08_Sources/main.o
+ .comment       0x00000000       0x71 ./07_Soft_Component/common/common.o
+ .comment       0x00000000       0x71 ./06_App_Component/motor/motor.o
+ .comment       0x00000000       0x71 ./06_App_Component/light/light.o
+ .comment       0x00000000       0x71 ./06_App_Component/GyroAcce/GyroAcce.o
+ .comment       0x00000000       0x71 ./05_Driver/uart/uart.o
+ .comment       0x00000000       0x71 ./05_Driver/pwm/pwm.o
+ .comment       0x00000000       0x71 ./05_Driver/pit/pit.o
+ .comment       0x00000000       0x71 ./05_Driver/gpio/gpio.o
+ .comment       0x00000000       0x71 ./05_Driver/adc/adc.o
+ .comment       0x00000000       0x71 ./03_MCU/startup.o
+ .comment       0x00000000       0x71 ./03_MCU/sysint.o
+ .comment       0x00000000       0x71 ./03_MCU/vectors.o
+ .comment       0x00000000       0x71 ./02_CPU/arm_cm4.o
+
+.debug_frame    0x00000000      0xaa4
+ .debug_frame   0x00000000       0xa8 ./08_Sources/isr.o
+ .debug_frame   0x000000a8       0x34 ./08_Sources/main.o
+ .debug_frame   0x000000dc       0x58 ./07_Soft_Component/common/common.o
+ .debug_frame   0x00000134       0x50 ./06_App_Component/motor/motor.o
+ .debug_frame   0x00000184       0x70 ./06_App_Component/light/light.o
+ .debug_frame   0x000001f4      0x130 ./06_App_Component/GyroAcce/GyroAcce.o
+ .debug_frame   0x00000324      0x144 ./05_Driver/uart/uart.o
+ .debug_frame   0x00000468       0x48 ./05_Driver/pwm/pwm.o
+ .debug_frame   0x000004b0       0x6c ./05_Driver/pit/pit.o
+ .debug_frame   0x0000051c      0x12c ./05_Driver/gpio/gpio.o
+ .debug_frame   0x00000648       0x88 ./05_Driver/adc/adc.o
+ .debug_frame   0x000006d0       0xec ./03_MCU/startup.o
+ .debug_frame   0x000007bc       0x60 ./03_MCU/sysint.o
+ .debug_frame   0x0000081c       0x28 ./03_MCU/vectors.o
+ .debug_frame   0x00000844       0xb0 ./02_CPU/arm_cm4.o
+ .debug_frame   0x000008f4       0x34 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-w_asin.o)
+ .debug_frame   0x00000928       0x38 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_asin.o)
+ .debug_frame   0x00000960       0x34 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-e_sqrt.o)
+ .debug_frame   0x00000994       0x20 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fabs.o)
+ .debug_frame   0x000009b4       0x28 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_fpclassify.o)
+ .debug_frame   0x000009dc       0x20 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_matherr.o)
+ .debug_frame   0x000009fc       0x20 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libm.a(lib_a-s_nan.o)
+ .debug_frame   0x00000a1c       0x20 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-errno.o)
+ .debug_frame   0x00000a3c       0x28 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-exit.o)
+ .debug_frame   0x00000a64       0x20 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libc_s.a(lib_a-memset.o)
+ .debug_frame   0x00000a84       0x20 f:/kds 3.0.0/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv7e-m\libnosys.a(_exit.o)
